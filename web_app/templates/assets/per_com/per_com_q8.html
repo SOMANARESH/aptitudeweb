@@ -1,0 +1,44 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 8 </u>:</h2>
+<hr>
+<p>How many numbers of 4 digits can be formed with the digits 0, 1, 2 and 3(Repetition is not allowed)</p>
+
+
+	<div>
+		A.192
+	</div>
+<br>
+	<div>
+		B.108
+	</div>
+<br>
+	<div>
+		C.18
+	</div>
+<br>
+	<div>
+		D.48
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: C </h2>
+<h3>Solution: </h3>
+	<p>Let&CloseCurlyQuote;s assume four digit number be WXYZ</p>
+    <p>From the given digits the four digit combination should have thousand&CloseCurlyQuote;s place value other than &OpenCurlyDoubleQuote;0&CloseCurlyDoubleQuote; .</p>
+	<p>The combinations should be from </p>
+	<p>W X Y Z where W>0</p>
+	<p>The possibilities for first place W are {1, 2, 3 } = 3 ways.</p>
+	<p>Now given that the sequence doesn&CloseCurlyQuote;t allow repetition.</p>
+	<p>So the remaining combination of numbers are </p>
+	<p>{0, 2, 3},{0, 1, 3},{0, 1, 2}</p>
+	<p>There are 3 positions for 3 numbers. The number of ways of arrangement of 3 numbers for 3 positions is</p>
+	<p><sup> 3 </sup> P <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> (3 - 3)! </sub> = <sup> 3&times;2&times;1 </sup> &frasl; <sub> 0! </sub></p>
+	<p> <sup> 3 </sup> P <sub> 3 </sub> = 6 </p>
+	<p> So total number of ways = 6 &times; 3 = 18</p>
+</body>
+</html>

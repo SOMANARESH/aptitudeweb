@@ -1,0 +1,50 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 16 </u>:</h2>
+<hr>
+<p>In an Examination, a candidate is required to answer 7 questions in all, from 3 sections having 5 questions each. What are the total number of ways in which a candidate can select the questions, provided that at least two questions are to be attempted from each section?
+</p>
+
+
+	<div>
+		A.300
+	</div>
+<br>
+	<div>
+		B.3000
+	</div>
+<br>
+	<div>
+		C.100
+	</div>
+<br>
+	<div>
+		D.1000
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: B </h2>
+<h3>Solution: </h3>
+	<p>Here the total number of questions from all sections = 3(5) = 15</p>
+	<p>Given that the candidate has to answer total of 7 from all sections such that he has to answer at least two questions from each sections.</p>
+    <p>So the possibilities of choosing the questions from each section are {223, 232, 322}</p>
+	<p>here 223 means,  2 questions from 1st section, 2 questions from 2nd section and 3 questions from 3rd section.</p>
+	<p>The number of ways of selecting 2 questions from 1st section = <sup> 5 </sup> C <sub> 2 </sub></p>
+	<p><sup> 5 </sup> C <sub> 2 </sub> = <sup> 5! </sup> &frasl; <sub> 2! &times; (5 - 2)! </sub></p>
+	<p><sup> 5 </sup> C <sub> 2 </sub> = <sup> 5&times;4&times;3! </sup> &frasl; <sub> 2! &times; 3! </sub></p>
+    <p><sup> 5 </sup> C <sub> 2 </sub> = <sup> 5&times;4 </sup> &frasl; <sub> 2&times;1 </sub> = 10</p>
+	<p>Similarly from 2nd section = <sup> 5 </sup> C <sub> 2 </sub> = 10</p>
+	<p>From 3rd Section = <sup> 5 </sup> C <sub> 3 </sub> = <sup> 5 </sup> C <sub> 2 </sub> = 10</p>
+	<li>
+		<sup> n </sup> C <sub> r </sub> = <sup> n </sup> C <sub> (n - r) </sub>
+	</li>
+	<p>For the 1st combination, the number of ways = 10&times;10&times;10 = 1000</p>
+	<p>Similarly for 2nd group = <sup> 5 </sup> C <sub> 2 </sub> &times; <sup> 5 </sup> C <sub> 3 </sub> &times; <sup> 5 </sup> C <sub> 2 </sub> = 10 &times; 10 &times; 10 = 1000</p>
+	<p>For 3rd Group = <sup> 5 </sup> C <sub> 3 </sub> &times;<sup> 5 </sup> C <sub> 2 </sub> &times;<sup> 5 </sup> C <sub> 2 </sub> = 10&times;10&times;10 = 1000</p>
+	<p>So total number of ways = 1000 +1000 + 1000 = 3000</p>
+</body>
+</html>

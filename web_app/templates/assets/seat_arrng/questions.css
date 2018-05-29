@@ -1,0 +1,40 @@
+<html>
+<body>
+hr {color: brown;}
+
+
+p {
+	line-height:150%;
+}
+
+p1 {
+	line-height:150%;
+}
+
+
+h2 {
+    color: brown;
+    text-align: left;
+	font-family: "Segoe UI Emoji", Times, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+	margin-left: 8px;
+	font-family: "Segoe UI Emoji", Times, sans-serif;
+	line-height:150%;
+}
+
+div {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    background: #dddddd;
+    width: 150px;
+    border-radius: 25px;
+	font-family: "Segoe UI Emoji", Times, sans-serif;
+	line-height:150%;
+}
+
+
+</body>
+</html>

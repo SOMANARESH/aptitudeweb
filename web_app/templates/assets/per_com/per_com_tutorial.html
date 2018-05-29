@@ -1,0 +1,219 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="questions.css">
+    <title>Permutations and Combinations Tutorial</title>
+</head>
+<body>
+<br/>
+<br/>
+<hr/>
+<hr/>
+
+<p align="center"><font size="6"><b>
+    <p1> Permutations and Combinations</p1>
+</b></font></p>
+<hr/>
+<hr/>
+Before going to learn permutations and combinations, you need to know about the Factorial.It will also help while solving probability problems.
+
+<u><h3>1.Factorial:</h3></u>
+<ul>
+    <li>
+        The Factorial of a non negative integer is the product of all positive numbers less than or equal to given number.
+        It is denoted by &OpenCurlyDoubleQuote;!&CloseCurlyDoubleQuote; and also denoted by  &OpenCurlyQuote;L&CloseCurlyQuote;
+    </li>
+    <br>
+
+    <li>
+        Factorial of n i.e. n! = 1&times;2&times;3&times;4&times;------(n-1)&times;n = n&times;(n-1)&times;(n-2)&times;(n-3)&times; ------- 4&times;3&times;2&times;1
+    </li>
+
+</ul>
+<h3>Properties : </h3>
+<ul>
+    <li>
+        0! = 1
+    </li>
+    <li>
+        1! = 1
+    </li>
+    <li>
+        n! = n&times;(n-1)!  where (n-1)! = 1&times;2&times;3&times;---- (n-1)
+    </li>
+    <li>
+        n! = n&times;(n-1)&times;(n-2)! = n&times;(n-1)&times;(n-2)&times;(n-3)!
+    </li>
+</ul>
+<h3>Examples:</h3>
+<ul>
+    <li>
+        5! = 1&times;2&times;3&times;4&times;5 = 120
+    </li>
+    <li>
+        8! = 8&times;7! = 8&times;7&times;6! = 8&times;7&times;6&times;5! = 336&times;120 = 40320
+    </li>
+    <li>
+        The number of ways of arranging the letters of word having length n is &OpenCurlyQuote;n!&CloseCurlyQuote;
+        <h4>Ex:</h4>
+        <ul>
+            <li>
+                <b>Word = ab</b> then possibilities = <b>ab,ba</b> = 2 = 2!
+            </li>
+            <li>
+                <b>Word = abc</b> then possibilities = <b>abc,acb,bac,bca,cab,cba</b> = 6 = 3!
+            </li>
+            <li>
+                <b>Word = abcd</b> then possibilities = <b>abcd,abdc,acbd,acdb,adbc,adcb,bacd,badc,bcad,bcda,bdac,bdca,cabd,cadb,cbad,
+cbda,cdab,cdba, dabc,dacb,dbac,dbca,dcab,dcba</b> = 24 = 1&times;2&times;3&times;4 = 4!
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<u> <h3>2.Permutations:</h3> </u>
+<ul>
+    <li>
+        The different arrangements of a given number of things by taking some or all at a time, are called permutations.
+    </li>
+    <li>
+        It can be defined as The number of all permutations of n things taken r at a time is given by
+        <br><br>
+        <sup> n </sup> P <sub> r </sub> = <sup> n! </sup> &frasl; <sub>(n-r)!</sub> <br>
+		<sup> n </sup> P <sub> r </sub> = <sup>1&times;2&times;3&times;---n</sup> &frasl; <sub>1&times;2&times;3&times;--(n-r-1)&times;(n-r)</sub> where n &GreaterEqual; r
+    </li>
+</ul>
+<h3>Properties : </h3>
+<ul>
+    <li>
+        <sup> n </sup> P <sub> n </sub> = <sup>n!</sup>&frasl;<sub>(n-n)!</sub> = <sup> n! </sup> &frasl; <sub> 0! </sub> = n!
+    </li>
+    <li>
+        <sup> n </sup> P <sub> 0 </sub> = <sup>n!</sup>&frasl;<sub>(n-0)!</sub> = <sup> n! </sup> &frasl; <sub> n! </sub> = 1
+    </li>
+    <li>
+        <b>In case of Permutations, the order of the arrangement is more important and takes into account while calculating.</b>
+        <ul><br>
+                <li><b>Scenario:</b>
+                    Two men representing pass and fail combinations. (Pass followed by Fail).<br>
+                    AB represents A-Pass and B-Fail.<br>
+                    In this case AB, BA are different.
+                </li>
+        </ul>
+    </li>
+</ul>
+<h3>Examples: </h3>
+<ul>
+    <li>
+        <sup> 4 </sup> P <sub> 3 </sub> = <sup>4!</sup> &frasl; <sub>(4-3)!</sub> = <sup> 1&times;2&times;3&times;4 </sup> &frasl; <sub> 1! </sub>= 24!= 24
+    </li>
+    <li>
+        <sup> 10 </sup> P <sub> 5 </sub> =  <sup> 10! </sup> &frasl; <sub> (10-5)! </sub><br>
+		<sup> 10 </sup> P <sub> 5 </sub> = <sup> 10&times;9&times;8&times;7&times;6&times;5&times;4&times;3&times;2&times;1 </sup> &frasl; <sub> 5! </sub> <br> 
+		<sup> 10 </sup> P <sub> 5 </sub> = <sup> 10&times;9&times;8&times;7&times;6&times;5! </sup> &frasl; <sub> 5! </sub>
+        <br>
+        <sup> 10 </sup> P <sub> 5 </sub> = 10&times;9&times;8&times;7&times;6 = 30240
+    </li>
+    <li>
+        All permutations (or arrangements) made with the letters a, b, c by taking two at a time are (ab, ba, ac, ca, bc, cb).
+        <br>
+        n=3, r=2
+        <br>
+        <sup> 3 </sup> P <sub> 2 </sub> = <sup> 3! </sup> &frasl; <sub> (3-2)! </sub> <br>
+		<sup> 3 </sup> P <sub> 2 </sub> = <sup> 3! </sup> &frasl; <sub> 1! </sub> = 3! <br>
+		<sup> 3 </sup> P <sub> 2 </sub> = 3&times;2&times;1 = 6(ab,ba,ac,ca,bc,cb)
+    </li>
+    <li>
+        All permutations made with the letters a, b, c taking all at a time are: ( abc, acb, bac, bca,cab,cba)
+        <br>
+        n=3, r=3
+        <br>
+        <sup> 3 </sup> P <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> (3-3)! </sub> <br>
+		<sup> 3 </sup> P <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> 0! </sub> = 3! <br>
+		<sup> 3 </sup> P <sub> 3 </sub> = 3&times;2&times;1 = 6(ab,ba,ac,ca,bc,cb)
+
+    </li>
+    <li>
+         <u>Keywords to identify permutation problems:</u> Arrangement of People, Letters, Colours,alphabets, Digits etc
+    </li>
+</ul>
+
+<u> <h3> 3.Combinations:  </h3> </u>
+<ul>
+    <li>
+        Each of the different groups or selections formed by taking some or all of a number of objects is called a combination.
+    </li>
+    <li>
+        It is defined as &OpenCurlyDoubleQuote;The number of all combinations of n things, taken r at a time&CloseCurlyDoubleQuote; is:
+        <br><br>
+        <sup> n </sup> C <sub> r </sub> = <sup> n! </sup> &frasl; <sub> r! &times; (n-r)! </sub> where n &GreaterEqual; r
+    </li>
+</ul>
+<h3>Properties : </h3>
+<ul>
+    <li>
+        <sup> n </sup> C <sub> r </sub> = 1 where n = r
+    </li>
+    <li>
+        <sup> n </sup> C <sub> n </sub> = 1
+    </li>
+    <li>
+        <sup> n </sup> C <sub> n </sub> = <sup> n </sup> C <sub> (n-r) </sub>
+    </li>
+    <li>
+        <sup> n </sup> C <sub> 0 </sub> = <sup> n! </sup> &frasl; <sub> 0!&times;(n-0)! </sub> = <sup> n! </sup> &frasl; <sub> n! </sub> = 1
+    </li>
+    <li>
+        <b>In case of combinations, order is not considered into account while calculating.</b>
+        <ul><br>
+                <li><b>Scenario:</b>
+                    Selection of three persons(A,B and C) for a two posts.<br>
+                    Combinations are AB,BA,AC,CA,BC and CB<br>
+                    Among the all {AB, BA }, {AC,CA},{BC,CB} will represents same.<br>
+                    Because there is no specific order for that.<br>
+                    So number of combinations = 3<br>
+                </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Examples: </h3>
+<ul>
+    <li>
+        <sup> 10 </sup> C <sub> 4 </sub> = <sup> 10! </sup> &frasl; <sub> 4!&times;(10-4)! </sub> <br>
+		<sup> 10 </sup> C <sub> 4 </sub> = <sup> 10! </sup> &frasl; <sub> 4!&times;6! </sub> <br>
+		<sup> 10 </sup> C <sub> 4 </sub> = <sup> 10&times;9&times;8&times;7&times;6! </sup> &frasl; <sub> 4!&times;6! </sub> <br>
+        <sup> 10 </sup> C <sub> 4 </sub> = <sup> 10&times;9&times;8&times;7 </sup> &frasl; <sub> 4&times;3&times;2&times;1 </sub> <br>
+		<sup> 10 </sup> C <sub> 4 </sub> = <sup> 5040 </sup> &frasl; <sub> 24 </sub> = 210
+    </li>
+    <li>
+        <sup> 10 </sup> C <sub> 6 </sub> = <sup> 10 </sup> C <sub> (10 - 6) </sub> = <sup> 10 </sup> C <sub> 4 </sub> = 210<br>
+        <sup> 10 </sup> C <sub> 6 </sub> = <sup> 10! </sup> &frasl; <sub> 6!&times;(10-6)! </sub> <br>
+		<sup> 10 </sup> C <sub> 6 </sub> = <sup> 10! </sup> &frasl; <sub> 6!&times;4! </sub> <br>
+		<sup> 10 </sup> C <sub> 6 </sub> = <sup> 10&times;9&times;8&times;7&times;6&times;5&times;4! </sup> &frasl; <sub> 6!&times;4! </sub> <br>
+        <sup> 10 </sup> C <sub> 6 </sub> = <sup> 10&times;9&times;8&times;7&times;6&times;5 </sup> &frasl; <sub> 6&times;5&times;4&times;3&times;2&times;1 </sub> <br>
+		<sup> 10 </sup> C <sub> 6 </sub> = <sup> 5040 </sup> &frasl; <sub> 24 </sub> = 210
+    </li>
+    <li>
+        Suppose we want to select two out of three boys A, B, C. Then, possible selections are AB, BC and CA<br>
+        n=3, r=2<br>
+        <sup> 3 </sup> C <sub> 2 </sub> = <sup> 3! </sup> &frasl; <sub> 2!&times;(3-2)! </sub> <br>
+		<sup> 3 </sup> C <sub> 2 </sub> = <sup> 3! </sup> &frasl; <sub> 2!&times;1! </sub> <br>
+		<sup> 3 </sup> C <sub> 2 </sub> = <sup> 3&times;2&times;1 </sup> &frasl; <sub> 2&times;1&times;1 </sub> = 3
+    </li>
+    <li>
+        All the combinations formed by a, b, c taking ab, bc, ca<br>
+        Just like <sup> 3 </sup> C <sub> 2 </sub><br>
+        The only combination that can be formed by three letters a, b, c taken all at a time is abc.<br>
+        <sup> 3 </sup> C <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> 3!&times;(3-3)! </sub> <br>
+		<sup> 3 </sup> C <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> 3!&times;0! </sub> <br>
+		<sup> 3 </sup> C <sub> 3 </sub> = <sup> 3&times;2&times;1 </sup> &frasl; <sub> 3&times;2&times;1 </sub> = 1
+    </li>
+    <li>
+        <u> Keywords to identify Combinations problems: </u> Selection of Teams,menu,balls,Subjects.
+    </li>
+</ul>
+
+</body>
+
+
+</html>

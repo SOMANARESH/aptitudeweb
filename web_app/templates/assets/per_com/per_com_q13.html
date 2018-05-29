@@ -1,0 +1,43 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 13 </u>:</h2>
+<hr>
+<p>In how many ways can 4 Indians, 3 Chinese and 2 Dutch be seated in a row such that all persons of the same nationality sit together?
+</p>
+
+
+	<div>
+		A.126
+	</div>
+<br>
+	<div>
+		B.576
+	</div>
+<br>
+	<div>
+		C.4!&times;3!&times;2!
+	</div>
+<br>
+	<div>
+		D.1728
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: D </h2>
+<h3>Solution: </h3>
+	<p>Here each group of people are treated as group.</p>
+    <p>So let&CloseCurlyQuote;s assume &OpenCurlyQuote;I&CloseCurlyQuote; represents Indians Group, &OpenCurlyQuote;C&CloseCurlyQuote; represents Chinese Group and &OpenCurlyQuote;D&CloseCurlyQuote; represents Dutch Group.</p>
+	<p>So the number of ways of arranging these groups is </p>
+	<p>{ICD, IDC, CID, CDI, DCI, DIC} = 6</p>
+	<p>The persons in a Indian group can be arranged in <sup> 4 </sup> P <sub> 4 </sub> ways( Arrangement of 4 persons for 4 positions by taking 4 persons at a time)</p>
+	<p><sup> 4 </sup> P <sub> 4 </sub> = 4! = 24</p>
+	<li><sup> n </sup> P <sub> n </sub> = <sup> n! </sup> &frasl; <sub> (n-n)! </sub> =<sup> n! </sup> &frasl; <sub> 0! </sub> =  n!</li>
+	<p>Similarly for Chinese = <sup> 3 </sup> P <sub> 3 </sub> = 3! = 6</p>
+	<p>For Dutch Group = <sup> 2 </sup> P <sub> 2 </sub> = 2! = 2</p>
+    <p>So the total number of ways of arrangements = 6 &times; 24 &times; 6 &times; 2 = 1728</p>
+</body>
+</html>

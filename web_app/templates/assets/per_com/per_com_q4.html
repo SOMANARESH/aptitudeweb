@@ -1,0 +1,42 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 4 </u>:</h2>
+<hr>
+<p>In how many ways the letters in a word &OpenCurlyDoubleQuote;BANGALORE&CloseCurlyDoubleQuote; can be formed by treating all vowels as a single group(all vowels comes together).</p>
+
+
+	<div>
+		A.15120
+	</div>
+<br>
+	<div>
+		B.90720
+	</div>
+<br>
+	<div>
+		C.1440
+	</div>
+<br>
+	<div>
+		D.8640
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: D </h2>
+<h3>Solution: </h3>
+	<p>In a given word the number of letters are { A, A, B, E, G, L, N, O, R } = 9</p>
+	<p>The vowels are {A, A, E, O } = 4</p>
+	<p>So each combination should consist of a vowel group as a single letter. Let&CloseCurlyQuote;s treat the group as &OpenCurlyDoubleQuote;V&CloseCurlyDoubleQuote;(Just for assumption and its not a letter &OpenCurlyDoubleQuote;V&CloseCurlyDoubleQuote;)</p>
+	<p>So Now we have total of 6 letters including the Group.</p>
+	<p>The number of ways = 6! = 6&times;5&times;4&times;3&times;2&times;1 = 720</p>
+	<p>Now come to the group {A,A,E,O}</p>
+	<p>The number of ways of forming a word from the letters of the Group </p><br>
+		<sup> 4! </sup> &frasl; <sub> 2! </sub> = <sup> 4&times;3&times;2&times;1 </sup> &frasl; <sub> 2&times;1 </sub> = 12
+	<p>So the total number of ways = Number of ways by treating vowels group as a single &times; number of ways of forming a word within a vowel group = 720 &times; 12 = 8640</p>
+
+</body>
+</html>

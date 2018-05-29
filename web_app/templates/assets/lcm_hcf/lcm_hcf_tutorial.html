@@ -1,0 +1,386 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="questions.css">
+    <title>LCM and HCF Tutorial</title>
+</head>
+<body>
+<br/>
+<br/>
+<hr/>
+<hr/>
+
+<h1 align="center">
+    <font size="6">
+        <b><u>
+            LCM AND HCF/GCD
+        </u></b>
+    </font></h1>
+
+<hr/>
+<hr/>
+
+<p><font size="4"> <u> LCM (Least common Multiple)</u></font>
+<ul>
+    <li>
+        If we goes on writing the multiples of each of the numbers, then the number which is least
+        and common in each number is called LCM(Least Common Multiple)
+
+    </li>
+
+</ul>
+
+<u> EX: </u>
+
+If we consider LCM of numbers 2,3,6,8.<br><br>
+
+2=2 2,4,6,8,10,12,114,16,20,22,24,2,28,30,32,34,36,38,40,42,44
+<br><br>
+
+3= 3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60
+
+<br><br>
+
+6=6,12,18,24,30,36,42,48,54,60
+
+<br><br>
+
+8=8,16,24,32,40,48,56,64,72,80
+
+<br><br>
+
+When you look at all the factors of numbers, common factor in all the numbers is 24, so 24 is the
+LCM of 2,3,6,8.<br><br>
+
+
+<u>Way to solve LCM:</u>
+
+LCM of 22,49,28,56.
+
+<br><br>
+
+Write the numbers as the following <br>
+
+<img src="/static/images/1st.png" width="120" height="100"/>
+
+<br>
+
+from the least prime number divide all the numbers
+
+i) If the number is divisible by prime number then write the quotient under it, else write the same
+number under it.
+
+<br><br>
+
+<img src="/static/images/1.png"/> <br>
+
+ii) Do the same procedure by using next prime number until getting all ones in the last.<br><br>
+
+<img src="/static/images/2.png"/> <br>
+
+iii) Now multiply each prime numbers which are used to divide numbers
+
+<br><br>
+
+2 &times; 2 &times; 2 &times; 7 &times; 7 &times; 11 = 8 &times; 49 &times; 11 = 4312
+<br><br>
+
+so, 4312 is the LCM of 22,49,28,56.
+<br><br>
+
+</p>
+
+<p><font size="4"> <u> HCF (Highest Common Factors) </u></font>
+
+<ul>
+    <li>
+
+        If you goes on writing the factors of number individually, then we will find a greater
+        number which is common in each number.
+
+        <br> then the common number is called HCF.
+
+        <br>
+
+        If you didn't find any common factor then HCF = 1.
+    </li>
+</ul>
+
+
+<u> Ex: </u> HCF of 3,7,9,5. <br>
+
+3 = 1,3 <br>
+
+7 = 1,7 <br>
+
+9 = 1,3,9 <br>
+
+5 = 1,5,<br>
+
+HCF = 1.
+
+</p>
+
+<p><font size="4"> <u> Way to find HCF: </u></font><br><br>
+
+    Find the HCF of 108, 288, 360. <br><br>
+
+<ol>
+    <li>
+
+        Take two largest numbers (288, 360)<br><br>
+
+        divide highest one with lowest number <br><br>
+
+        <img src="/static/images/Division.png"/><br><br>
+
+        if the remainder is not zero, then divide the previous with the remainder<br><br>
+
+        <img src="/static/images/Division_1.png"/><br><br>
+
+        If you get zero remainder then divisor at previous is HCF of the two numbers. <br><br>
+
+        If you didn't get zero remainder do the same procedure further.<br><br>
+
+        Ex: 42,68.<br><br>
+
+        <img src="/static/images/Division_2.png"/><br><br>
+
+        <br> HCF = 2. <br><br>
+
+        Repeat the procedure with HCF of 1st two numbers and the largest of remaining numbers <br><br>
+
+        HFC of 72, 108. <br>
+
+        <img src="/static/images/Division_14.png"/><br><br>
+
+        HCF of 108,288,360 = 36 <br><br>
+
+    </li>
+</ol>
+
+
+<p><font size="4"> <u>LCM by Power method: </u></font>
+
+<ul>
+    <li>
+
+        LCM of 22, 49, 28,56. <br><br>
+
+        Write the each number in terms of power of prime numbers<br><br>
+
+
+        <img src="/static/images/LCM_3.png"/><br>
+
+
+        22 = 2 <sup>1</sup> &times; 11 <sup>1</sup><br>
+
+        <img src="/static/images/LCM_5.png"/><br>
+
+        49 = 7 <sup>2</sup><br><br>
+
+        <img src="/static/images/LCM_6.png"/><br>
+
+        28 = 2 <sup>2</sup> &times; 7 <br><br>
+
+
+        <img src="/static/images/LCM_7.png"/><br>
+
+        56 = 2 <sup>3</sup> &times; 7 <br><br>
+
+    </li>
+
+    <li>
+
+        Let you choose one prime number which is common in every number and select highest power of
+        prime number in the given numbers.
+
+        <br><br>
+
+        Here 2<sup>3</sup> is the highest power of 2 in the given numbers. <br><br>
+
+    </li>
+
+    <u> Note: </u>
+
+    If any number doesn't have power of selected prime number, then the power for that prime number is treated as 0
+
+    <br><br>
+
+    49 = 2 <sup>0</sup> &times; 7 <sup>2</sup> <br><br>
+
+    Similarly do for all the common prime number in the numbers <br><br>
+
+    LCM = 2 <sup>3</sup> &times; 7<sup>2</sup> &times; 11 <sup>1</sup> = 4312 <br>
+
+</ul>
+
+<p><font size="4"> <u>HCM by power method: </u></font>
+
+<ul>
+    <li>
+
+        It is similar to LCM, but instead of selecting highest power of prime numbers here we are
+        selecting lowest power of prime number.
+
+        <br><br>
+
+        <u> Note: </u>
+
+        If any numbers doesn't have common prime number then leave that common prime number the
+        power of prime number in that number is zero. <br><br>
+
+        <u>Ex: </u>
+
+
+        18, 54, 42,68, 20 <br><br>
+
+        <img src="/static/images/LCM_8.png"/><br>
+
+        18 = 2 <sup>1</sup> &times; 3 <sup>2</sup><br>
+
+        <img src="/static/images/LCM_9.png"/><br>
+
+        54 = 2 <sup>1</sup> &times; 3 <sup>3</sup><br>
+
+        <img src="/static/images/LCM_10.png"/><br>
+
+        42 = 2 <sup>1</sup> &times; 3 <sup>1</sup> &times; 7 <sup>1</sup><br>
+
+        <img src="/static/images/LCM_11.png"/><br>
+
+        68 = 2 <sup>2</sup> &times; 17 <sup>1</sup> <br>
+
+        <img src="/static/images/LCM_12.png"/><br>
+
+        20 = 2 <sup>2</sup> &times; 5 <sup>1</sup><br>
+        <!-- ToDo:  add a diagram here -->
+
+    </li>
+</ul>
+
+
+<u>Note:</u> In case of two numbers the product of LCM and HCF is equal to product of two numbers
+<br><br>
+
+<u>Ex:</u> 9,21 <br><br>
+
+<!-- ToDo:add image here for LCM and HCF -->
+
+LCM = 3 &times; 3 &times; 7 <br><br>
+
+HCF = 3. <br><br>
+
+LCM &times; HCF = 63 &times; 3 = 189 <br><br>
+
+Product of 9,21 = 9 &times; 21 = 189 <br><br>
+
+<u>Note:</u> In case of fractional numbers <br><br>
+
+<sup>a<sub>1</sub></sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>a<sub>2</sub></sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>a<sub>3</sub></sup>&frasl;<sub>b<sub>3</sub></sub> <br><br>
+
+LCM: Take LCM of b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub> = L1 <br><br>
+
+Now find the LCM of numbers
+
+<sup>L1 &times; a<sub>1</sub></sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>L1 &times; a<sub>2</sub></sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>L1 &times; a<sub>3</sub></sup>&frasl;<sub>b<sub>3</sub></sub> <br><br>
+
+Now find LCM of resultant numbers <br><br>
+
+After that divide result by LCM of b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub> (L1) then we will get LCM of
+<br><br>
+
+
+<sup>a<sub>1</sub></sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>a<sub>2</sub></sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>a<sub>3</sub></sup>&frasl;<sub>b<sub>3</sub></sub> <br><br>
+
+<u>Ex:</u>
+
+<sup>2</sup>&frasl;<sub>3</sub>,
+<sup>8</sup>&frasl;<sub>9</sub>,
+<sup>16</sup>&frasl;<sub>81</sub>,
+<sup>10</sup>&frasl;<sub>27</sub><br><br>
+
+Now LCM of 3,9,81,27 is<br>
+
+<img src="/static/images/LCM_19.png"/><br>
+
+LCM of 3, 9, 81, 27 = 3 &times; 3 &times; 3 &times; 3 = 81 <br><br>
+
+The resultant numbers are <br><br>
+
+<sup>81 &times; 2</sup>&frasl;<sub>3</sub> = 54,<br><br>
+<sup>81 &times; 8</sup>&frasl;<sub>9</sub> = 72,<br><br>
+<sup>81 &times; 16</sup>&frasl;<sub>81</sub> = 16,<br><br>
+<sup>81 &times; 10</sup>&frasl;<sub>27</sub> = 30<br><br>
+
+LCM of 54, 72, 16, 30 is <br><br>
+
+<img src="/static/images/LCM_20.png"/><br>
+
+LCM of 54, 72, 16, 30 is = 2<sup>4</sup> &times; 3<sup>3</sup> &times; 5 = 2160. <br><br>
+
+
+
+LCM of
+<sup>2</sup>&frasl;<sub>3</sub>,
+<sup>8</sup>&frasl;<sub>9</sub>,
+<sup>16</sup>&frasl;<sub>81</sub>,
+<sup>10</sup>&frasl;<sub>27</sub><br><br>
+
+= <sup>2160</sup>&frasl;<sub>81</sub> <br><br>
+= <sup>80</sup>&frasl;<sub>3</sub><br><br>
+
+<u>HCF:</u> <br><br>
+
+Same procedure as that of LCM but we need to find the LCM for 3,9,81,27 <br><br>
+
+
+<sup>a<sub>1</sub></sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>a<sub>2</sub></sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>a<sub>3</sub></sup>&frasl;<sub>b<sub>3</sub></sub> <br><br>
+
+LCM of b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub> = L1 <br><br>
+
+<sup>(L1&times;a<sub>1</sub>)</sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>(L1&times;a<sub>2</sub>)</sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>(L1&times;a<sub>3</sub>)</sup>&frasl;<sub>b<sub>3</sub></sub> <br><br>
+
+HCF of result = x <br><br>
+
+HCF of
+
+<sup>a<sub>1</sub></sup>&frasl;<sub>b<sub>1</sub></sub>,
+<sup>a<sub>2</sub></sup>&frasl;<sub>b<sub>2</sub></sub>,
+<sup>a<sub>3</sub></sup>&frasl;<sub>b<sub>3</sub></sub> =
+
+<br>
+<br>
+
+<sup>x</sup>&frasl;<sub>LCM of b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub></sub><br><br>
+
+<u>Ex:</u><br><br>
+
+<sup>2</sup>&frasl;<sub>3</sub>,
+<sup>8</sup>&frasl;<sub>9</sub>,
+<sup>16</sup>&frasl;<sub>81</sub>,
+<sup>10</sup>&frasl;<sub>27</sub><br><br>
+
+LCM of 3,9,81,27 = 81 <br><br>
+
+<sup>81 &times; 2</sup>&frasl;<sub>3</sub>,
+<sup>81 &times; 8</sup>&frasl;<sub>9</sub>,
+<sup>81 &times; 16</sup>&frasl;<sub>81</sub>,
+<sup>81 &times; 10</sup>&frasl;<sub>27</sub><br><br>
+
+54,72,16,30 <br><br>
+
+HCF of 54,72,16,30
+
+
+</body>
+</html>

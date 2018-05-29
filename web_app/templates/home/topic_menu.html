@@ -1,0 +1,68 @@
+{% load static %}
+
+<html>
+<head>
+    <title>{{data.topicName}} Topic Menu</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'questions.css' %}">
+</head>
+<body>
+    <div class="toolbar">
+        <!--<font size="5" color="white"><a href="/"><img src="/static/images/white_arrow3.png" width="40" height="40"/></a>
+        <b style="margin-right:4px;font:10px;float:center;">&nbsp;&nbsp;{{data.topicName}} Topic Menu</b></font>-->
+        <!--<a href="/">
+            <img src="/static/images/left-arrow.png" width="40" height="40"/>
+        </a>
+        <a href="/" style="float:center;">
+            <img src="/static/images/home.png" width="30" height="30"/>
+        </a>
+        <b>
+            <font size="4" color="white">&nbsp;&nbsp;Topic Menu ({{data.topicName}})</font>
+        </b>-->
+        <a href="/" style="text-decoration:none;">
+            <img src="/static/images/left-arrow.png" width="40" height="40"/>
+        </a>
+        <div class="centered">
+            <font size="4" color="white">Topic Menu ({{data.topicName}})</font>
+        </div>
+        <div class="dropdown">
+            <button style="display:inline-block;background:#009688;border:none;top:10;position:relative;">
+                <img src="/static/images/more.png" width="20" height="20"/>
+            </button>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <hr>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=my.first.home.aptitude"
+                   style="text-decoration:none;">Android App</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 main-div">
+    {% if data.tutorialAvailable == 1 %}
+
+       <div class="col-md-12"  align="center">
+           <a href="/{{data.alias}}/tutorial" type ="button" class="btn btn-lg btn-success btn-css">Tutorial</a>
+       </div>
+
+    {% endif%}
+
+    {% if data.formulaeAvailable == 1%}
+
+        <div class="col-md-12" align="center">
+            <a href="/{{data.alias}}/formula" type ="button" class="btn btn-lg btn-success btn-css">Formula</a>
+        </div>
+
+    {% endif%}
+
+    {% if data.questionsAvailable == 1%}
+
+        <div class="col-md-12" align="center">
+            <a href="/{{data.alias}}/papers/" type ="button" class="btn btn-lg btn-success btn-css">Questions</a>
+        </div>
+
+    {% endif%}
+    </div>
+
+</body>
+</html>

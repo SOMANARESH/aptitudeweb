@@ -1,0 +1,110 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question </u>:8</h2>
+<hr>
+<p>
+Given the sequence below and find the value of X
+<br><br>
+7, 26, 63, 124, 215, 342, x
+<br><br>
+</p>
+
+
+<div>
+	A.&nbsp;&nbsp; 511
+	
+</div>
+<br>
+<div>
+	B.&nbsp;&nbsp; 481
+
+	
+</div>
+<br>
+<div>
+	C.&nbsp;&nbsp; 391
+
+	
+</div>
+<br>
+			
+<div>
+	D.&nbsp;&nbsp; 421
+
+	
+</div>
+		
+	
+
+<h2> <u>Answer</u>: A</h2>
+<h3>Solution: </h3>
+<hr>
+<b>General Method:</b>
+<br><br>
+Let us calculate the diffrences between two successive numbers
+<br><br>
+26 -7 = 19
+<br><br>
+63- 26 = 37
+<br><br>
+124 - 63 = 61
+<br><br>
+215 - 124 = 91
+<br><br>
+342 - 215 = 127
+<br><br>
+X - 342 = Y - - - > Eq.1
+<br><br>
+Now let us find the difference between the differences obtained previously
+<br><br>
+37 - 19 = 18
+<br><br>
+61 - 37 = 24
+<br><br>
+91 - 61 = 30
+<br><br>
+127 - 91 = 36
+<br><br>
+Y - 127 = Z
+Here the differences have difference of 6 from previous.
+<br><br>
+So next difference number must be 36+6 = 42.
+<br><br>
+i.e, Z = 42
+<br><br>
+So Y - 127 = 42
+<br><br>
+Y = 42 + 127 = 169
+<br><br>
+From Eq.1 
+<br><br>
+X - 342 = 169
+<br><br>
+X = 169 + 342 = 511
+<br><br>
+<hr>
+<br><br>
+<b>Method 2:</b>
+<br><br>
+If you observe the sequence, the numbers is obtainer by cube of the number less by 1 from 2.
+<br><br>
+i.e, 2<sup>3</sup> - 1 = 7 
+<br><br>
+3<sup>3</sup> - 1 = 26
+<br><br>
+4<sup>3</sup> - 1 = 63
+<br><br>
+5<sup>3</sup> - 1 = 124
+<br><br>
+6<sup>3</sup> - 1 = 215
+<br><br>
+7<sup>3</sup> - 1 = 342
+<br><br>
+So similarly 8<sup>3</sup> - 1 = 511
+<br><br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Aptitude Topic List</title>
+    <meta content='width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'questions.css' %}">
+    <style type="text/css">
+     div.inline { float:left; }.clearBoth { clear:both; }
+     .toolbar {
+    background: #009688;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+    </style>
+
+</head>
+<body>
+<div class="toolbar">
+        <!--<font size="5" color="white"><a href="/{{data.alias}}/"><img src="/static/images/white_arrow3.png" width="40" height="40"/></a>
+        <b style="margin-right:4px;font:10px;float:center;">&nbsp;&nbsp;{{data.topicName}} Tutorial</b></font>-->
+        <!--<b>
+            <font size="4" color="white">&nbsp;&nbsp;Aptitude Plus</font>
+        </b>
+        <div class="dropdown">
+            <button style="display:inline-block;background:#009688;border:none;float:right;">
+                    <img src="/static/images/more.png" width="40" height="35"/>
+            </button>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=my.first.home.aptitude">Android App</a>
+            </div>
+        </div>-->
+        <div class="centered">
+        <font size="4" color="white">Aptitude Plus</font>
+        </div>
+        <div class="dropdown">
+            <button style="display:inline-block;background:#009688;border:none;top:10;position:relative;">
+                <img src="/static/images/more.png" width="30" height="30"/>
+            </button>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=my.first.home.aptitude"
+                   style="text-decoration:none;">Android App</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr style="margin-left:60px; margin-right:60px;" >
+
+{% for item in list %}
+
+<div>
+    <a href="/{{item.alias}}/" style="text-decoration: none;">
+    <div class="inline" style="margin-left:20px">
+
+        <img src="{{ item.iconResource }}" style="width:50px; height:50px;">
+
+    </div>
+
+
+    <div class="inline,topic_name">
+
+        <span class="topic_name">{{ item.topicName }}</span><br>
+
+        <span class="question_count" >No of Questions:{{ item.numberOfQuestions }}</span>
+
+    </div>
+    </a>
+    <hr style="margin-left:60px; margin-right:60px;" >
+
+</div>
+
+{% endfor %}
+
+
+</body>
+</html>

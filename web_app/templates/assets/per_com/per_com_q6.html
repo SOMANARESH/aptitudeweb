@@ -1,0 +1,41 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 6 </u>:</h2>
+<hr>
+<p>A train is going from Bangalore to Chennai and makes 5 stops between these stations. 3 persons enter the train during the journey with 3 different tickets. How many different sets of tickets may they have had?</p>
+
+
+	<div>
+		A.455
+	</div>
+<br>
+	<div>
+		B.10
+	</div>
+<br>
+	<div>
+		C.405
+	</div>
+<br>
+	<div>
+		D.135
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: A </h2>
+<h3>Solution: </h3>
+	<p>For this we need find out the number of different tickets available from Starting to end.</p>
+    <p>But the 3 persons enter the journey means they started picking the train from next stop of starting.</p>
+	<p>The combinations should be from </p>
+	<p>{1-2, 1-3, 1-4, 1-5, 1-C, 2-3, 2-4, 2-5, 2-C, 3-4, 3-5, 3-C, 4-5, 4-C, 5-C } =15</p>
+	<p>So there are 15 distinct tickets.</p>
+	<p>The number of ways of selecting 3 different tickets from 15 tickets is given by </p>
+	<p><sup> 15 </sup> C <sub> 3 </sub> = <sup> 15! </sup> &frasl; <sub> 3! &times; (15 - 3)! </sub></p>
+	<p><sup> 15 </sup> C <sub> 3 </sub> = <sup> 15&times;14&times;13&times;12! </sup> &frasl; <sub> 3! &times; 12! </sub></p>
+    <p><sup> 15 </sup> C <sub> 3 </sub> = <sup> 15&times;14&times;13 </sup> &frasl; <sub> 3&times;2&times;1 </sub> = 455</p>
+</body>
+</html>

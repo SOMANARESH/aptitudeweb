@@ -1,0 +1,60 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<h2><u> Question 10 </u>:</h2>
+<hr>
+<p>There is a five digit code consist of letters and digit. the code can have one digit from 1,2,3 and any four letters from A,b,c,d,e. first and last code must be a letter and all letters can be repeated. How many combinations can be possible?</p>
+
+
+	<div>
+		A.1875
+	</div>
+<br>
+	<div>
+		B.5625
+	</div>
+<br>
+	<div>
+		C.1125
+	</div>
+<br>
+	<div>
+		D.11250
+	</div>
+		
+	
+
+<h2> <u>Answer</u>: B </h2>
+<h3>Solution: </h3>
+	<p>Here the first and last digit must be letters. So those two digits must be selected from 5 letters and repetition is allowed.</p>
+    <b>Scenarios</b>
+	<ul>
+		<li>
+			<p>Let&CloseCurlyQuote;s take 2 numbers(1,2) two positions.</p>
+			<p>combinations are {11, 12, 21, 22 } = 4 = 2<sup>2</sup></p>
+		</li>
+		<li>
+			<p>Now let's take 2(1, 2 ) numbers 3 positions.</p>
+			<p>Combinations = {111, 112 ,121, 122, 211, 212, 221, 222} = 2<sup>3</sup></p>
+		</li>
+		<li>
+			<p>3 numbers (1,2,3) 2 positions</p>
+			<p>Combinations = {11,12,13,21,22,23,31,32,33} = 9 = 3<sup>2</sup></p>
+		</li>
+		<li>
+			<p>Like that 4 numbers and 3 positions</p>
+			<p>Number of Combinations = 4<sup>3</sup> = 64</p>
+		</li>
+	</ul>
+    <p>As per the above Scenarios, the number of combinations of 5 numbers for two positions will be
+    5<sup>2</sup>= 25</p>
+    <p>Now among the 3 digits, one digit have number.</p>
+	<p>So the 3 positions may contain any of 3 numbers.</p>
+	<p>the number of combinations = 3&times;3 = 9</p>
+	<p>Now we have 2 digits pending which are filled by 5 numbers(Because Repetition is allowed).</p>
+	<p>From above Scenarios, the number of combinations with 5 numbers and 2 digits is 5<sup>2</sup> = 25</p>
+	<p>Total number of ways = 25 &times; 9 &times; 25 = 5625</p>
+</body>
+</html>
