@@ -1,7 +1,8 @@
+{% load static %}
 .<html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:60</h1>
 <hr>
@@ -12,26 +13,26 @@ If <sup>1</sup>&frasl;<sub>3</sub> of A = 75% of B = 0.6  of C, then A:B:C is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4:5:9
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5:9:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9:5:4
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;9:4:5
 
 	
@@ -39,7 +40,9 @@ If <sup>1</sup>&frasl;<sub>3</sub> of A = 75% of B = 0.6  of C, then A:B:C is:
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <sup>1</sup>&frasl;<sub>3</sub>A = <sup>75</sup>&frasl;<sub>100</sub>B = 0.6C<br><br>
 
 <sup>1</sup>&frasl;<sub>3</sub>A = <sup>3</sup>&frasl;<sub>4</sub> B = <sup>3</sup>&frasl;<sub>5</sub> C <br><br>
@@ -66,5 +69,6 @@ A:B:C = 9A:4A:5A <br><br>
 A:B:C = 9:4:5
 
 
+</div>
 </body>
 </html>

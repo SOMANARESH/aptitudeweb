@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:71</h1>
 <hr>
@@ -12,26 +13,26 @@ The average age of 40 students of a class is 18 years. When 20 new students are 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;19 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;19 years 6 months
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20 years 6 months
 
 	
@@ -39,7 +40,9 @@ The average age of 40 students of a class is 18 years. When 20 new students are 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that Average age of 40 students = 18 years<br><br>
 <sup>(Sum of ages of 40 students)</sup>&frasl;<sub>40</sub> = 18&times;12 months
 <br><br>
@@ -74,5 +77,6 @@ Now average of newly added 20 students is
 <br><br>
 = 19years+6months.
 
+</div>
 </body>
 </html>

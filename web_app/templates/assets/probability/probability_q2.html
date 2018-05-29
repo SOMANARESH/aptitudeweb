@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:2</h1>
 <hr>
@@ -11,25 +12,25 @@ The probability of getting 2 on a die when it is rolled is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 1 &frasl; 6
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 1 &frasl; 3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1 &frasl; 2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 1 
 
 	
@@ -37,7 +38,9 @@ The probability of getting 2 on a die when it is rolled is
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 In this case, if you roll a die you will get six possibilities from 1 to 6 on the face of the die
 <br><br>
@@ -55,5 +58,6 @@ P(2) = 1 &frasl; 6
 <br><br>
 
 <br><br>
+</div>
 </body>
 </html>

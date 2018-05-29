@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:56</h1>
 <hr>
@@ -12,26 +13,26 @@ A train moves past a telegraph post and a bridge 264 m log in 8 seconds and 20 s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;69.5 km/h
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;70 km/h
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;79 km/h
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;79.2 km/h
 
 	
@@ -39,12 +40,15 @@ A train moves past a telegraph post and a bridge 264 m log in 8 seconds and 20 s
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time take to cover 264 m = (20-8) seconds <br><br>= 12 seconds<br><br>
 Speed of train = 264&divide;12<br><br>=22 m/s <br><br>= 22&times;<sup>5</sup>&frasl;<sub>18</sub> km/hr<br><br>= 79.2 km/hr.
 
 
 
+</div>
 </body>
 </html>

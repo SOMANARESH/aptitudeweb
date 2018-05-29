@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:21</h1>
 <hr>
@@ -12,26 +13,26 @@ A man gains 20% by selling an article for a certain price. If he sells it at dou
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;40%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;140%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;100%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;120%
 
 	
@@ -39,12 +40,15 @@ A man gains 20% by selling an article for a certain price. If he sells it at dou
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Selling price = 100%+20%<br><br>= 120% of cost price<br><br>
 New selling price = 2&times;120% of cost price <br><br>= 240% of cost price <br><br>
 New profit = 240%-100% <br><br>= 140% of cost price.
 
 
+</div>
 </body>
 </html>

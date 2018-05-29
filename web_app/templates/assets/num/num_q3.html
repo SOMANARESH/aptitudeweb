@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 3 </u>:</h2>
 <hr>
@@ -13,26 +14,26 @@ On subtracting 5 from one-fifth of a number, the result is 10. What is the numbe
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;15
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;75
 
 	
@@ -40,7 +41,9 @@ On subtracting 5 from one-fifth of a number, the result is 10. What is the numbe
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the number be x.<br><br>
 
 Then <sup>x</sup>&frasl;<sub>5</sub> &minus; 5 = 10<br><br>
@@ -49,5 +52,6 @@ x = 5 &times;15<br><br>
 x= 75
 
 
+</div>
 </body>
 </html>

@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 10 </u>:</h2>
 <hr>
 <p>How much does a watch lose per day, if its hands coincide ever 64 minutes?</p>
 
 
-	<div>
+	<div class="div2">
 		A.35<sup>8</sup>&frasl;<sub>11</sub>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.33<sup>8</sup>&frasl;<sub>11</sub>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.34<sup>8</sup>&frasl;<sub>11</sub>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.32<sup>8</sup>&frasl;<sub>11</sub>
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>We know that,in 1 hour(60 minutes), minute hand gains 55minutes than the hour hand</p>
     <p>So 55 min spaces are covered in 60 min to get coincide each other</p>
@@ -42,5 +45,6 @@
     <p>Loss in 24 hours = <sup>360</sup>&frasl;<sub>11</sub></p>
     <p>Loss in 24 hours = 32<sup>8</sup>&frasl;<sub>11</sub></p>
 
+</div>
 </body>
 </html>

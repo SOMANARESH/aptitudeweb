@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:95</h1>
 <hr>
@@ -12,26 +13,26 @@ Radha spends 40% of her salary on food 20% on house rent, 10% on entertainment a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;8000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;7500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6000
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10000
 
 	
@@ -39,7 +40,9 @@ Radha spends 40% of her salary on food 20% on house rent, 10% on entertainment a
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Total amount spend 
 <br><br>
@@ -57,5 +60,6 @@ Total income = 75&times;100
 Total income = 7500
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:84</h2>
 <hr>
@@ -12,26 +13,26 @@ A wire when cut into pieces of 14 metre each, leaves a piece of 11 metre. When a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;18 meters
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25 meters
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;123 meters
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;221 meters
 
 	
@@ -39,7 +40,9 @@ A wire when cut into pieces of 14 metre each, leaves a piece of 11 metre. When a
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Difference between the pieces left = 11-3= 8 meters<br><br>
 Difference in length of two types of pieces  = 15-14 <br><br>
 = 1 meter each<br><br>
@@ -51,5 +54,6 @@ or Length of the wire = 15&times;8+3<br><br>
 =123 meter.
 
 
+</div>
 </body>
 </html>

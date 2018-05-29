@@ -1,8 +1,9 @@
+{% load static %}
 
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:10</h1>
 <hr>
@@ -13,26 +14,26 @@ The average of first 47 natural numbers is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;23
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;47
 
 	
@@ -40,7 +41,9 @@ The average of first 47 natural numbers is:
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Average = <sup>a</sup>&frasl;<sub>b</sub><br><br>
 where <br><br>
@@ -63,5 +66,6 @@ Average of 47 numbers
 <br><br>
 = 24
 
+</div>
 </body>
 </html>

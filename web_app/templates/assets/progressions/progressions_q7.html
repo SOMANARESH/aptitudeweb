@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h2>
 <hr>
@@ -10,30 +11,32 @@
     10<sup>th</sup> term is 5 and 18<sup>th</sup> term is 77
 </p>
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp; a = &minus;67, d = 8
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     B.&nbsp;&nbsp; a = &minus;76, d = 8
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     C.&nbsp;&nbsp; a = &minus;76, d = 9
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp; a = &minus;67, d = 9
 
 </div>
 
-<h2><u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p>
     Given that
@@ -85,5 +88,6 @@
     <br><br>
 
 <p>
+</div>
 </body>
 </html>

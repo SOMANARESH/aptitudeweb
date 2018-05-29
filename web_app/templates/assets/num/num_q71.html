@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:71</h2>
 <hr>
@@ -12,26 +13,26 @@ The taxi charges in a city contain fixed charges and additional charge/km. the f
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;900
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;950
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;800
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;750
 
 	
@@ -39,7 +40,9 @@ The taxi charges in a city contain fixed charges and additional charge/km. the f
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Additional km charges for 15 km <br><br>
 
 (i.e. 25-10)km = 800-350<br><br>
@@ -60,5 +63,6 @@ Total charges for 30 km = total charges for 25 km + additional km charges for 5k
 = 950.
 
 
+</div>
 </body>
 </html>

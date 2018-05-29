@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:63</h2>
 <hr>
@@ -12,26 +13,26 @@ If a two digit number is three times the sum of its digits, the number formed by
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;7
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;8
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10
 
 	
@@ -39,10 +40,13 @@ If a two digit number is three times the sum of its digits, the number formed by
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 We know that sum of two such numbers is 11 times the sum of its digit.<br><br>
 Number on interchanging = 11-3<br><br>=8 times of sum of the digits.
 
+</div>
 </body>
 </html>

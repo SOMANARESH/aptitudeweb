@@ -1,37 +1,41 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 11 </u>:</h2>
 <hr>
 <p>How many days are there in x weeks x days?</p>
 
 
-	<div>
+	<div class="div2">
 		A.7 x<sup>2</sup>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.14x
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.7
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.8x
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p><li>Given that there are x weeks.</li></p>
 	<p><li>For a week there are 7 days</li></p>
 	<p><li>So X weeks should have = x &times; 7 = 7x days</li></p>
 	<p><li>So X weeks and X days should have = 7x + x days</li></p>
 	<p><li>There are total of 8x days in X weeks and X days</li></p>
+</div>
 </body>
 </html>

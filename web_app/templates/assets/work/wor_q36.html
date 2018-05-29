@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:36</h1>
 <hr>
@@ -21,26 +22,26 @@ of a land in 6 days and B can cultivate
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;8days
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10days
 
 	
@@ -48,7 +49,9 @@ of a land in 6 days and B can cultivate
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 One day work of A = <sup>2</sup>&frasl;<sub>5</sub>
 
 &times
@@ -90,5 +93,6 @@ th work =
 = 8 days.
 
 
+</div>
 </body>
 </html>

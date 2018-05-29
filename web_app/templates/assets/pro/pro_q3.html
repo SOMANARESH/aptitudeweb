@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:3</h1>
 <hr>
@@ -12,26 +13,26 @@ A man bought an old typewriter for 1200 and spent 200 on its repair. He sold it 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;8%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;16%
 
 	
@@ -39,12 +40,15 @@ A man bought an old typewriter for 1200 and spent 200 on its repair. He sold it 
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Total cost price = 1200+200<br><br>=1400<br><br>
 Profit = (1680-1400)<br><br>= 280<br><br>
 Profit% = profit&divide;cost price <br><br>
 = <sup>280</sup>&frasl;<sub>1400</sub>&times;100 <br><br>=20%.
 
 
+</div>
 </body>
 </html>

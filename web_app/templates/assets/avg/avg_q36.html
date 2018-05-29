@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:36</h1>
 <hr>
@@ -12,26 +13,26 @@ If average of 5 observations is 46 and that of 5 other observations is 50, find 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;96
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;48
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;46
 
 	
@@ -39,7 +40,9 @@ If average of 5 observations is 46 and that of 5 other observations is 50, find 
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average of first 5 observations is 46
 <br><br>
 <sup>(sum of first 5 observations)</sup>&frasl;<sub>5</sub> = 46
@@ -66,5 +69,6 @@ Now the average of these 10 observations is
 <br><br>
 = 48
 
+</div>
 </body>
 </html>

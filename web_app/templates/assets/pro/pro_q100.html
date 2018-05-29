@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:100</h1>
 <hr>
@@ -12,26 +13,26 @@ A person A sells a table costing 2000 to a person B and earns a profit of 6%. Th
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2054
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2050
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2024
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2014
 
 	
@@ -39,7 +40,9 @@ A person A sells a table costing 2000 to a person B and earns a profit of 6%. Th
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Difference = 6-5-
 <sup>(6 &times; 5)</sup>&frasl;<sub>100</sub>
@@ -50,5 +53,6 @@ Required price = 2000+0.7% of 2000<br><br>
 =2014.
 
 
+</div>
 </body>
 </html>

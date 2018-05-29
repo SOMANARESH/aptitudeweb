@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h1>
 <hr>
@@ -12,26 +13,26 @@ A fruit seller had some apples. He sells 40% apples and still has 420 apples. Or
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;588 apples
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;600 apples
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;672 apples
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;700 apples
 
 	
@@ -39,7 +40,9 @@ A fruit seller had some apples. He sells 40% apples and still has 420 apples. Or
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Stock left unsold = (100-40)% <br><br>
 = 60% <br><br>
@@ -51,5 +54,6 @@ Stock left unsold = (100-40)% <br><br>
 Total apples = 700<br><br>
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:11</h1>
 <hr>
@@ -12,19 +13,19 @@ A person buys some pencils at 5 for a rupee and sells them at 3 for a rupee. His
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;66 <sup>2</sup>&frasl;<sub>3</sub>%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;76 <sup>2</sup>&frasl;<sub>3</sub>%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;56 <sup>2</sup>&frasl;<sub>3</sub>%
 
 	                                                   
@@ -32,7 +33,7 @@ A person buys some pencils at 5 for a rupee and sells them at 3 for a rupee. His
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;46 <sup>2</sup>&frasl;<sub>3</sub>%
 
 	
@@ -40,7 +41,9 @@ A person buys some pencils at 5 for a rupee and sells them at 3 for a rupee. His
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Ratio of cost price and selling price = 1&divide;5:1&divide;3<br><br>
 = 3:5<br><br>
 Profit percent = (5-3)&divide;3&times;100 <br><br>
@@ -48,5 +51,6 @@ Profit percent = (5-3)&divide;3&times;100 <br><br>
 = 66 <sup>2</sup>&frasl;<sub>3</sub>%
 
 
+</div>
 </body>
 </html>

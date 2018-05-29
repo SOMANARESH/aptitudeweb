@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:70</h1>
 <hr>
@@ -12,26 +13,26 @@ There are some coins and rings of either gold or silver in a box. 60% of the obj
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;16
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;27
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;58
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;70
 
 	
@@ -39,7 +40,9 @@ There are some coins and rings of either gold or silver in a box. 60% of the obj
 		
 	
 
-<h2> <u>Answer</u>:c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that 60% of objects are coins, So remaining 40% of objects are rings.
 <br><br>
 And also 30% of coins are silver that means 70% of coins are gold.
@@ -61,5 +64,6 @@ Total percentage of Gold = <sup>(42+16)</sup>&frasl;<sub>100</sub>
 Total percentage of Gold = <sup>58</sup>&frasl;<sub>100</sub>
 <br><br>
 Total percentage of Gold = 58%
+</div>
 </body>
 </html>

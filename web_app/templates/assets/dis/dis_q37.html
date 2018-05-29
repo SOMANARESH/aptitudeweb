@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h2>
 <hr>
@@ -13,26 +14,26 @@ A person can walk a certain distance and drive back in six hours. He can also wa
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;Two hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;Two and half hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;Five and a half hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Four hours.
 
 	
@@ -40,7 +41,9 @@ A person can walk a certain distance and drive back in six hours. He can also wa
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 One way walking+ one wy driving = 6 hours<br><br>
 2&times;(one way walking + one way driving)= 12 hours<br><br>
@@ -49,5 +52,6 @@ Two ways driving time = 12 hours &minus; 10 hours <br><br>= 2 hours.
 
 
 
+</div>
 </body>
 </html>

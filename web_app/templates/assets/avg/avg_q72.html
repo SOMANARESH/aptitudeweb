@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:72</h1>
 <hr>
@@ -12,26 +13,26 @@ A batsman in his 17<sup>th</sup> innings make a score of 85, and there by increa
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;32
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;34
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;37
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ A batsman in his 17<sup>th</sup> innings make a score of 85, and there by increa
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the average  score by 16 innings be X
 <br><br>
 Then <sup>(Sum of 16 innings score)</sup>&frasl;<sub>16</sub> = X
@@ -69,5 +72,6 @@ Average score after 17 innings is X+3
 = 34+3
 <br><br>
 = 37
+</div>
 </body>
 </html>

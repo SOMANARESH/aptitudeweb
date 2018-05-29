@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:28</h1>
 <hr>
@@ -12,26 +13,26 @@ Of the three numbers, second is twice the first and is also thrice the third. If
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;72
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;36
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;108
 
 	
@@ -39,7 +40,9 @@ Of the three numbers, second is twice the first and is also thrice the third. If
 		
 	
 
-<h2> <u>Answer</u>:B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that second number is twice that of first and thrice that of third
 <br><br>
 i.e.X<sub>2</sub> = 2(X<sub>1</sub>)
@@ -82,5 +85,6 @@ X<sub>2</sub> = 72
 <br><br>
 So among all X<sub>2</sub> = 72 is the largest number.
 
+</div>
 </body>
 </html>

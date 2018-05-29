@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:4</h1>
 <hr>
@@ -12,26 +13,26 @@ Which one of the following numbers is not a square of any natural number?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5041
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;9852
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1936
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4624
 
 	
@@ -39,8 +40,11 @@ Which one of the following numbers is not a square of any natural number?
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Unit digit 2 is not possible in a square nuber.
 
+</div>
 </body>
 </html>

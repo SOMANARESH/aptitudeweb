@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:57</h1>
 <hr>
@@ -12,26 +13,26 @@ A man bought 25 km of rice for 750. On selling them for a certain price, he suff
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;30
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;35
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;37.50
 
 	
@@ -39,7 +40,9 @@ A man bought 25 km of rice for 750. On selling them for a certain price, he suff
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Selling price + loss = cost price<br><br>
 Selling price of 25 kg + selling price of 5 kg = 750<br><br>
@@ -51,5 +54,6 @@ Selling price of 1 kg
 = 25.
 
 
+</div>
 </body>
 </html>

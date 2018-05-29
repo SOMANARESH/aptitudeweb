@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:26</h1>
 <hr>
@@ -12,13 +13,13 @@ A dishonest merchant professes to sell his goods at cost price, but uses a weigh
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;11 <sup>1</sup>&frasl;<sub>9</sub>%.
 
 
@@ -26,14 +27,14 @@ A dishonest merchant professes to sell his goods at cost price, but uses a weigh
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10%
 
 	
@@ -41,7 +42,9 @@ A dishonest merchant professes to sell his goods at cost price, but uses a weigh
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The merchant gives 900 grams charging the price of 1000 grams.<br><br>
 His gain is 100 grams on every 900 grams <br><br>
 Profit percent =  
@@ -51,5 +54,6 @@ Profit percent =
 
 	
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:28</h1>
 <hr>
@@ -13,26 +14,26 @@ If 27% of 1380 = 36% of x, find the value of x.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1035
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4140
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1840
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;5520
 
 	
@@ -40,7 +41,9 @@ If 27% of 1380 = 36% of x, find the value of x.
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that 27% of 1380 = 36% of X
 <br><br>
 (<sup>27</sup>&frasl;<sub>100</sub>)&times;1380 = (<sup>36</sup>&frasl;<sub>100</sub>)&times;X
@@ -53,5 +56,6 @@ X = <sup>37260</sup>&frasl;<sub>36</sub>
 <br><br>
 X = 1035
 <br><br>
+</div>
 </body>
 </html>

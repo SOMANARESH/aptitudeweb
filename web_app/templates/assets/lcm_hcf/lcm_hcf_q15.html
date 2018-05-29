@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -15,26 +16,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.3n+18
 </div>
 <br>
-<div>
+<div class="div2">
     B.2n+12
 </div>
 <br>
-<div>
+<div class="div2">
     C.n+6
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.6
 </div>
 
 
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
     GCD stands for Greatest Common Divisor and it is same as HCF.<br><br>
@@ -47,11 +50,12 @@
 
     GCD = product of Least power of prime numbers <br><br>
 
-    <img src="/static/images/Division_12.png"/><br>
+    <img src="Division_12.png"/><br>
 
     GCD = (n+6)<sup>1</sup>.<br><br>
 
 </p>
 
+</div>
 </body>
 </html>

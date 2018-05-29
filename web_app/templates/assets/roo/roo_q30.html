@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -12,26 +13,26 @@ Which number should replace both the question marks in the following equation?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;384
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;398
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;404
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;416
 
 	
@@ -39,7 +40,9 @@ Which number should replace both the question marks in the following equation?
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <sup>?</sup>&frasl;<sub>576</sub> = <sup>256</sup>&frasl;<sub>?</sub><br><br>
  ?&times;?= 256&times;576<br><br>
@@ -57,5 +60,6 @@ Which number should replace both the question marks in the following equation?
 =16&times;24<br><br>
 =384.
 
+</div>
 </body>
 </html>

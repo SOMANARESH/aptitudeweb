@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:13</h2>
 <hr>
@@ -14,33 +15,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;7:2
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;5:2
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;3:2
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;5:3
 
 
 </div>
 
 
-<h2><u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 (5x<sup>2</sup> &minus; 3y<sup>2</sup>)&divide;(xy) =<sup>11</sup>&frasl;<sub>2</sub><br><br>
 2(5x<sup>2</sup>- 3y<sup>2</sup>)= 11xy<br><br>
@@ -53,5 +56,6 @@ x:y = -2:3 or x:y = 3:2.
 <br><br>
 So solution is x = 3 and y = 2
 
+</div>
 </body>
 </html>

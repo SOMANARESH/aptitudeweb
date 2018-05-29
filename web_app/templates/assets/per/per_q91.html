@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:91</h1>
 <hr>
@@ -11,26 +12,26 @@ In an examination, 70% students qualified from school A. there are 20% more stud
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;30%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;70%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;87.5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;78.5%
 
 	
@@ -38,7 +39,9 @@ In an examination, 70% students qualified from school A. there are 20% more stud
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the number of students in school A be X
 <br><br>
@@ -90,5 +93,6 @@ i.e., <sup>B<sub>q</sub></sup>&frasl;<sub>Y</sub> = [(<sup>105</sup>&frasl;<sub>
 <br><br>
 Required percentage is 87.5%
 
+</div>
 </body>
 </html>

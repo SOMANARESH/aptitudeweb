@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:48</h2>
 <hr>
@@ -12,33 +13,35 @@ The difference between a two digit number and the number obtained by interchangi
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 	
 </div>
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the two digit number be XY then it can be represented in decimal format as below
 <br><br>
 (10<sup>1</sup>&times;X)+(10<sup>0</sup>&times;Y)--->1
@@ -58,5 +61,6 @@ i.e. (10X+Y)-(10Y+X) = 36
 X-Y = 4
 <br><br>
 So the difference between digits of a number is 4
+</div>
 </body>
 </html>

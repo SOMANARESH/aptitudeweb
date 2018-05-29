@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h2>
 <hr>
@@ -12,36 +13,39 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;9988
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;9966
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;9944
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;8888
 
 
 </div>
 
 
-<h2><u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 9944: last three digits i.e. 944 is 56 less than 1000 is divisible by 8 <br><br>
 
 
 9944 is divisible by 11 as (9+4)-(9+4)=0
+</div>
 </body>
 </html>

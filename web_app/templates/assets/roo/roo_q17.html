@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h1>
 <hr>
@@ -12,26 +13,26 @@ The product of two consecutive numbers is 3192. What is the smaller number?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;56
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;57
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;58
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,11 +40,14 @@ The product of two consecutive numbers is 3192. What is the smaller number?
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 31=25+6<br><br>
 3192 is near square of 50+6 = 56<br><br>
 Now 56&times;57 = 3192.
 
+</div>
 </body>
 </html>

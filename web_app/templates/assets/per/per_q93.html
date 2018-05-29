@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:93</h1>
 <hr>
@@ -13,26 +14,26 @@ Vipul decided to donate 5% of his salary. On the day of donation he changed his 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;37500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;45000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;33750
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -40,7 +41,9 @@ Vipul decided to donate 5% of his salary. On the day of donation he changed his 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let vipul salary = X<br><br>
 Then 5% of 75% of X = 1687.50 <br><br>
 <sup>5</sup>&frasl;<sub>100</sub> &times; <sup>75</sup>&frasl;<sub>100</sub> &times; X = 1687.50
@@ -55,5 +58,6 @@ X = <sup>16875000</sup>&frasl;<sub>375)</sub>
 <br><br>
 X = 45000
 
+</div>
 </body>
 </html>

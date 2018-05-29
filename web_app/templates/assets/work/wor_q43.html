@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:43</h2>
 <hr>
@@ -14,33 +15,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;50
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;350
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;200
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;Data Insufficient
 
 
 </div>
 
 
-<h2><u>Answer</u>:c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Work done by C = 1-
 <sup>7</sup>&frasl;<sub>11</sub> <br><br>
 = <sup>4</sup>&frasl;<sub>11</sub>
@@ -56,5 +59,6 @@ C share in wages =
 =200.
 
 
+</div>
 </body>
 </html>

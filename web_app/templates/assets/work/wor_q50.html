@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:50</h1>
 <hr>
@@ -12,26 +13,26 @@ A job can be completed by 12 men in 12 days. how many extra days will be needed 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;24
 
 	
@@ -39,7 +40,9 @@ A job can be completed by 12 men in 12 days. how many extra days will be needed 
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used:</u>
 <br><br>
 If a man can do a piece of work in x days, <br><br>
@@ -88,5 +91,6 @@ Extra days = 12-6 =6 days.
 Extra days = 12-6 = 6 days.<br><br>
 
 
+</div>
 </body>
 </html>

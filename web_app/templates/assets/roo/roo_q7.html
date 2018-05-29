@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h1>
 <hr>
@@ -12,26 +13,26 @@ If (x + 7954 &times; 7956 ) be a square number, then the value of x is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;16
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4
 
 	
@@ -39,8 +40,11 @@ If (x + 7954 &times; 7956 ) be a square number, then the value of x is:
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Product of two consecutive odd or even numbers increased by unity is equal to square of average of the numbers.
 
+</div>
 </body>
 </html>

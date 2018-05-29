@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:67</h1>
 <hr>
@@ -12,26 +13,26 @@ In what time will a train 100 meters long cross an electric pole, if its speed b
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2.5 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12.5 seconds
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3 <sup>5</sup>&frasl;<sub>4</sub> seconds
 
 	
@@ -39,12 +40,15 @@ In what time will a train 100 meters long cross an electric pole, if its speed b
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Speed of the train =144 km/hr <br><br>= (5&divide;18)&times;144 m/s <br><br>= 40 m/s<br><br>
 Required time = 100&divide;40<br><br>=2.5 seconds.
 
 
 
+</div>
 </body>
 </html>

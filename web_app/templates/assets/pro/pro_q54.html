@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:54</h1>
 <hr>
@@ -12,26 +13,26 @@ A retailer buys 40 pens at the marked price of 36 pens from a wholesaler. If he 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;9%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;10 1/9%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;11%
 
 	
@@ -39,7 +40,9 @@ A retailer buys 40 pens at the marked price of 36 pens from a wholesaler. If he 
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Marked price : cost price = 40:36<br><br>=10:9<br><br>
 Selling price = 10-1% of 10 <br><br>= 9.90<br><br>
@@ -48,5 +51,6 @@ Profit = 9.90-9.00 <br><br>= 0.90 on 9.00<br><br>
 &times;100% <br><br>= 10%.
 
 
+</div>
 </body>
 </html>

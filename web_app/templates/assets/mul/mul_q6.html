@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:6</h2>
 <hr>
@@ -12,32 +13,34 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;111111111
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;21212121
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;111111112
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;2222222221
 
 
 </div>
 
 
-<h2><u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 unit digit of the solution must be 1 i.e. units digit in 9 &times; 9 <br><br>
 
@@ -50,5 +53,6 @@ B and D are ruled out as first three digits (left hand side) are much greater th
 sum of digits of solution must be 9 as the sum of digits of the multiplier is 9.<br><br>
 
 A is the correct answer
+</div>
 </body>
 </html>

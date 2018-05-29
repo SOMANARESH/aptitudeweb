@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:22</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of five consecutive even numbers A, B, C, D and E is 42. What will b
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1722
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1760
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1764
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ The average of five consecutive even numbers A, B, C, D and E is 42. What will b
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given A,B,C,D and E are 5 consecutive even numbers
 <br><br>
 Let us assume that the five consecutive even numbers be 2n,2n+2,2n+4,2n+6,2n+8
@@ -71,6 +74,7 @@ Product of B and D is
 <br><br>
 = 1760
 
+</div>
 </body>
 </html>
 

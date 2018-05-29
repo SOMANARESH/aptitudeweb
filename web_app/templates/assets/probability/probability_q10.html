@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:10</h1>
 <hr>
@@ -12,25 +13,25 @@ The probability that a student selected at random has failed in both examination
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 1 &frasl; 7
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 1 &frasl; 5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 5 &frasl; 7
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 5 &frasl; 6
 
 	
@@ -38,7 +39,9 @@ The probability that a student selected at random has failed in both examination
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 Given that the total number of students = n(A) = 100
 <br><br>
@@ -99,5 +102,6 @@ So the probability that a student failed in both examinations is
 P(F(P ^ Q)) = n(F(P ^ Q)) &frasl; n(A)
 <br><br>
 P(F(P ^ Q)) = 20 &frasl; 100 = 1 &frasl; 5
+</div>
 </body>
 </html>

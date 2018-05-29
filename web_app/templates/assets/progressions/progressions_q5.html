@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h2>
 <hr>
@@ -9,34 +10,36 @@
     What is the sum of all 3 digit numbers that leave a remainder of 2 when divided by 3?
 </p>
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp; 149700
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     B.&nbsp;&nbsp; 164749
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     C.&nbsp;&nbsp; 897
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp; 164850
 
 
 </div>
 
 
-<h2><u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p>
     The minimum and maximum three digit numbers are 100 and 999 respectively.
@@ -92,5 +95,6 @@
     <br><br>
 
 <p>
+</div>
 </body>
 </html>

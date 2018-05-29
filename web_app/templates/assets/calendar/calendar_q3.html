@@ -1,31 +1,34 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 3 </u>:</h2>
 <hr>
 <p>The last day of the century should not be</p>
 
 
-<div>
+<div class="div2">
     A.Friday
 </div>
 <br>
-<div>
+<div class="div2">
     B.Monday
 </div>
 <br>
-<div>
+<div class="div2">
     C.Wednesday
 </div>
 <br>
-<div>
+<div class="div2">
     D.Tuesday
 </div>
 
 
-<h2><u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p><li>Last day of the century depends on the number of odd days in that year.</li></p>
 <p><li>The numbering of days is as follows
@@ -46,5 +49,6 @@
 <p><li>Total number of odd days for 400 years = 0</li></p>
 <p><li>Odd day 0 = Sunday</li></p>
 <p><li>So the last of the century cannot be Tuesday,Thursday,Saturday</li></p>
+</div>
 </body>
 </html>

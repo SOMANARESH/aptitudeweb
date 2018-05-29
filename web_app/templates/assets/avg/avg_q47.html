@@ -1,7 +1,8 @@
+{% load static %}
  <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:47</h1>
 <hr>
@@ -12,26 +13,26 @@ The average weight of A, B, C is 45 kg. if the average weight of A and B be 40 k
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;17kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20 kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;26 kg
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;31 kg
 
 	
@@ -39,7 +40,9 @@ The average weight of A, B, C is 45 kg. if the average weight of A and B be 40 k
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average weight of A and B is 40
 <br><br>
 <sup>(Sum of weights of A and B)</sup>&frasl;<sub>2</sub> = 40
@@ -69,5 +72,6 @@ B = 86-55
 B = 31
 
 
+</div>
 </body>
 </html>

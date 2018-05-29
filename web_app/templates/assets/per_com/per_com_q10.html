@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 10 </u>:</h2>
 <hr>
 <p>There is a five digit code consist of letters and digit. the code can have one digit from 1,2,3 and any four letters from A,b,c,d,e. first and last code must be a letter and all letters can be repeated. How many combinations can be possible?</p>
 
 
-	<div>
+	<div class="div2">
 		A.1875
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.5625
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.1125
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.11250
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>Here the first and last digit must be letters. So those two digits must be selected from 5 letters and repetition is allowed.</p>
     <b>Scenarios</b>
@@ -56,5 +59,6 @@
 	<p>Now we have 2 digits pending which are filled by 5 numbers(Because Repetition is allowed).</p>
 	<p>From above Scenarios, the number of combinations with 5 numbers and 2 digits is 5<sup>2</sup> = 25</p>
 	<p>Total number of ways = 25 &times; 9 &times; 25 = 5625</p>
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:61</h1>
 <hr>
@@ -17,26 +18,26 @@ If 40% of a number is equal to <sup>3</sup>&frasl;<sub>7</sub>
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;85
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;70
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;75
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -44,7 +45,9 @@ If 40% of a number is equal to <sup>3</sup>&frasl;<sub>7</sub>
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the two numbers be X and Y<br><br>
 
 Given that 40% of X = <sup>3</sup>&frasl;<sub>7</sub> of Y<br><br> 
@@ -82,5 +85,6 @@ X = 145-70 <br><br>
 
 X = 75 
 
+</div>
 </body>
 </html>

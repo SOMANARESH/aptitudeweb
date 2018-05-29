@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:21</h1>
 <hr>
@@ -15,26 +16,26 @@
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4600
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2300
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3000
 
 	
@@ -42,7 +43,9 @@
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let 60% of 2300 = 30% of x <br><br>
 <sup>60</sup>&frasl;<sub>100</sub>&times;2300 = <sup>30</sup>&frasl;<sub>100</sub>&times;X<br><br>
@@ -52,5 +55,6 @@ Let 60% of 2300 = 30% of x <br><br>
 X = <sup>(138000&times;100</sup>&frasl;<sub>100&times;30</sub><br><br>
 X = <sup>138000</sup>&frasl;<sub>30</sub><br><br>
 X = 4600
+</div>
 </body>
 </html>

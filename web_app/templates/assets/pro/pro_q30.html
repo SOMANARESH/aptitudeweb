@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -12,26 +13,26 @@ A shopkeeper buys some pens. If he sells them at 13 per pen, his total loss is 1
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;125
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;150
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;250
 
 	
@@ -39,7 +40,9 @@ A shopkeeper buys some pens. If he sells them at 13 per pen, his total loss is 1
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Difference in sales amount due to change in selling price <br><br>= 150+100 <br><br>= 250<br><br>
 Difference in selling price per pen = 15-13<br><br>=2<br><br>
@@ -47,5 +50,6 @@ On selling 1 pen, sales amount is increased by 2 in second case.<br><br>
 Total pens sold = 250&divide;2<br><br>=125 pens.
 
 
+</div>
 </body>
 </html>

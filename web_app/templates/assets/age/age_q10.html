@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:10</h1>
 <hr>
@@ -11,26 +12,26 @@ The ratio of present ages of sita and her son is 5:2 respectively. Seven years h
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;28 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;35 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;21 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Data insufficient
 
 	
@@ -38,7 +39,9 @@ The ratio of present ages of sita and her son is 5:2 respectively. Seven years h
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The ratio of present ages of sita and her son is 5:2<br><br>
 
 => <sup>Si</sup>&frasl;<sub>So</sub> = <sup>5</sup>&frasl;<sub>2</sub><br><br>
@@ -72,5 +75,6 @@ By Calculations we will get Si = 35<br><br>
 
 Then Difference is 35-14 = 21.
 
+</div>
 </body>
 </html>

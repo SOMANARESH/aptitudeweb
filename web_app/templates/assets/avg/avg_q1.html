@@ -1,9 +1,10 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
-<h2><u> Question </u>:1</h1>
+<h2><u> Question </u>:1</h2>
 <hr>
 <p>
 The ratio of ducks and frogs in a pond is 37:41. The average of ducks and frogs is 156. What is the number of frogs in the pond?
@@ -12,26 +13,26 @@ The ratio of ducks and frogs in a pond is 37:41. The average of ducks and frogs 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;78
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;74
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;82
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;164
 
 	
@@ -39,7 +40,9 @@ The ratio of ducks and frogs in a pond is 37:41. The average of ducks and frogs 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given the ratio of bucks and frogs is 37:41
 <br><br>
 <sup>B</sup>&frasl;<sub>F</sub> = <sup>37</sup>&frasl;<sub>41</sub>
@@ -70,5 +73,6 @@ Number of frogs = 312 &times;<sup>41</sup>&frasl;<sub>(37+41)</sub>
 = 164
 
 
+</div>
 </body>
 </html>

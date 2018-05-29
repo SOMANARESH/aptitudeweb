@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:29</h1>
 <hr>
@@ -15,26 +16,26 @@ The total number of students in two schools A and B is 990. If the number of stu
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5:6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6:5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;115:84
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;84:115
 
 	
@@ -42,7 +43,9 @@ The total number of students in two schools A and B is 990. If the number of stu
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the number of students in School A and B be X and Y
 <br><br>
@@ -100,5 +103,6 @@ i.e.<sup> 95X</sup>&frasl;<sub>100</sub> = <sup>114Y</sup>&frasl;<sub>100</sub>
 <br><br>
 <sup>X</sup>&frasl;<sub>Y</sub> = <sup>6</sup>&frasl;<sub>5</sub>
 
+</div>
 </body>
 </html>

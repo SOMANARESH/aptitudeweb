@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:46</h1>
 <hr>
@@ -12,26 +13,26 @@ The sum of all natural numbers between 100 and 200, which are multiples of 3 is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4950
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;4980
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4900
 
 	
@@ -39,7 +40,9 @@ The sum of all natural numbers between 100 and 200, which are multiples of 3 is:
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The number which are multiples of 3 between 100 and 200 are
 <br><br>
 102,105,108,....195,198
@@ -68,5 +71,6 @@ Sum of numbers = 102+105+108+....+195+198
 = 4950
 
 
+</div>
 </body>
 </html>

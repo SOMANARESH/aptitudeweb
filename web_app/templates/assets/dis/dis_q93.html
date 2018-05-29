@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:93</h1>
 <hr>
@@ -13,26 +14,26 @@ A, B and C start together from the same place to walk round a circular path of l
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;15 hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;24 hours
 
 	
@@ -40,7 +41,9 @@ A, B and C start together from the same place to walk round a circular path of l
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time taken by A to complete a round 
 = <sup>12</sup>&frasl;<sub>4</sub>
@@ -55,5 +58,6 @@ Required time = LCM of 3,4 and 8 hours = 24 hours.
 
 
 
+</div>
 </body>
 </html>

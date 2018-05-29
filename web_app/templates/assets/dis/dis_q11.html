@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:11</h1>
 <hr>
@@ -13,26 +14,26 @@ What is the ratio between times taken by a train 240 m long to cross an electric
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2:3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;4:5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;5:6
 
 	
@@ -40,12 +41,15 @@ What is the ratio between times taken by a train 240 m long to cross an electric
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Ratio of time taken = ratio of distances covered <br>= 240:(240+80)<br><br>
 = 240:320<br><br>
 = 3:4
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:73</h1>
 <hr>
@@ -12,26 +13,26 @@ Two trains each 200 m long move towards each other on parallel lines with veloci
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;24.8 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;28.8 seconds
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;30 seconds
 
 	
@@ -39,7 +40,9 @@ Two trains each 200 m long move towards each other on parallel lines with veloci
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Total distance = 200+200<br><br>=400 m<br><br>
@@ -49,5 +52,6 @@ Relative speed = (20+30) km/hr <br><br>= 50 km/hr <br><br>
 Required time = 400&divide;125&divide;9 <br><br>= 400&times;9&divide;125<br><br>=28.8 secs.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:14</h2>
 <hr>
@@ -14,34 +15,36 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;
     2<sup>2</sup>&frasl;<sub>9</sub>days
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;3days
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;4days
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;
     5<sup>5</sup>&frasl;<sub>11</sub>days
 
 </div>
 
 
-<h2><u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
@@ -87,5 +90,6 @@ A and B do the work in
 days.
 
 
+</div>
 </body>
 </html>

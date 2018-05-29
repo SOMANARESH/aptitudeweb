@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:27</h1>
 <hr>
@@ -12,26 +13,26 @@ A car starts from A to B and another car starts form B to A. they meet at the ex
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3:2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;16:24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;13:16
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;16:13
 
 	
@@ -39,7 +40,9 @@ A car starts from A to B and another car starts form B to A. they meet at the ex
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time taken by two cars to cover equal distances <br><br>= 2 hours and 1 hours 20 minutes<br><br>
 = 120 minutes and 80 minutes respectively<br><br>
@@ -47,5 +50,6 @@ Required ratio = 120:80 <br><br>= 3:2.
 
 
 
+</div>
 </body>
 </html>

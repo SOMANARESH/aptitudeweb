@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:66</h2>
 <hr>
@@ -12,26 +13,26 @@ The difference between two numbers is 1375. On dividing the bigger number by he 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;250
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;270
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;275
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;300
 
 	
@@ -39,7 +40,9 @@ The difference between two numbers is 1375. On dividing the bigger number by he 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the smaller number = x<br><br>
 Then bigger number = x+1375<br><br>
 6x+25=x+1375<br><br>
@@ -47,5 +50,6 @@ Then bigger number = x+1375<br><br>
 X = 270.
 
 
+</div>
 </body>
 </html>

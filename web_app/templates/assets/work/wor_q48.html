@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:48</h1>
 <hr>
@@ -12,26 +13,26 @@ While working 7 hours a day, A alone can complete a piece of work in 6 days and 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2.5days
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3.6days
 
 	
@@ -39,7 +40,9 @@ While working 7 hours a day, A alone can complete a piece of work in 6 days and 
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used:</u><br><br>
 If a man can do a piece of work in x hours, <br><br>
 Then his work for one hour = 
@@ -75,5 +78,6 @@ one hour work of A and B
 A and B both do the work in = 24 hours = 8 &times; 3<br><br>
 
 working 8 hours a day they will complete in = 3 days.
+</div>
 </body>
 </html>

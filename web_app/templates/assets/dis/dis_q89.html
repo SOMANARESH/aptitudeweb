@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:89</h1>
 <hr>
@@ -11,26 +12,26 @@ A and B walk around a circular path of 900 meter in circumference, starting toge
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4.5 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;15 minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;18 minutes
 
 	
@@ -38,7 +39,9 @@ A and B walk around a circular path of 900 meter in circumference, starting toge
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 They will be together at the starting point when B (the faster one) has gained 900 meter (i.e. on round) over A.<br><br>
 In 1 minute B gains (200-150) meter = 50 meter overA<br><br>
@@ -47,5 +50,6 @@ B will gain 900 meters in 900&divide;50<br><br>=18 minutes.
 
 
 
+</div>
 </body>
 </html>

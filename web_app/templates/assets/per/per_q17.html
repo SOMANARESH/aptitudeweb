@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h1>
 <hr>
@@ -15,26 +16,26 @@ If 20% of 250 + 25% of x = 100, then x=?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;200
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;250
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25
 
 	
@@ -42,7 +43,9 @@ If 20% of 250 + 25% of x = 100, then x=?
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 20% of 250+25% of x = 100<br><br>
 [(<sup>20</sup>&frasl;<sub>100</sub>)&times;250] + [(<sup>25</sup>&frasl;<sub>100</sub>)&times;X] = 100<br><br>
 <sup>25X</sup>&frasl;<sub>100</sub> = 100- <sup>5000</sup>&frasl;<sub>100</sub><br><br>
@@ -53,5 +56,6 @@ X = <sup>(5000)</sup>&frasl;<sub>25</sub> <br><br>
 X = 200
 
 
+</div>
 </body>
 </html>

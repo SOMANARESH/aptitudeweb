@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:9</h2>
 <hr>
@@ -13,7 +14,7 @@ Which part contains the fractions in ascending order?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;
 <sup>11</sup>&frasl;<sub>14</sub>,
 <sup>16</sup>&frasl;<sub>19</sub>, 
@@ -21,7 +22,7 @@ Which part contains the fractions in ascending order?
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 <sup>16</sup>&frasl;<sub>19</sub>,
 <sup>11</sup>&frasl;<sub>14</sub>,
@@ -30,7 +31,7 @@ Which part contains the fractions in ascending order?
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 <sup>11</sup>&frasl;<sub>14</sub>,
 <sup>19</sup>&frasl;<sub>21</sub>.
@@ -39,7 +40,7 @@ Which part contains the fractions in ascending order?
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;
 <sup>19</sup>&frasl;<sub>21</sub>,
 <sup>11</sup>&frasl;<sub>14</sub>,
@@ -48,7 +49,9 @@ Which part contains the fractions in ascending order?
 		
 	
 
-<h2> <u>Answer</u>:a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Clearly, <br><br>
 <sup>11</sup>&frasl;<sub>14</sub> = 0.785,<br><br>
@@ -61,5 +64,6 @@ Now, 0.785 < 0.842 < 0.904. <br><br>So,
 <sup>19</sup>&frasl;<sub>21</sub>
 
 
+</div>
 </body>
 </html>

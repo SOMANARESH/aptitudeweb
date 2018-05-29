@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:92</h1>
 <hr>
@@ -12,26 +13,26 @@ The mean of 50 observations was 36. It was found later that an observation 48 wa
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;35.2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;36.1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;36.5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;39.1
 
 	
@@ -39,7 +40,9 @@ The mean of 50 observations was 36. It was found later that an observation 48 wa
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that average of 50 observations is 36
 <br><br>
 <sup>(Sum of 50 observations)</sup>&frasl;<sub>50</sub> = 36
@@ -62,5 +65,6 @@ Now average of 50 observations by replacing 23 by 48 is
 <br><br>
 = 36.5
 
+</div>
 </body>
 </html>

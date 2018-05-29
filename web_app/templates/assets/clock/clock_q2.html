@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 2 </u>:</h2>
 <hr>
 <p>At what time between 2 and 3 O&CloseCurlyQuote; Clock will the hands of a clock be together</p>
 
 
-	<div>
+	<div class="div2">
 		A.(<sup>120</sup>&frasl;<sub>11</sub>)min Past 2
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.(<sup>140</sup>&frasl;<sub>11</sub>)min Past 2
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.(<sup>118</sup>&frasl;<sub>11</sub>)min Past 2
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.(<sup>122</sup>&frasl;<sub>11</sub>)min Past 2
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: A </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>At 2 O&CloseCurlyQuote; Clock, Hour hand is at 2 and minute hand is at 12.</p>
 	<p>i.e, they are 10 minutes space apart</p>
@@ -35,5 +38,6 @@
 	<p>So 55 minutes are gained by it in 60 minutes</p>
 	<p>In case of this scenario,10 minutes will be gained in 10&times;(<sup>60</sup>&frasl;<sub>55</sub>)</p>
 	<p>i.e,<sup>120</sup>&frasl;<sub>11</sub></p><br>
+</div>
 </body>
 </html>

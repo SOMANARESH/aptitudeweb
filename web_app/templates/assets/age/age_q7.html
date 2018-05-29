@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h1>
 <hr>
@@ -11,26 +12,26 @@ The ratio between present ages of A and B is 7:5. The ratio between As age 5 yea
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4:3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2:1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1:2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3:4
 
 	
@@ -38,7 +39,9 @@ The ratio between present ages of A and B is 7:5. The ratio between As age 5 yea
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The Ratio between present ages of A and B is 
 <br><br>
@@ -75,5 +78,6 @@ Finally the ratio of age of A after 5 years and that of B 5 years ago is <br><br
 
 => 2:1.
 
+</div>
 </body>
 </html>

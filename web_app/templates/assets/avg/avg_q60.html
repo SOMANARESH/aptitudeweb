@@ -1,7 +1,8 @@
+{% load static %}
  <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:60</h1>
 <hr>
@@ -12,26 +13,26 @@ The average age of 4 brothers is 6 years. If age of their father is included, th
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;31
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;35
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;38
 
 	
@@ -39,7 +40,9 @@ The average age of 4 brothers is 6 years. If age of their father is included, th
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average of 4 brothers is 6
 <br><br>
 <sup>(Sum of ages of four brothers)</sup>&frasl;<sub>4</sub> = 6
@@ -64,5 +67,6 @@ X = 55-24
 <br><br>
 X = 31
 
+</div>
 </body>
 </html>

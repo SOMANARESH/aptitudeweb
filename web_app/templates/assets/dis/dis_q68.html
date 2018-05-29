@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:68</h2>
 <hr>
@@ -12,26 +13,26 @@ A train 150 long running at the speed of 36 km/h takes 30 seconds to cross a pla
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;300 meter
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;250 meter
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;150 meter
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;100 meter
 
 	
@@ -39,7 +40,9 @@ A train 150 long running at the speed of 36 km/h takes 30 seconds to cross a pla
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Speed of train = <sup>5</sup>&frasl;<sub>18</sub>&times;36 <br><br>= 10 m/s<br><br>
 Distance covered in 30 seconds = 30&times;10<br><br>=300 meters<br><br>
@@ -47,5 +50,6 @@ Length of platform = 300-150<br><br>=150 meters.
 
 
 
+</div>
 </body>
 </html>

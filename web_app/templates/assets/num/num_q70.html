@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:70</h2>
 <hr>
@@ -12,26 +13,26 @@ A man engaged a servant on the condition that he would pay him 3000 and one unif
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;200
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;250
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;400
 
 	
@@ -39,7 +40,9 @@ A man engaged a servant on the condition that he would pay him 3000 and one unif
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 12 months wages = 3000+one uniform &minus;&minus;&minus;&minus;&minus;(1)<br><br>
 9 months wages = 2200+ one uniform &minus;&minus;&minus;&minus;&minus;(2)<br><br>
 (1)-(2)<br><br>
@@ -52,5 +55,6 @@ From (1): cost of uniform
 = 3200-3000<br><br>=200.
 
 
+</div>
 </body>
 </html>

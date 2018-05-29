@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question :18</u></h2>
 <hr>
@@ -9,14 +10,14 @@
     If the ratio of H.M to G.M of two numbers is 12:13 then the rario of numbers is
 </p>
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp; <sup>2</sup>&frasl;<sub>5</sub> &nbsp; or &nbsp; <sup>5</sup>&frasl;<sub>2</sub>
 
 </div>
 
 <br>
 
-<div>
+<div class="div2">
     B.&nbsp;&nbsp; <sup>4</sup>&frasl;<sub>9</sub> &nbsp; or &nbsp; <sup>9</sup>&frasl;<sub>4</sub>
 
 
@@ -24,20 +25,22 @@
 
 <br>
 
-<div>
+<div class="div2">
     C.&nbsp;&nbsp; <sup>2</sup>&frasl;<sub>3</sub> &nbsp; or &nbsp; <sup>3</sup>&frasl;<sub>2</sub>
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp; <sup>3</sup>&frasl;<sub>4</sub> &nbsp; or &nbsp; <sup>4</sup>&frasl;<sub>3</sub>
 
 
 </div>
 
-<h2><u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p>
     Let the two numbers be a, b
@@ -147,5 +150,6 @@
     <font size="4"><b><sup>a</sup>&frasl;<sub>b</sub> = <sup>9</sup>&frasl;<sub>4</sub></b></font>
     <br><br>
 <p>
+</div>
 </body>
 </html>

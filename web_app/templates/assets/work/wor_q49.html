@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:49</h1>
 <hr>
@@ -12,26 +13,26 @@ In a factory, there are equal number of women and children. Women work for 6 hou
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3
 
 	
@@ -39,7 +40,9 @@ In a factory, there are equal number of women and children. Women work for 6 hou
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Total number of hours by boy and women per day = 10 hours <br><br>
 
 work load goes up to 50% up <br><br>
@@ -49,5 +52,6 @@ that means we need 5 more working hours <br><br>
 boy work 4 hours per day but allowed to do 6 hours per day <br><br>
 
 then women required to do remaining 3 hours. 
+</div>
 </body>
 </html>

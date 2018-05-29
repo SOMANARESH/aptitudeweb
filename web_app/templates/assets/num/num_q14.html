@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 14</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@ a <sup>c</sup> &times; b <sup>a</sup> &times; ?=0
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;-1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;0
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;c <sup>b</sup>
 
 	
@@ -39,8 +40,11 @@ a <sup>c</sup> &times; b <sup>a</sup> &times; ?=0
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Any number multiplied by 0 gives 0.
 
+</div>
 </body>
 </html>

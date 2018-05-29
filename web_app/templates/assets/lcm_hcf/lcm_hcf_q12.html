@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -15,26 +16,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.56
 </div>
 <br>
-<div>
+<div class="div2">
     B.128
 </div>
 <br>
-<div>
+<div class="div2">
     C.64
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.96
 </div>
 
 
 
-<h2> <u>Answer</u>:C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -43,13 +46,13 @@
 
     HCF of 1856 and 2752<br>
 
-    <img src="/static/images/Division_10.png"/><br>
+    <img src="Division_10.png"/><br>
 
     HCF of 1856 and 2752 = 64<br>
 
     HCF of 64,1344 is <br>
 
-    <img src="/static/images/Division_11.png"/><br>
+    <img src="Division_11.png"/><br>
 
     HCF of 64,144 = 64 <br><br>
 
@@ -57,5 +60,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

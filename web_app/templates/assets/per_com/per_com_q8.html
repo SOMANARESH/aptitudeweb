@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 8 </u>:</h2>
 <hr>
 <p>How many numbers of 4 digits can be formed with the digits 0, 1, 2 and 3(Repetition is not allowed)</p>
 
 
-	<div>
+	<div class="div2">
 		A.192
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.108
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.18
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.48
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>Let&CloseCurlyQuote;s assume four digit number be WXYZ</p>
     <p>From the given digits the four digit combination should have thousand&CloseCurlyQuote;s place value other than &OpenCurlyDoubleQuote;0&CloseCurlyDoubleQuote; .</p>
@@ -40,5 +43,6 @@
 	<p><sup> 3 </sup> P <sub> 3 </sub> = <sup> 3! </sup> &frasl; <sub> (3 - 3)! </sub> = <sup> 3&times;2&times;1 </sup> &frasl; <sub> 0! </sub></p>
 	<p> <sup> 3 </sup> P <sub> 3 </sub> = 6 </p>
 	<p> So total number of ways = 6 &times; 3 = 18</p>
+</div>
 </body>
 </html>

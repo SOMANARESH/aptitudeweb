@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -22,26 +23,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.<sup>3</sup>&frasl;<sub>2800</sub>
 </div>
 <br>
-<div>
+<div class="div2">
     B.<sup>3</sup>&frasl;<sub>1400</sub>
 </div>
 <br>
-<div>
+<div class="div2">
     C.<sup>7</sup>&frasl;<sub>200</sub>
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.<sup>3</sup>&frasl;<sub>200</sub>
 </div>
 
 
 
-<h2> <u>Answer</u> B: </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -55,7 +58,7 @@
 
     LCM of 10,25,35,40 <br>
 
-    <img src="/static/images/LCM_14.png"/><br> <br>
+    <img src="LCM_14.png"/><br> <br>
 
     LCM = 2<sup>3</sup> &times; 5<sup>2</sup> &times; 7 = 1400.<br><br>
 
@@ -73,19 +76,19 @@
 
     Ascending order 672,720,735,1260<br><br>
 
-    <img src="/static/images/Division_5.png"/><br>
+    <img src="Division_5.png"/><br>
 
     HCF of 735,1260  = 105 <br><br>
 
     HCF of 672, 105  <br><br>
 
-    <img src="/static/images/Division_6.png"/><br>
+    <img src="Division_6.png"/><br>
 
     HCF of 672,105 = 21<br><br>
 
     HCF of 720, 21 <br><br>
 
-    <img src="/static/images/Division_7.png"/><br>
+    <img src="Division_7.png"/><br>
 
 
     HCF of 720, 21=3 <br><br>
@@ -108,5 +111,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

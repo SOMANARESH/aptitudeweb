@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:31</h1>
 <hr>
@@ -12,26 +13,26 @@ Out of four numbers, the average of first three numbers is thrice the fourth num
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4.5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4
 
 	
@@ -39,7 +40,9 @@ Out of four numbers, the average of first three numbers is thrice the fourth num
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assume that the four numbers be a,b,c and d
 <br><br>
 Average of three numbers is equal to three times of the fourt number
@@ -66,5 +69,6 @@ d = 2
 <br><br>
 Forth number is d = 2
 
+</div>
 </body>
 </html>

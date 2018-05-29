@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -15,33 +16,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.10080
 </div>
 <br>
-<div>
+<div class="div2">
     B.10400
 </div>
 <br>
-<div>
+<div class="div2">
     C.10200
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.10360
 </div>
 
 
 
-<h2> <u>Answer</u>:C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
     Let us find the LCM of given numbers<br>
 
 
-    <img src="/static/images/LCM_17.png"/><br>
+    <img src="LCM_17.png"/><br>
 
     LCM = 2 <sup>3</sup> &times; 3 &times; 5<sup>2</sup><br><br>
 
@@ -53,7 +56,7 @@
 
     Divide 10,000 with LCM <br><br>
 
-    <img src="/static/images/Division_13.png"/><br>
+    <img src="Division_13.png"/><br>
 
     remainder = 400<br><br>
 
@@ -67,5 +70,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

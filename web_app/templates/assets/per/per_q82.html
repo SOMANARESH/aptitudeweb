@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:82</h2>
 <hr>
@@ -12,33 +13,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;7:8
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;7:3
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;7:5
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;5:7
 
 
 </div>
 
 
-<h2><u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given 20% of (P+Q) = 50% of (P-Q)<br><br>
 (<sup>20</sup>&frasl;<sub>100</sub>)(P+Q) = (<sup>50</sup>&frasl;<sub>100</sub>)(P-Q) <br><br>
 (<sup>1</sup>&frasl;<sub>5</sub>)(P+Q) = (<sup>1</sup>&frasl;<sub>2</sub>)(P-Q) <br><br>
@@ -48,5 +51,6 @@ Given 20% of (P+Q) = 50% of (P-Q)<br><br>
 3P = 7Q <br><br>
 <sup>P</sup>&frasl;<sub>Q</sub> = <sup>7</sup>&frasl;<sub>3</sub> <br><br>
 
+</div>
 </body>
 </html>

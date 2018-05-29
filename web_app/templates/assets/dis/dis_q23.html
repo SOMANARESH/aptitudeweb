@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:23</h1>
 <hr>
@@ -12,26 +13,26 @@ A car travelling with 5/7 of its usual speed covers 42 km in 1 hour 40 mins 48 s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;17 <sup>6</sup>&frasl;<sub>7</sub> km/hr
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;35 km/hr
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;25 km/hr
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;30 km/hr
 
 	
@@ -39,7 +40,9 @@ A car travelling with 5/7 of its usual speed covers 42 km in 1 hour 40 mins 48 s
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 40 minutes = 40&times;<sup>1</sup>&frasl;<sub>60</sub>hour <br><br>= <sup>2</sup>&frasl;<sub>3</sub>hours<br><br>
 48 seconds = 
 48&times;<sup>1</sup>&frasl;<sub>60</sub>&times;<sup>1</sup>&frasl;<sub>60</sub><br><br>
@@ -54,5 +57,6 @@ Usual speed of the car = <sup>7</sup>&frasl;<sub>5</sub>&times;25 km/hr <br><br>
 
 
 
+</div>
 </body>
 </html>

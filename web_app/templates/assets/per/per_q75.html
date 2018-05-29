@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:75</h1>
 <hr>
@@ -13,26 +14,26 @@ Two numbers are less than the third number by 50% and 54% respectively. By how m
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;13
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -40,7 +41,9 @@ Two numbers are less than the third number by 50% and 54% respectively. By how m
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the numbers be X , Y and Z <br><br>
 Given that X = 50% less than Z and Y = 54% less than Z <br><br>
 X = 50% less than  Z <br><br>
@@ -71,5 +74,6 @@ Y = X - 8% of X
 
 <br><br>
 X = 80% of Y
+</div>
 </body>
 </html>

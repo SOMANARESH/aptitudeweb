@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:47</h1>
 <hr>
@@ -12,26 +13,26 @@ Find the cube root of 185193.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;47
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;53
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;57
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;63
 
 	
@@ -39,7 +40,9 @@ Find the cube root of 185193.
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 First part of three digits is 193<br><br>
 Since the number end in 3, its cube root will end in 7<br><br>
 Second part (group)is 185 and 5<sup>3</sup>< 185 < 6<sup>3</sup><br><br>
@@ -47,5 +50,6 @@ Tens digit is 5<br><br>
 The cube root is 57.
 
 
+</div>
 </body>
 </html>

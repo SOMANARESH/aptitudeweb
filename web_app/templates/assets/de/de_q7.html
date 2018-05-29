@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h2>
 <hr>
@@ -12,7 +13,7 @@ Which of the following are in descending order of their value?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;
 <sup>5</sup>&frasl;<sub>9</sub>,
 <sup>7</sup>&frasl;<sub>11</sub>,
@@ -21,7 +22,7 @@ Which of the following are in descending order of their value?
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 <sup>5</sup>&frasl;<sub>9</sub>,
 <sup>8</sup>&frasl;<sub>15</sub>,
@@ -29,7 +30,7 @@ Which of the following are in descending order of their value?
 <sup>7</sup>&frasl;<sub>11</sub>
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 <sup>11</sup>&frasl;<sub>17</sub>,
 <sup>7</sup>&frasl;<sub>11</sub>,
@@ -39,7 +40,7 @@ Which of the following are in descending order of their value?
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;
 <sup>11</sup>&frasl;<sub>17</sub>,
 <sup>7</sup>&frasl;<sub>11</sub>,
@@ -50,7 +51,9 @@ Which of the following are in descending order of their value?
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Converting each of the given fractions into decimal form, we get : <br><br>
 <sup>5</sup>&frasl;<sub>9</sub> = 0.55,<br><br>
@@ -71,5 +74,6 @@ Clearly,<br><br> 0.647 > 0.63 > 0.55 > 0.533<br><br> So,
 <sup>8</sup>&frasl;<sub>15</sub>
 .
 
+</div>
 </body>
 </html>

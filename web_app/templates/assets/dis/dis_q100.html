@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:100</h1>
 <hr>
@@ -11,26 +12,26 @@ A grey hound pursues a hare and takes 5 leaps for every 6 leaps of the hare. If 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2:3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6:5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;24:25
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25:24
 
 	
@@ -38,7 +39,9 @@ A grey hound pursues a hare and takes 5 leaps for every 6 leaps of the hare. If 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 4 leaps of grey hound = 5 leaps of hare<br><br>
 5 leaps of greay hound 
@@ -50,5 +53,6 @@ Speed of grey hound : speed of hare <br><br>
 
 
 
+</div>
 </body>
 </html>

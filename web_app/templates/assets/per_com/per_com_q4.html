@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 4 </u>:</h2>
 <hr>
 <p>In how many ways the letters in a word &OpenCurlyDoubleQuote;BANGALORE&CloseCurlyDoubleQuote; can be formed by treating all vowels as a single group(all vowels comes together).</p>
 
 
-	<div>
+	<div class="div2">
 		A.15120
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.90720
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.1440
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.8640
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>In a given word the number of letters are { A, A, B, E, G, L, N, O, R } = 9</p>
 	<p>The vowels are {A, A, E, O } = 4</p>
@@ -38,5 +41,6 @@
 		<sup> 4! </sup> &frasl; <sub> 2! </sub> = <sup> 4&times;3&times;2&times;1 </sup> &frasl; <sub> 2&times;1 </sub> = 12
 	<p>So the total number of ways = Number of ways by treating vowels group as a single &times; number of ways of forming a word within a vowel group = 720 &times; 12 = 8640</p>
 
+</div>
 </body>
 </html>

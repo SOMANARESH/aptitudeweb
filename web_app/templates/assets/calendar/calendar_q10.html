@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 10 </u>:</h2>
 <hr>
 How many times does the 29th days of the month occur in 400 consecutive years?
 
 
-	<div>
+	<div class="div2">
 		A.97 times
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.4800 times
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.4497 times
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.4400 times
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 
 <ul>
@@ -44,5 +47,6 @@ How many times does the 29th days of the month occur in 400 consecutive years?
 	<li>Total number of times that 400 years having 29th day in a month = 3333 + 1164 = 4497</li>
 </ul>
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:82</h2>
 <hr>
@@ -12,26 +13,26 @@ A sum of 80 made up of 100 coins, which are either 1 or 50 paise denomination. H
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;80
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;75
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;40
 
 	
@@ -39,7 +40,9 @@ A sum of 80 made up of 100 coins, which are either 1 or 50 paise denomination. H
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let all the coins are of 50 paise denomination<br><br>
 Then total value of 100 coins = 100&times;1&divide;2=50 i.e 30 less than 80.<br><br>
 Replacement of one fifty paise coin with one rupee coin means 50 paise extra.<br><br>
@@ -48,5 +51,6 @@ One rupee coin = 30&divide;0.50 = 30&times;2 = 60 coins<br><br>
 = 40.
 
 
+</div>
 </body>
 </html>

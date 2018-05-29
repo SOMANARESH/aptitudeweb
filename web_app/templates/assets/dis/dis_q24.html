@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:24</h1>
 <hr>
@@ -13,26 +14,26 @@ A 240 metres long train crosses a platform twice its length in 40 seconds. What 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6 m/s
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;28 m/s
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18 m/s
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;16 m/s
 
 	
@@ -40,12 +41,15 @@ A 240 metres long train crosses a platform twice its length in 40 seconds. What 
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Length of platform = 2&times;240 = 480m<br><br>
 Total distance covered = 240+480<br><br>= 720 m.<br><br>
 Speed of the train = 720&divide;40 = 18 m/s.
 
 
+</div>
 </body>
 </html>

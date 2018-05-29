@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:4</h2>
 <hr>
@@ -20,7 +21,7 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;<span style="white-space: nowrap;">
 <span style="text-decoration:overline;">x</span>
 </span>
@@ -28,7 +29,7 @@
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;a
 <span style="white-space: nowrap;">
 <span style="text-decoration:overline;">x</span>
@@ -36,7 +37,7 @@
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;
     <sup>
 <span style="white-space: nowrap;">
@@ -46,7 +47,7 @@
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;
 <span style="white-space: nowrap;">
 <span style="text-decoration:overline;">x</span>
@@ -55,7 +56,9 @@
 </div>
 
 
-<h2><u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that <span style="white-space: nowrap"></span>
 <span style="text-decoration:overline;">x</span> is the mean of n observations
 <br><br>
@@ -75,5 +78,6 @@ x<sub>1</sub>,x<sub>2</sub>&hyphen;&hyphen;&hyphen;&hyphen;&hyphen;x<sub>n</sub>
 </span></sup> &frasl;<sub>a</sub><br><br>
 
 
+</div>
 </body>
 </html>

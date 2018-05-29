@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:11</h1>
 <hr>
@@ -11,26 +12,26 @@ The average of eight successive numbers is 6.5. the average of the smallest and 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6.5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7.5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;9
 
 	
@@ -38,7 +39,9 @@ The average of eight successive numbers is 6.5. the average of the smallest and 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average of 8 successive numbers is 6.5.
 <br><br>
 Let us assume that 8 successive numbers be n,n+1,n+2,n+3,n+4,n+5,n+6,n+7.
@@ -73,5 +76,6 @@ Then The average of smallest and largest numbers is
 <br><br>
 = 6.5
 
+</div>
 </body>
 </html>

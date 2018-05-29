@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:2</h2>
 <hr>
@@ -12,26 +13,26 @@ The difference between the ages of Arun and Deepak is 14 years. Seven years ago.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;49 years.
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;42 years.
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;63 years.
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these.
 
 	
@@ -39,7 +40,9 @@ The difference between the ages of Arun and Deepak is 14 years. Seven years ago.
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that Difference	between Arun and Deepak ages is <br><br>
 
 modulus(A-D) = 14<br><br>
@@ -97,5 +100,6 @@ Substitute A in 1 then we will get<br><br>
 
 then D = A+14<br><br> = 42+14<br><br> = 56<br>
 
+</div>
 </body>
 </html>

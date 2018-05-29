@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h2>
 <hr>
@@ -12,14 +13,14 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp; 3 and 22960
 
 </div>
 
 <br>
 
-<div>
+<div class="div2">
     B.&nbsp;&nbsp; 3 and 2548
 
 
@@ -27,20 +28,22 @@
 
 <br>
 
-<div>
+<div class="div2">
     C.&nbsp;&nbsp; 7 and 22960
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp; 7 and 2548
 
 
 </div>
 
-<h2><u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p>
     Given a = 7
@@ -81,5 +84,6 @@
     <br><br>
 
 <p>
+</div>
 </body>
 </html>

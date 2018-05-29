@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:62</h1>
 <hr>
@@ -12,26 +13,26 @@ Out of 10 terms, the average of first 5 terms is 34 and that of last 5 terms is 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;26
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;35
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;44
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;45
 
 	
@@ -39,7 +40,9 @@ Out of 10 terms, the average of first 5 terms is 34 and that of last 5 terms is 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Given that the average of first 5 terms is 34
 <br><br>
@@ -76,5 +79,6 @@ Sum of first 9 terms + 10 th term = (170+190)
 10th term = 45
 
 
+</div>
 </body>
 </html>

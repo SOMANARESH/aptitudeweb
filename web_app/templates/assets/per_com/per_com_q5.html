@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 5 </u>:</h2>
 <hr>
 <p>A mother with 6 children takes three at a time to a park. She goes with every group of three that she can form, How many times can she go to the park with distinct group of three children.</p>
 
 
-	<div>
+	<div class="div2">
 		A.10
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.30
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.20
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.40
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>The solution of this problem is the number of ways of selecting a group of three children among six </p>
 	<p>We know that the number of combinations of &OpenCurlyDoubleQuote;n&CloseCurlyDoubleQuote; things by taking &OpenCurlyDoubleQuote;r&CloseCurlyDoubleQuote; at a time is <sup> n </sup> C <sub> r </sub> </p>
@@ -34,5 +37,6 @@
 	<p><sup> 6 </sup> C <sub> 3 </sub> = <sup> 6&times;5&times;4&times;3! </sup> &frasl; <sub> 3!&times;3! </sub> </p>
 	<p><sup> 6 </sup> C <sub> 3 </sub> = <sup> 6&times;5&times;4 </sup> &frasl; <sub> 3&times;2&times;1 </sub> = 20</p>
 
+</div>
 </body>
 </html>

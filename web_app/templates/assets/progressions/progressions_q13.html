@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-	<link rel="stylesheet" type="text/css" href="questions.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:13</h1>
 <hr>
@@ -9,30 +10,32 @@
 	The sum of 1<sup>st</sup> 6 terms of the sequence in G.P with a=3 and common ratio r = 3 is
 </p>
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 1029
 	
 </div>
 
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 1082
 
 </div>
 
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1092
 
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 1638
 
 </div>
 		
-<h2><u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3> Solution: </h3>
 <p>
 	Given a = 3 and r = 3
@@ -54,5 +57,6 @@
 	S<sub>6</sub> = 1092
 	<br><br>
 <p>
+</div>
 </body>
 </html>

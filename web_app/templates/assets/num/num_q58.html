@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:58</h2>
 <hr>
@@ -12,26 +13,26 @@ A two digit number is five times the sum of is digits. If 9 is added to the numb
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;11
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6
 
 	
@@ -39,7 +40,9 @@ A two digit number is five times the sum of is digits. If 9 is added to the numb
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the number be 10x+y<br><br>
 Then 10x+y = 5&times;(x+y)<br><br>
 5x = 4y<br><br>
@@ -48,5 +51,6 @@ The number is 45. [note 45+9=54]<br><br>
 Sum of digits = 4+5=9.
 
 
+</div>
 </body>
 </html>

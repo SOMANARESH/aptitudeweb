@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 15</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@ A canteen requires 119 kg of wheat for a week. How many kg of wheat will it requ
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;357
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1343
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9401
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,12 +40,15 @@ A canteen requires 119 kg of wheat for a week. How many kg of wheat will it requ
 		
 	
 
-<h2> <u>Answer</u>:B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Daily requirement =  <sup>119</sup>&frasl;<sub>7</sub><br><br>
 = 17kg<br><br>
 Requirement for 79 days = 79&times;17<br><br>
 = 1343 kg.
 
+</div>
 </body>
 </html>

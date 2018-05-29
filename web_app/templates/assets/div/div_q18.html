@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:18</h2>
 <hr>
@@ -12,32 +13,34 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;4
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;6
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;9
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;12
 
 
 </div>
 
 
-<h2><u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 A number is divisible by 18, if its units digit is divisible by 2 and 9 both <br><br>
 
@@ -54,5 +57,6 @@ sum of digits of 15762 is 3 <br><br>
 6 is the required number.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:4</h2>
 <hr>
@@ -12,37 +13,40 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;2283
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;3920
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;4275
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;5184
 
 
 </div>
 
 
-<h2><u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 A number divisible by 45 if it is divisible by both 5 and 9 <br><br>
 
 4275: sum of digits = 4+2+7+5 = 0(ignoring both 9s) <br><br>
 
 4275 is divisible by 9.
+</div>
 </body>
 </html>

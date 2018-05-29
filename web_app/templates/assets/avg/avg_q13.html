@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:13</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of 7 consecutive numbers is 20. The largest of these numbers is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;23
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;22
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20
 
 	
@@ -39,7 +40,9 @@ The average of 7 consecutive numbers is 20. The largest of these numbers is:
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let us assume that the seven consecutive numbers be n,n+1,n+2,n+3,n+4,n+5,n+6
 <br><br>
@@ -65,5 +68,6 @@ So largest term is given by n+6
 <br><br>
 = 23
 
+</div>
 </body>
 </html>

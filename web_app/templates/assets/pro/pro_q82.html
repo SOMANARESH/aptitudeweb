@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:82</h1>
 <hr>
@@ -14,26 +15,26 @@ of his cost price. Find his profit percentage, if the article is sold for 66.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25%
 
 	
@@ -41,7 +42,9 @@ of his cost price. Find his profit percentage, if the article is sold for 66.
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Loss = <sup>1</sup>&frasl;<sub>6</sub> of cost price <br><br>
 Selling price = 
@@ -61,5 +64,6 @@ Profit = <sup>11</sup>&frasl;<sub>10</sub>-1<br><br>
  = 10% of cost price.
 
 
+</div>
 </body>
 </html>

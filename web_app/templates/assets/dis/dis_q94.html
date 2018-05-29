@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:94</h1>
 <hr>
@@ -12,26 +13,26 @@ A and B can walk around a circular path in 5 minutes and 8 minutes respectively.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;13 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;40 minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;13 minutes 20 seconds
 
 	
@@ -40,7 +41,9 @@ A and B can walk around a circular path in 5 minutes and 8 minutes respectively.
 
 
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let length of the circular path = LCM of 5 and 8 <br><br>= 40 meters<br><br>
 Then speeds of A and B are 8 and 5 meters/minute<br><br>
@@ -50,5 +53,6 @@ Time taken by A = 40&divide;(8-5) <br><br>= 13
  minutes <br><br>= 13 minutes 20 seconds.
 
 	
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:33</h1>
 <hr>
@@ -30,7 +31,7 @@ The real value of x, that satisfies the equation
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3&divide;
 				<span style="white-space: nowrap;">
 				&radic;<span 												style="text-decoration:overline;">&nbsp;7&nbsp;</span>
@@ -41,7 +42,7 @@ The real value of x, that satisfies the equation
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 
 
@@ -50,7 +51,7 @@ The real value of x, that satisfies the equation
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 
 <span style="white-space: nowrap;">
@@ -62,7 +63,7 @@ The real value of x, that satisfies the equation
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;
 
 
@@ -76,7 +77,9 @@ The real value of x, that satisfies the equation
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Comparing the two sides of the equation, we get:<br><br>
  <span style="white-space: nowrap;">
 				&radic;<span 												style="text-decoration:overline;">&nbsp;4x+5&nbsp;</span>
@@ -99,5 +102,6 @@ Comparing the two sides of the equation, we get:<br><br>
 X = 16/4<br><br>= 4.
 
 
+</div>
 </body>
 </html>

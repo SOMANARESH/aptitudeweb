@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:15</h1>
 <hr>
@@ -14,26 +15,26 @@ The ratio between the rates of travelling of A and B is 2:3 and therefore A take
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;15 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20 minutes
 
 	
@@ -41,7 +42,9 @@ The ratio between the rates of travelling of A and B is 2:3 and therefore A take
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Ratio of speeds = 2:3<br><br>
 Ratio of time taken = 3:2<br><br>
 Difference of time = (3-2)ratio<br><br>
@@ -50,5 +53,6 @@ As normal time = 30 minutes.<br><br>
 Time taken by A at double the speed = 30&divide;2<br><br>
 = 15 minutes.
 
+</div>
 </body>
 </html>

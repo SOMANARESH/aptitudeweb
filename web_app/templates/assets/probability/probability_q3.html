@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:3</h1>
 <hr>
@@ -11,25 +12,25 @@ The probability of not getting saturday in a week is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 2 &frasl; 7
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 6 &frasl; 7
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 1 &frasl; 7
 
 	
@@ -37,7 +38,9 @@ The probability of not getting saturday in a week is
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 For a week we will have 7 days namely Mon, Tue, Wed, Thu, Fri, Sat and Sun.
 <br><br>
@@ -53,5 +56,6 @@ So the probability of not getting Saturday P(Sat<sup>|</sup>) = n(Sat<sup>|</sup
 <br><br>
 P(Sat<sup>|</sup>) = 6 &frasl; 7
 <br><br>
+</div>
 </body>
 </html>

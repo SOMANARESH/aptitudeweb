@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:18</h1>
 <hr>
@@ -12,26 +13,26 @@ The product of two consecutive natural numbers is 6162, what is the smaller numb
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;72
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;76
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;78
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,12 +40,15 @@ The product of two consecutive natural numbers is 6162, what is the smaller numb
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 6162 is smaller than 80<sup>2</sup> or 6400<br><br>
 2 is the unit digit in 6162 and 8&times;9 = 72<br><br>
 78&times;79=6162<br><br>
 Required number is 78.
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:27</h1>
 <hr>
@@ -12,26 +13,26 @@ A merchant professes to sell goods at the loss of 5% but uses weight of 900 gram
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5 <sup>5</sup>&frasl;<sub>9</sub>%.
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10%
 
 	
@@ -39,7 +40,9 @@ A merchant professes to sell goods at the loss of 5% but uses weight of 900 gram
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The merchant gives 900 grams charging the price of 950 grams.<br><br>
 His gain is 50 grams on every 900 grams.<br><br>
@@ -50,5 +53,6 @@ Profit percent =
 	
 
 
+</div>
 </body>
 </html>

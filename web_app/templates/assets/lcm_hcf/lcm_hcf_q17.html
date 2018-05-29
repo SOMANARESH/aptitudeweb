@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -15,26 +16,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.849
 </div>
 <br>
-<div>
+<div class="div2">
     B.859
 </div>
 <br>
-<div>
+<div class="div2">
     C.427
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.1723
 </div>
 
 
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -44,7 +47,7 @@
 
     Now we need to find LCM of given number and subtract 5 from result then we will get LCM of 24,32,36 and 54 is<br><br>
 
-    <img src="/static/images/LCM_18.png"/><br>
+    <img src="LCM_18.png"/><br>
 
 
 
@@ -58,5 +61,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

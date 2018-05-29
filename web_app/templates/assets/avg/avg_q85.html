@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:85</h1>
 <hr>
@@ -12,26 +13,26 @@ Average weight of 30 students in a class is increased by 200 grams when one stud
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;26
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;30
 
 	
@@ -39,7 +40,9 @@ Average weight of 30 students in a class is increased by 200 grams when one stud
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let average weight of 30 students is X
 <br><br>
 <sup>(Sum of weight of 30 students)</sup>&frasl;<sub>30</sub> = X
@@ -63,5 +66,6 @@ Y = 6+20
 Y = 26
 
 
+</div>
 </body>
 </html>

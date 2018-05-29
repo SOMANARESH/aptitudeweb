@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:16</h1>
 <hr>
@@ -14,26 +15,26 @@ A grocer purchased 2 kg of rice at the rate of 15 per kg. and 3 kg of rice at th
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;28
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18.40
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;17.40
 
 	
@@ -41,7 +42,9 @@ A grocer purchased 2 kg of rice at the rate of 15 per kg. and 3 kg of rice at th
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Total quantity bought = 2+3 =5 kg<br><br>
 Total cost price = 2&times;15+3&times;13<br><br>
@@ -53,5 +56,6 @@ total selling price = 69+23<br><br>=92<br><br>
 Selling price per kg. = 92&divide;5 <br><br>= 18.40.
 
 
+</div>
 </body>
 </html>

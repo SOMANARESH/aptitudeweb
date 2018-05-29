@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:55</h1>
 <hr>
@@ -13,26 +14,26 @@ A 120 meter long train is running at a speed of 90 km per hour. It will cross a 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4 4/5 seconds 
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;9 1/5 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7 seconds
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;14 seconds
 
 	
@@ -40,7 +41,9 @@ A 120 meter long train is running at a speed of 90 km per hour. It will cross a 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Total distance = 120+230<br><br>=350 meters<br><br>
@@ -49,5 +52,6 @@ Speed of train = 90 km/hr <br><br>=
 =25m/s<br><br>
 Required time = 350&divide;25<br><br>=14 seconds.
 
+</div>
 </body>
 </html>

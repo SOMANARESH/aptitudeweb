@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:11</h2>
 <hr>
@@ -11,26 +12,26 @@ Which of the following fractions is greater than <sup>3</sup>&frasl;<sub>4</sub>
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;<sup>1</sup>&frasl;<sub>2</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;<sup>2</sup>&frasl;<sub>3</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;<sup>4</sup>&frasl;<sub>5</sub>
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;<sup>9</sup>&frasl;<sub>10</sub>
 
 	
@@ -38,7 +39,9 @@ Which of the following fractions is greater than <sup>3</sup>&frasl;<sub>4</sub>
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <sup>5</sup>&frasl;<sub>4</sub> = 0.75,<br><br>
 <sup>5</sup>&frasl;<sub>6</sub> = 0.833,<br><br>
@@ -55,5 +58,6 @@ Then
 
 
 
+</div>
 </body>
 </html>

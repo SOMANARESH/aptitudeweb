@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 7 </u>:</h2>
 <hr>
 <p>At what time between 4 and 5 o&CloseCurlyQuote;Clock will the hands of a clock be right angle</p>
 
 
-	<div>
+	<div class="div2">
 		A.4 Hr (<sup>60</sup>&frasl;<sub>11</sub>)min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.4 Hr (<sup>420</sup>&frasl;<sub>11</sub>)min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.4 Hr 5 min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.Both A and B
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>We know that, hour hand will cover 30<sup>&deg;</sup> for every hour.So Angle by hour hand in 4 hours = 30<sup>&deg;</sup>&times;4 = 120<sup>&deg;</sup></p>
 	<p>We also know that, for every minute hour hand will cover 0.5<sup>&deg;</sup></p>
@@ -54,5 +57,6 @@
         <p>Y = (<sup>420</sup>&frasl;<sub>11</sub>)min</p>
         <p>So hands of a clock will be right angle at 4 Hr (<sup>420</sup>&frasl;<sub>11</sub>)min</p>
     </ol>
+</div>
 </body>
 </html>

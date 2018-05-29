@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:8</h1>
 <hr>
@@ -12,26 +13,26 @@ The average age of a man and his son is 28 years. The ratio of their ages is 5:2
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;7:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2:1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3:1
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ The average age of a man and his son is 28 years. The ratio of their ages is 5:2
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that The average age of a man and his son is 28 years<br><br>
 
 => <sup>(M+S)</sup>&frasl;<sub>2</sub> = 28--->1
@@ -70,5 +73,6 @@ M = 5&times;<sup>S</sup>&frasl;<sub>2</sub>
 
 M = 40.
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:97</h1>
 <hr>
@@ -12,26 +13,26 @@ Four years ago, the average age of 4 persons A,B,C and D was 38 years. With join
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;26 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;32 years
 
 	
@@ -39,7 +40,9 @@ Four years ago, the average age of 4 persons A,B,C and D was 38 years. With join
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assume that A,B,C and D be represent present ages. 
 <br><br>
 Then before 4 year their ages are 
@@ -74,5 +77,6 @@ E = 180-168
 <br><br>
 E = 12
 
+</div>
 </body>
 </html>

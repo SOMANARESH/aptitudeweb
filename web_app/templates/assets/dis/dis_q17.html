@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h1>
 <hr>
@@ -12,26 +13,26 @@ A person travelled by train for 1 hour at a speed of 50 kmph. He then travelled 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;44 kmph
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;42 kmph
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;41 kmph
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;33 kmph
 
 	
@@ -39,7 +40,9 @@ A person travelled by train for 1 hour at a speed of 50 kmph. He then travelled 
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Total distance covered = 1&times;50 + <sup>1</sup>&frasl;<sub>2</sub>&times;32 <br><br>= 50+16 <br><br>= 66 km<br><br>
 
@@ -52,5 +55,6 @@ Average speed during the journey = 66&divide;
 
 
 
+</div>
 </body>
 </html>

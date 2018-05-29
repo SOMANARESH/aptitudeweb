@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:10</h2>
 <hr>
@@ -14,26 +15,26 @@ Working together how long will they take to finish the work?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;7 <sup>1</sup>&frasl;<sub>2</sub>
 
 
@@ -41,7 +42,9 @@ Working together how long will they take to finish the work?
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <br>
 <u>Formula Used</u>
@@ -88,5 +91,6 @@ One day work of A and B=<sup>1</sup>&frasl;<sub>6</sub>
 A and B do work in 6 days.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:75</h1>
 <hr>
@@ -13,26 +14,26 @@ A train 200 meter long is running at an average speed of 75 kmph and the other t
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;15 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 seconds
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;35 seconds
 
 	
@@ -40,7 +41,9 @@ A train 200 meter long is running at an average speed of 75 kmph and the other t
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Distance covered = (200+250) meter <br><br>= 450 meter<br><br>
 Relative speed of two trains = (75+33) km/h <br><br>
@@ -49,5 +52,6 @@ Relative speed of two trains = (75+33) km/h <br><br>
 Time taken to cover 450 meter = 450&divide;30<br><br>=15 seconds
 
 
+</div>
 </body>
 </html>

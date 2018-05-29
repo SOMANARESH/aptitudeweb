@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:2</h1>
 <hr>
@@ -12,26 +13,26 @@ The average age of three boys is 24 years. If ratio of their ages is 3:4:5, then
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;24 years
 
 	
@@ -39,7 +40,9 @@ The average age of three boys is 24 years. If ratio of their ages is 3:4:5, then
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average age of 3 boys is 24
 <br><br>
 So we can write as
@@ -67,5 +70,6 @@ Age of the youngest boy = 72&times;<sup>3</sup>&frasl;<sub>12</sub>
 = 18 years.
 
 
+</div>
 </body>
 </html>

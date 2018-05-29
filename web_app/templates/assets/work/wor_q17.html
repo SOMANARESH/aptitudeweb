@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h1>
 <hr>
@@ -13,26 +14,26 @@ Pipe A alone can fill the tank in 24 hours. In how many hours, can pipe B alone 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;36hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;48hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;72hours
 
 	
@@ -40,7 +41,9 @@ Pipe A alone can fill the tank in 24 hours. In how many hours, can pipe B alone 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
@@ -92,5 +95,6 @@ Pipe B one hour work<br><br>
 x=72.
 
 
+</div>
 </body>
 </html>

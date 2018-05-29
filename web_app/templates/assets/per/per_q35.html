@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:35</h1>
 <hr>
@@ -13,26 +14,26 @@ What rate percent is 1 minute 12 seconds to an hour?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4%
 
 	
@@ -40,12 +41,15 @@ What rate percent is 1 minute 12 seconds to an hour?
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 1 minute 12 seconds = (60+12) seconds = 72 seconds<br><br>
 1 hour = 3600 seconds<br><br>
 Required rate percent = <sup>72</sup>&frasl;<sub>3600</sub>&times;100<br><br>=2%.
 
+</div>
 </body>
 </html>

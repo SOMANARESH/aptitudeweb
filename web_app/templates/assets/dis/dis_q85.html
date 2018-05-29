@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:85</h2>
 <hr>
@@ -12,26 +13,26 @@ A theft is reported to policeman. The thief starts running and the policeman cha
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1000 m
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1250 m
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1500 m
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ A theft is reported to policeman. The thief starts running and the policeman cha
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Ratio of speeds = 9:10<br><br>
 Police man gains = (10-9)km<br><br>
@@ -48,5 +51,6 @@ Required distance = 10&times;150m<br><br>=1500 m.
 
 
 
+</div>
 </body>
 </html>

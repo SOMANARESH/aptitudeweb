@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:46</h1>
 <hr>
@@ -12,26 +13,26 @@ Two men undertook to do a job for 1400. One of them alone can do it in 7 days, a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;200
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;250
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;275
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;325
 
 	
@@ -39,7 +40,9 @@ Two men undertook to do a job for 1400. One of them alone can do it in 7 days, a
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 First man work for 3 days = <sup>3</sup>&frasl;<sub>7</sub><br><br>
 Second man work for 3 days = <sup>3</sup>&frasl;<sub>8</sub><br><br>
 Boys work =
@@ -54,5 +57,6 @@ Boys work =
 Boys share = <sup>11</sup>&frasl;<sub>56</sub>&times;1400 <br><br>= 275.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:23</h1>
 <hr>
@@ -12,26 +13,26 @@ A,B,C and D are four consecutive even numbers and their average is 65. What is t
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3698
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4216
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;4092
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4352
 
 
@@ -40,7 +41,9 @@ A,B,C and D are four consecutive even numbers and their average is 65. What is t
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given A,B,C and D are 4 consecutive even numbers
 <br><br>
 Let us assume that the four consecutive even numbers be 2n,2n+2,2n+4,2n+6
@@ -71,5 +74,6 @@ Product of A and D is
 = 62&times;68
 <br><br>
 = 4216
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:66</h1>
 <hr>
@@ -12,26 +13,26 @@ By selling an article for 72, there is a loss of 10%. In order to gain 5%, its s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;87
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;85
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;80
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;84
 
 	
@@ -39,10 +40,13 @@ By selling an article for 72, there is a loss of 10%. In order to gain 5%, its s
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Required selling price = (72&times;100+5)&divide;(100-10)<br><br>
 =(72&times;105)&divide;90 <br><br>= 84.
 
 
+</div>
 </body>
 </html>

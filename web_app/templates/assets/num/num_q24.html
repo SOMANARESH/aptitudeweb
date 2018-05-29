@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:24</h2>
 <hr>
@@ -12,26 +13,26 @@ The number of digits in the smallest number, which when multiplied by 7 yields a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6
 
 	
@@ -39,10 +40,13 @@ The number of digits in the smallest number, which when multiplied by 7 yields a
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 out of 9,99,999,9999,99999, and 999999, only 999999 is divisible by 7.<br><br>
 999999&divide;7=142,857.
 
 
+</div>
 </body>
 </html>

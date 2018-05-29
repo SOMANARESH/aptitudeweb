@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:8</h1>
 <hr>
@@ -12,26 +13,26 @@ If 39a + 39b = 8502, find the average of a and b?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;78
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;104
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;108
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;cant say
 
 	
@@ -39,7 +40,9 @@ If 39a + 39b = 8502, find the average of a and b?
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given 39a + 39b = 8502
 <br><br>
 39(a+b) = 8502<br><br>
@@ -53,5 +56,6 @@ Average of a and b
 = 104
 
 
+</div>
 </body>
 </html>

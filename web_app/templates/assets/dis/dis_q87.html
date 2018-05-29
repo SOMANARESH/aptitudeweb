@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:87</h1>
 <hr>
@@ -12,26 +13,26 @@ A, B, C walk 1 km in 5 minutes, 8 minutes and 10 minutes respectively. C starts 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;<sup>4</sup>&frasl;<sub>3</sub> min, 3 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;<sup>5</sup>&frasl;<sub>3</sub> min, 2 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1 mins, 2 mins
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2 min, 3 min
 
 	
@@ -39,7 +40,9 @@ A, B, C walk 1 km in 5 minutes, 8 minutes and 10 minutes respectively. C starts 
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Speeds of A, B, C(In m/min) = 1000&divide;5, 1000&divide;8,1000&divide;10<br><br>
 =200,125,100<br><br>
@@ -51,5 +54,6 @@ Time taken by A to gain 200 m over C = 200&divide;100<br><br>=2.
 
 
 
+</div>
 </body>
 </html>

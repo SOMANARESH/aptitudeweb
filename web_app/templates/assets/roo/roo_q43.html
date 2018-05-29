@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:43</h1>
 <hr>
@@ -12,26 +13,26 @@ The largest number of 5 digits, which is a perfect square is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;99999
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;99976
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;99856
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;99764
 
 	
@@ -39,11 +40,14 @@ The largest number of 5 digits, which is a perfect square is:
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The largest number of 5 digit is 99999<br><br>
 By division method, we get: 99999=316<sup>2</sup>+143<br><br>
 The required number is 99999-143<br><br>=99856.
 
+</div>
 </body>
 </html>

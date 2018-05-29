@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h2>
 <hr>
@@ -12,32 +13,34 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;5
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;6
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;7
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;8
 
 
 </div>
 
 
-<h2><u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Sum of digits at odd places (from left side) = 5+3+7 = 15 <br><br>
 
 Sum of digits at even places (from left side) = 8+1+1=10 <br><br>
@@ -48,5 +51,6 @@ if we add 5 to given number difference between the sum of digits becomes 15-15 =
 
 5 is to be added to the given number.
 
+</div>
 </body>
 </html>

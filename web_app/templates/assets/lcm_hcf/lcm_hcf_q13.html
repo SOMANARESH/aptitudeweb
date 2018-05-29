@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -16,26 +17,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.3
 </div>
 <br>
-<div>
+<div class="div2">
     B.8
 </div>
 <br>
-<div>
+<div class="div2">
     C.5
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.9
 </div>
 
 
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -43,11 +46,12 @@
 
     = 2 &times; 3 &times; 2 &times; 2 &times; 5 <br><br>
 
-    <img src="/static/images/LCM_16.png"/><br>
+    <img src="LCM_16.png"/><br>
 
     So among the options, 9 is not present in LCM.<br><br>
 
 </p>
 
+</div>
 </body>
 </html>

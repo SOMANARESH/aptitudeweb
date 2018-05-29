@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:64</h2>
 <hr>
@@ -13,33 +14,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;39
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;40
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;43
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;45
 
 
 </div>
 
 
-<h2><u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that Average of 10 students = 41 marks<br><br>
 <sup>(Sum of 10 student marks)</sup>&frasl;<sub>10</sub> = 41
 <br><br>
@@ -60,5 +63,6 @@ New average marks by 11 students is
 = 43
 
 
+</div>
 </body>
 </html>

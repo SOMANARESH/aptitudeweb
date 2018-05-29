@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:72</h1>
 <hr>
@@ -12,26 +13,26 @@ Two trains 140 m and 160 m long run at the speeds of 60 km/h and 40 km/h respect
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10.8
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6
 
 	
@@ -39,7 +40,9 @@ Two trains 140 m and 160 m long run at the speeds of 60 km/h and 40 km/h respect
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 total distance = 140+160<br><br>=300 m<br><br>
 relative speed = (60+40) km/hr <br><br>
@@ -51,5 +54,6 @@ required time = 300&divide;(100&divide;<sup>5</sup>&frasl;<sub>18</sub>)<br><br>
 
 
 
+</div>
 </body>
 </html>

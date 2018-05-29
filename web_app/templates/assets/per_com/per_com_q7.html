@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 7 </u>:</h2>
 <hr>
 <p>In how many ways can 4 Apples be distributed to 7 children if each child can get any number of Apples?</p>
 
 
-	<div>
+	<div class="div2">
 		A.28
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.7<sup> 4 </sup>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.4<sup> 7 </sup>
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.35
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>From the given problem, each child can get any number of Apples means each child can get at most 4 Apples.</p>
     <p>You can distribute any no. of apples (1,2,3,4) to each child.</p>
@@ -57,5 +60,6 @@
         4 Apples Distributed to 7 children
     </li>
 	<p>Total combinations = 7&times;7&times;7&times;7 = 7<sup>4</sup></p>
+</div>
 </body>
 </html>

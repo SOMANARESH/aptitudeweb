@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:21</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of five consecutive numbers A, B, C, D and E is 105. What is the pro
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;11025
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12024
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;11128
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Cant say
 
 
@@ -40,7 +41,9 @@ The average of five consecutive numbers A, B, C, D and E is 105. What is the pro
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given A,B,C,D and E are 5 consecutive numbers
 <br><br>
 Let us assume that the five consecutive numbers be n,n+1,n+2,n+3,n+4
@@ -70,5 +73,6 @@ So product of B and E is
 <br><br>
 = 11128
 
+</div>
 </body>
 </html>	

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:28</h1>
 <hr>
@@ -12,26 +13,26 @@ The sum of ages of mohan and his father is 35 years. When mohans age will be equ
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;32 years
 
 	
@@ -39,7 +40,9 @@ The sum of ages of mohan and his father is 35 years. When mohans age will be equ
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let us assume that the ages of mohan and his father be <u>M</u> and <u>F</u>
 
@@ -129,5 +132,6 @@ F=30
 
 
 
+</div>
 </body>
 </html>

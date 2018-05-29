@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:89</h1>
 <hr>
@@ -12,26 +13,26 @@ The percent of profit, when an article is sold for 78, is twice than when it is 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;49
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;51
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;57
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;60
 
 	
@@ -39,7 +40,9 @@ The percent of profit, when an article is sold for 78, is twice than when it is 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let profit  = x<br><br>
 Then cost price +x = 69<br><br>
@@ -48,5 +51,6 @@ x = 78-69=9<br><br>
 Cost price = 69-9 <br><br>= 60.
 
 
+</div>
 </body>
 </html>

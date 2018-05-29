@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:19</h1>
 <hr>
@@ -13,26 +14,26 @@ A tap can empty a tank in 30 minutes while second tap empty it in 20 minutes.
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;12minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;50minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1hour
 
 	
@@ -40,7 +41,9 @@ A tap can empty a tank in 30 minutes while second tap empty it in 20 minutes.
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
@@ -70,5 +73,6 @@ one minute work of tap A and B <br><br>=
 = <sup>1</sup>&frasl;<sub>12</sub><br><br>
 
 Then entire work of tap A and tap B = 12 minutes.
+</div>
 </body>
 </html>

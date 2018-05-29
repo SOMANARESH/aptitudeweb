@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:99</h1>
 <hr>
@@ -11,26 +12,26 @@ A train is running at 70 km/hr but due to stoppages it could cover a certain dis
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12 mins
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;15 mins
 
 	
@@ -38,7 +39,9 @@ A train is running at 70 km/hr but due to stoppages it could cover a certain dis
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time spent on stoppages (pen hour)<br><br>
 Time in which the train could have travelled (70-63)km i.e. 7 km = <sup>7</sup>&frasl;<sub>70</sub>&times;60<br><br>=6 min/hr.
@@ -46,5 +49,6 @@ Time in which the train could have travelled (70-63)km i.e. 7 km = <sup>7</sup>&
 
 
 
+</div>
 </body>
 </html>

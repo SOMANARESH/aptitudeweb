@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:86</h1>
 <hr>
@@ -12,26 +13,26 @@ A thief is noticed by a policeman from a distance of 200 m. the thief starts run
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;150
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;190
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;200
 
 	
@@ -39,7 +40,9 @@ A thief is noticed by a policeman from a distance of 200 m. the thief starts run
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Police man gains = (11-10)km/hr <br><br>= 1 km/hr <br><br>= 1000 m/hr
 In 6 minues, he gains = (6&divide;60)&times;1000<br><br>=100 m<br><br>
@@ -47,5 +50,6 @@ Required distance = 200-100= 100m.
 
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:64</h2>
 <hr>
@@ -12,26 +13,26 @@ Three numbers which are co-prime to one another are such that the product of the
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;75
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;78
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;87
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;89
 
 	
@@ -39,7 +40,9 @@ Three numbers which are co-prime to one another are such that the product of the
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the number are X,Y and Z<br><br>
 X&times;Y = 475 =19&times;25 <br><br>
 and Y &times;Z = 1075=25&times;43<br><br>
@@ -48,5 +51,6 @@ Sum of the numbers<br><br>
  = 19+25+43 = 87.
 
 
+</div>
 </body>
 </html>

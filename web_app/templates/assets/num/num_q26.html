@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:26</h2>
 <hr>
@@ -12,26 +13,26 @@ In a group of 40 persons, 15 drink tea but not coffee and 18 drink coffee but no
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;15
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;18
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;22
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25
 
 	
@@ -39,9 +40,12 @@ In a group of 40 persons, 15 drink tea but not coffee and 18 drink coffee but no
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Persons who drink tea <br><br>
 = total persons &minus; persons who do not drink tea<br><br> = 40&minus;18 <br><br>=22.
 
+</div>
 </body>
 </html>

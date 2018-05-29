@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:28</h1>
 <hr>
@@ -12,26 +13,26 @@ A merchant professes to sell goods at 20% profit but uses weight of 800 grams in
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;50%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;33.33%
 
 	
@@ -39,12 +40,15 @@ A merchant professes to sell goods at 20% profit but uses weight of 800 grams in
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The merchant gives 800 grams charging the price of 1200 grams.<br><br>
 His gain is 400 grams on every 800 grams<br><br>
 Profit percent = 400&divide;800&times;100 <br><br>= 50%.
 
 
+</div>
 </body>
 </html>

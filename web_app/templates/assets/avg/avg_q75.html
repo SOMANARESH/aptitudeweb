@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:75</h1>
 <hr>
@@ -12,26 +13,26 @@ A cricketer batsman had a certain average of runs for 11 innings. In the 12<sup>
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;155
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;150
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;145
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;140
 
 	
@@ -39,7 +40,9 @@ A cricketer batsman had a certain average of runs for 11 innings. In the 12<sup>
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the average  score by 11 innings be X
 <br><br>
 Then <sup>(Sum of 11 innings score)</sup>&frasl;<sub>11</sub> = X
@@ -69,5 +72,6 @@ Average score after 12 innings is X-5
 = 150-5
 <br><br>
 = 145
+</div>
 </body>
 </html>

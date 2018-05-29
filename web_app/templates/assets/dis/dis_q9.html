@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:9</h2>
 <hr>
@@ -12,26 +13,26 @@ A car covers its journey at the speed of 80 km/hr in 10 hours. If the same dista
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;80 km/hr
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;100 km/hr 
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;120km/hr 
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;160 km/hr
 
 	
@@ -39,7 +40,9 @@ A car covers its journey at the speed of 80 km/hr in 10 hours. If the same dista
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
  
 Total distance covered = 80&times;10 <br><br>= 800km<br><br>
@@ -50,5 +53,6 @@ Increase in speed = (200-80) kmph <br><br>
 = 120 km&frasl;hr.
 
 
+</div>
 </body>
 </html>

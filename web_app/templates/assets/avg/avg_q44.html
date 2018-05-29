@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:44</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of eight numbers is 20. The average of first two numbers is 15 <sup>
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;11
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;18
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;22
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25
 
 	
@@ -39,7 +40,9 @@ The average of eight numbers is 20. The average of first two numbers is 15 <sup>
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let 8 numbers be n<sub>1</sub>,n<sub>2</sub>,n<sub>3</sub>,
 n<sub>4</sub>,n<sub>5</sub>,n<sub>6</sub>,
 n<sub>7</sub>,n<sub>8</sub>
@@ -86,5 +89,6 @@ Eighth nnumber = n<sub>6</sub>+7
 <br><br>
 Eighth nnumber = 18+7 = 25
 <br><br>
+</div>
 </body>
 </html>

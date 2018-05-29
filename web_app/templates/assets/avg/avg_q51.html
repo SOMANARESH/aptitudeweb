@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:51</h1>
 <hr>
@@ -12,26 +13,26 @@ In a group of 135 persons, 50% people contributed Rs.40 each, 30% contributed Rs
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;54
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;62
 
 	
@@ -39,8 +40,11 @@ In a group of 135 persons, 50% people contributed Rs.40 each, 30% contributed Rs
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Average contribution = 50% of 40 + 30% of 60 + 20% of 80<br><br> = 20+18+16<br><br> = 54.
 
+</div>
 </body>
 </html>

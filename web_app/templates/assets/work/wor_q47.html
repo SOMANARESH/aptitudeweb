@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:47</h1>
 <hr>
@@ -18,26 +19,26 @@ A tank has three pipes. The first pipe can fill
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;5 hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6 hours
 
 	
@@ -45,7 +46,9 @@ A tank has three pipes. The first pipe can fill
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
 
@@ -76,5 +79,6 @@ One hour work of third pipe =
 Required time = 4 hours.
 
 
+</div>
 </body>
 </html>

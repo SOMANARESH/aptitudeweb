@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:88</h1>
 <hr>
@@ -12,26 +13,26 @@ Profit after selling a commodity for 524 is the same as loss after selling it fo
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;480
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;488
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;485
 
 	
@@ -39,7 +40,9 @@ Profit after selling a commodity for 524 is the same as loss after selling it fo
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let loss = profit =x<br><br>
 Then cost price = 524-x<br><br>
@@ -51,5 +54,6 @@ Cost price = 452+36<br><br>
 =488.
 
 
+</div>
 </body>
 </html>

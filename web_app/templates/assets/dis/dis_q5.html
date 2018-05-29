@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h1>
 <hr>
@@ -12,26 +13,26 @@ The speeds of three cars are in the ratio 4:3:2. What is the ratio between the t
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2:3:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3:4:6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1:2:3
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4:3:2
 
 	
@@ -39,7 +40,9 @@ The speeds of three cars are in the ratio 4:3:2. What is the ratio between the t
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Required ratio = <sup>1</sup>&frasl;<sub>4</sub>:<sup>1</sup>&frasl;<sub>3</sub>
 :<sup>1</sup>&frasl;<sub>2</sub><br><br> = 3:4:6
@@ -47,5 +50,6 @@ Required ratio = <sup>1</sup>&frasl;<sub>4</sub>:<sup>1</sup>&frasl;<sub>3</sub>
 
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 17</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@ Find the difference between the place value and the face value of 7 in the numbe
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;0
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6993
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7337
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,12 +40,15 @@ Find the difference between the place value and the face value of 7 in the numbe
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Place value of 7 = 7000 <br><br>
 Face value of 7 = 7<br><br>
 Difference = 7000 &minus; 7<br><br>
 = 6993.
 
+</div>
 </body>
 </html>

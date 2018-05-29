@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:15</h1>
 <hr>
@@ -12,26 +13,26 @@ Ramesh purchased two types of wheat, one costing 20 per kg and the other 25 per 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4%Loss
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4%gain
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;8%Loss
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;8%gain
 
 	
@@ -39,7 +40,9 @@ Ramesh purchased two types of wheat, one costing 20 per kg and the other 25 per 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Cost price of 9 kg of mixture = 5&times;20+4&times;25<br><br>=200<br><br>
 Selling price of 9kg of mixture = 9&times;24<br><br>=216<br><br>
@@ -49,5 +52,6 @@ Profit percent =
 &times;100 <br><br>= 8%.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h2>
 <hr>
@@ -13,7 +14,7 @@ Which of the following has fraction in ascending order?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;
 <sup>1</sup>&frasl;<sub>3</sub>,
 <sup>2</sup>&frasl;<sub>5</sub>,
@@ -24,7 +25,7 @@ Which of the following has fraction in ascending order?
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 <sup>1</sup>&frasl;<sub>3</sub>,
 <sup>2</sup>&frasl;<sub>5</sub>,
@@ -36,7 +37,7 @@ Which of the following has fraction in ascending order?
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 <sup>1</sup>&frasl;<sub>3</sub>,
 <sup>2</sup>&frasl;<sub>5</sub>,
@@ -48,7 +49,7 @@ Which of the following has fraction in ascending order?
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;<sup>2</sup>&frasl;<sub>5</sub>,
 <sup>3</sup>&frasl;<sub>5</sub>,
 <sup>1</sup>&frasl;<sub>3</sub>,
@@ -61,7 +62,9 @@ Which of the following has fraction in ascending order?
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Converting each of the given fractions into decimal form, we get : <br><br>
 <sup>1</sup>&frasl;<sub>3</sub> = 0.33,<br><br>
@@ -84,5 +87,6 @@ So,
 .
 
 
+</div>
 </body>
 </html>

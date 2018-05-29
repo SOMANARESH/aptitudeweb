@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:20</h1>
 <hr>
@@ -12,26 +13,26 @@ A mixture contains spirit and water in the ratio 3:2. If it contains 3 litres mo
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10 liters
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12 liters
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;8 liters
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;9 liters
 
 	
@@ -39,7 +40,9 @@ A mixture contains spirit and water in the ratio 3:2. If it contains 3 litres mo
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 	
 Difference of quantities = (3-2)ratio<br><br>
  = 1 ratio <br><br>
@@ -49,5 +52,6 @@ Quantity of spirit = 3 ratio<br><br>
 = 9 liters. 
 
 
+</div>
 </body>
 </html>

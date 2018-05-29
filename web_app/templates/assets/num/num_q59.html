@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:59</h2>
 <hr>
@@ -12,26 +13,26 @@ With a two digit prime number, if 18 is added, we get another prime number with 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;0
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1
 
 	
@@ -39,12 +40,15 @@ With a two digit prime number, if 18 is added, we get another prime number with 
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 On adding 18, the digits are reversed <br><br>
 Difference in digits = 18&divide;2=9 <br><br>
 Prime numbers with difference of digits 2 = 13,79<br><br>
 Prime numbers on reversing the digits = 31,97.
 
+</div>
 </body>
 </html>

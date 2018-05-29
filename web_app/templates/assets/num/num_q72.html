@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:72</h2>
 <hr>
@@ -12,26 +13,26 @@ A laborer was appointed by a contractor on the condition that he would be paid 7
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3 days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5 days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;4 days
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2 days
 
 	
@@ -39,7 +40,9 @@ A laborer was appointed by a contractor on the condition that he would be paid 7
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Wages for 20 days@ 75 per day = 1500<br><br>
 Wages actually earned = 1140<br><br>
 Total wages deducted for absence = 1500-1140=360<br><br>
@@ -47,5 +50,6 @@ Wages deducted for one day absence = 75+15=90<br><br>
 Number of days he was absent for = 360&divide;90<br><br>=4 days.
 
 
+</div>
 </body>
 </html>

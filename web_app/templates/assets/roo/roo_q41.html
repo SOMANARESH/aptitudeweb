@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:41</h1>
 <hr>
@@ -12,26 +13,26 @@ The sum of digits of the smallest number which, when multiplied by 1800, gives a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;8
 
 	
@@ -39,12 +40,15 @@ The sum of digits of the smallest number which, when multiplied by 1800, gives a
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 1800 = 2<sup>3</sup>&times;3<sup>2</sup>&times;5<sup>2</sup><br><br>
 
 Smallest number to multiply = 3<sup>1</sup>&times;5<sup>1</sup> = 15<br><br>
 Required  sum = 1+5=6
 
+</div>
 </body>
 </html>

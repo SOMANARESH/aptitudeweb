@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:71</h1>
 <hr>
@@ -13,26 +14,26 @@ If two numbers are respectively 20% and 50% of a third number, what is the ratio
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5:2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2:5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1:5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1:2
 
 	
@@ -40,7 +41,9 @@ If two numbers are respectively 20% and 50% of a third number, what is the ratio
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the numbers be X , Y and Z <br><br>
 Given that <br><br>X = 20% of Z and Y = 50% of Z <br><br>
@@ -64,5 +67,6 @@ X:Y = 2:5
 
 
 
+</div>
 </body>
 </html>

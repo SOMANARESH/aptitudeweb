@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:79</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of 100 members is 44. The average of these 100 numbers and 4 other n
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;800
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;200
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;176
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;24
 
 	
@@ -39,7 +40,9 @@ The average of 100 members is 44. The average of these 100 numbers and 4 other n
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average of 100 numbers is 44
 <br><br>
 <sup>(Sum of 100 numbers)</sup>&frasl;<sub>100</sub> = 44
@@ -73,5 +76,6 @@ Average of 4 numbers is
 = 200
 
 
+</div>
 </body>
 </html>

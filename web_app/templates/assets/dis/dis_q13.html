@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:13</h1>
 <hr>
@@ -13,26 +14,26 @@ The ratio of speeds of A and B is 4:5. If difference between time taken by two i
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;4 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;70 minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;100 minutes
 
 	
@@ -40,7 +41,9 @@ The ratio of speeds of A and B is 4:5. If difference between time taken by two i
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Ratio of speeds = 4:5 <br><br>
 Ratio of time taken = 5:4<br><br>
@@ -48,5 +51,6 @@ Difference of time = (5-4)ratio <br><br>= 1 ratio <br><br>= 20 minutes<br><br>
 Time taken by A = 5 ratio <br><br>= 100 minutes.
 
 
+</div>
 </body>
 </html>

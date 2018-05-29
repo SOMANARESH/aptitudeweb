@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:19</h1>
 <hr>
@@ -13,26 +14,26 @@ A man completed a certain journey by a car. If he covered 30% of the distance at
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25 kmph
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;28 kmph
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 kmph
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;33 kmph
 
 	
@@ -40,7 +41,9 @@ A man completed a certain journey by a car. If he covered 30% of the distance at
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
  
 Let total distance = 100 km<br><br>
@@ -53,5 +56,6 @@ Then total time =
 =1.5+1.5+1= 4 hours<br><br>
 Average speed = 100&divide;4 <br><br>= 25 km/hr.
 
+</div>
 </body>
 </html>

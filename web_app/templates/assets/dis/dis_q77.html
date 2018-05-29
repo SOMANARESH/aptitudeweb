@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:77</h1>
 <hr>
@@ -14,26 +15,26 @@ Two trains running in the opposite directions at the speeds of 44 kmph and 55 km
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;120 meter
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;180 meter
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;220 meter
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;250 meter
 
 	
@@ -41,7 +42,9 @@ Two trains running in the opposite directions at the speeds of 44 kmph and 55 km
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Their relative speed = (44+55)km/hr <br><br>
 =99 km/h<br><br>
@@ -51,5 +54,6 @@ Distance covered in 12 seconds = 12&times;55&divide;2<br><br>=330 meter<br><br>
 Length of the second train = 330-150<br><br>=180 meter.<br><br>
 
 
+</div>
 </body>
 </html>

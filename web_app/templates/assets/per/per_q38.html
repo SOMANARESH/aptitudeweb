@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:38</h1>
 <hr>
@@ -14,26 +15,26 @@ If a man after spending 97% of his income, saves 300 per month, his annual incom
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;36000
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;120000
 
 	
@@ -41,7 +42,9 @@ If a man after spending 97% of his income, saves 300 per month, his annual incom
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Savings = (100-97)% = 3% of income <br><br>
 
 3% of income = 300<br><br>
@@ -53,5 +56,6 @@ For 12 months Total income = 10000&times;12<br><br>
 Annual Total income = 120000<br><br>
 
 
+</div>
 </body>
 </html>

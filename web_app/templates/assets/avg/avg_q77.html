@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:77</h1>
 <hr>
@@ -12,26 +13,26 @@ The batting average for 40 innings of a cricket player is 50 runs. His highest s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;165
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;170
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;172
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;174
 
 	
@@ -39,7 +40,9 @@ The batting average for 40 innings of a cricket player is 50 runs. His highest s
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the lowest score be X
 <br><br>
 Then According to problem Highest score exceeds lowest by 172
@@ -83,5 +86,6 @@ Highest score = X+172
 Highest score = 2+172
 <br><br>
 Highest score = 174
+</div>
 </body>
 </html>

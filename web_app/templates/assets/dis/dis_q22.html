@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:22</h1>
 <hr>
@@ -16,26 +17,26 @@ th, he goes 10 km less in that time. Find his speed (in km/hour)
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5 <sup>1</sup>&frasl;<sub>2</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;4
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;5
 
 	
@@ -43,7 +44,9 @@ th, he goes 10 km less in that time. Find his speed (in km/hour)
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Ratio of speeds = 15:14<br><br>
 Difference in distance covered = (15-14)ratio <br><br>
 = 1 ratio <br><br>
@@ -52,5 +55,6 @@ original distance = 15 ratio<br><br> = 15&times;10 km <br><br>= 150 km<br><br>
 Original speed = 150&divide;30 <br><br>= 5 km/hr.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:88</h1>
 <hr>
@@ -11,26 +12,26 @@ A and B can walk around a circular path in 4 hours and 6 hours respectively. If 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;6 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;8 hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;12 hours
 
 	
@@ -38,7 +39,9 @@ A and B can walk around a circular path in 4 hours and 6 hours respectively. If 
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 LMC of time taken by A and B = LCM of 4 and 6<br><br> = 12 hours<br><br>
 They will be together again at the starting point after 12 hours.
@@ -46,5 +49,6 @@ They will be together again at the starting point after 12 hours.
 
 
 
+</div>
 </body>
 </html>

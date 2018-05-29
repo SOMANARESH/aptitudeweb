@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:1</h2>
 <hr>
@@ -13,25 +14,25 @@ The next number in the given sequence below wil be
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 8
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 11
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 13
 
 	
@@ -39,7 +40,9 @@ The next number in the given sequence below wil be
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <ul>
 	<li>
@@ -74,5 +77,6 @@ The next number in the given sequence below wil be
 	</li>
 </ul>
 
+</div>
 </body>
 </html>

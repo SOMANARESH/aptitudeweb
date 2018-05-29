@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:66</h1>
 <hr>
@@ -13,26 +14,26 @@ Find the time taken by a train 200 meter long, running at 72 km/h in crossing a 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10 seconds
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20 seconds
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2 seconds
 
 	
@@ -40,12 +41,15 @@ Find the time taken by a train 200 meter long, running at 72 km/h in crossing a 
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Speed of the train = (5&divide;18)&times;72 m/s <br><br>= 20 m/s<br><br>
 Distance covered to cross the man = 200 meter<br><br>
 Required time = 200&divide;20<br><br>=10 seconds.
 
 
+</div>
 </body>
 </html>

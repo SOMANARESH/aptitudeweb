@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:54</h1>
 <hr>
@@ -14,26 +15,26 @@ Three fourth of one number is equal to 60% of another number. What is the ratio 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6:7
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -41,7 +42,9 @@ Three fourth of one number is equal to 60% of another number. What is the ratio 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the numbers be X and Y <br><br>
 Then <sup>3</sup>&frasl;<sub>4</sub> of X = 60% of Y <br><br>
@@ -53,5 +56,6 @@ Then <sup>3</sup>&frasl;<sub>4</sub> of X = 60% of Y <br><br>
 
 <sup>X</sup>&frasl;<sub>Y</sub> = <sup>4</sup>&frasl; <sub>5</sub> <br><br> 
 
+</div>
 </body>
 </html>

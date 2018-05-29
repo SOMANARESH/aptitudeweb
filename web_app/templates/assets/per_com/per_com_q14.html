@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 14 </u>:</h2>
 <hr>
 <p>How many straight lines can be formed from 12 non linear points on the X-Y plane?</p>
 
 
-	<div>
+	<div class="div2">
 		A.66
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.132
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.22
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.33
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: A </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>Here Straight line can be formed with the help of any two non linear points.</p>
     <p>So the number of ways of forming straight lines is equal to selection of two points from 12 non linear points.</p>
@@ -34,5 +37,6 @@
 	<p><sup> 12 </sup> C <sub> 2 </sub> = <sup> 12! </sup> &frasl; <sub> 2! &times; (12 - 2)! </sub></p>
 	<p><sup> 12 </sup> C <sub> 2 </sub> = <sup> 12&times;11&times;10! </sup> &frasl; <sub> 2! &times; 10! </sub></p>
     <p><sup> 12 </sup> C <sub> 2 </sub> = <sup> 12&times;11 </sup> &frasl; <sub> 2&times;1 </sub> = 66</p>
+</div>
 </body>
 </html>

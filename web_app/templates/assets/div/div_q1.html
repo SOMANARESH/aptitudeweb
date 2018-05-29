@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:1</h2>
 <hr>
@@ -17,33 +18,36 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;1 only
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;2 only
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;Both 1 and two
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;Neither 1 nor 2
 
 
 </div>
 
 
-<h2><u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 A number is divisible by 9 if and only if sum of its digits is divisible by 9.
 
+</div>
 </body>
 </html>

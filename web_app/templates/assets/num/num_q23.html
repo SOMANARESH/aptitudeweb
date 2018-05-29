@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:23</h2>
 <hr>
@@ -12,26 +13,26 @@ Find he maximum number of trees which can be planted, 20 meters apart , on the t
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;176
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;180
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;178
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;174
 
 	
@@ -39,7 +40,9 @@ Find he maximum number of trees which can be planted, 20 meters apart , on the t
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 number of trees can be planted on one side on road 
 = 1760&divide;20&plus;1<br><br>
 = 88&plus;1<br><br>
@@ -49,5 +52,6 @@ number of trees on both side
 = 89&times;2<br><br> 
 = 178.
 
+</div>
 </body>
 </html>

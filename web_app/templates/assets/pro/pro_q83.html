@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:83</h1>
 <hr>
@@ -12,26 +13,26 @@ One trader calculates the percentage profit on the buying price and another calc
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1700
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2550
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2750
 
 	
@@ -39,7 +40,9 @@ One trader calculates the percentage profit on the buying price and another calc
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the cost price in the first case = 100<br><br>
 Then profit in the first case = 20% of cost price = 20<br><br>
@@ -52,5 +55,6 @@ if difference is 85, selling price = 85&times; 30<br><br>
 = 2550.
 
 
+</div>
 </body>
 </html>

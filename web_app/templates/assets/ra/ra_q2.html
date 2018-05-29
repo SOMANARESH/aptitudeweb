@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:2</h1>
 <hr>
@@ -15,26 +16,26 @@ that of water. The proportion of milk in the mixture is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;<sup>1</sup>&frasl;<sub>8</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;<sup>1</sup>&frasl;<sub>2</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;<sup>3</sup>&frasl;<sub>8</sub>
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;<sup>5</sup>&frasl;<sub>8</sub>
 
 	
@@ -42,12 +43,15 @@ that of water. The proportion of milk in the mixture is:
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let quantity of water = 5<br><br>
 Then quantity of milk = 3<br><br>
 Required ratio = <sup>3</sup>&frasl;<sub>8</sub>.
 
 
+</div>
 </body>
 </html>

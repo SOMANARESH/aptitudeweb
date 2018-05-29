@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 6 </u>:</h2>
 <hr>
 <p>A clock is set right at 8 a.m. The clock gains 10 minutes in 24 hours. What will be the true time when the clock indicates 1 p.m. on the following day?</p>
 
 
-	<div>
+	<div class="div2">
 		A.1 Hr 12min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.12 Hr 48min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.12 Hr 42 min
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.1 Hr 18min
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
     <p>Given that there is difference of 29 hours of between 8 O&CloseCurlyQuote;clock AM and 1 O&CloseCurlyQuote;clock PM</p>
     <p>We also know that, Clock gains 10 minutes for 24 hours.</p>
@@ -45,5 +48,6 @@
     <p>29 Hrs of Current Clock = 28 Hr + (0.8&times;60)</p>
     <p>29 Hrs of Current Clock = 28 Hr + 48 min of Correct clock</p>
     <p>1 PM of Current Clock indicates 12 Hr 48 min PM</p>
+</div>
 </body>
 </html>

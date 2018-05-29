@@ -1,36 +1,40 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 3 </u>:</h2>
 <hr>
 <p>If a clock shows 4 O&CloseCurlyQuote;clock in the noon. Through how many degrees will the hour hand rotate when the clock shows 12 O&CloseCurlyQuote;clock in the night?</p>
 
 
-	<div>
+	<div class="div2">
 		A.120&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.240&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.60&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.300&deg;
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
     <p>Given that start time is 4 O&CloseCurlyQuote;clock PM and End time is 12 O&CloseCurlyQuote;clock AM.</p>
 	<p>So the difference between those two timings = 8 hours</p>
 	<p>We know that, For each hour hour hand will rotate 30 degrees.</p>
 	<p>So total angle by hour hand for 8 hours = 8 &times;30&deg; = 240&deg;
+</div>
 </body>
 </html>

@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h2>
 <hr>
@@ -14,33 +15,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;81
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;162
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;243
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;324
 
 
 </div>
 
 
-<h2><u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Wages is distributed in ratio of work done <br><br>
 i.e. in the ratio of 2:3:4<br><br>
 Sum of ratios = 2+3+4 = 9<br><br>
@@ -67,5 +70,6 @@ Bs share
 A&CloseCurlyQuote;s share +B&CloseCurlyQuote;s share + C&CloseCurlyQuote;s share = 243+162+324.
 
 = 729.
+</div>
 </body>
 </html>

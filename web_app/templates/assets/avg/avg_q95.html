@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:95</h1>
 <hr>
@@ -12,26 +13,26 @@ The arithmetic mean of 100 numbers was computed as 89.05. it was later found tha
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;88.55
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;87.55
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;89.55
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Data insufficient
 
 	
@@ -39,7 +40,9 @@ The arithmetic mean of 100 numbers was computed as 89.05. it was later found tha
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Given that average of 100 numbers is 89.05
 <br><br>
@@ -63,5 +66,6 @@ Now average of 100 numbers by replacing 192 and 83 by 92 and 83 is
 <br><br>
 = 88.55
 
+</div>
 </body>
 </html>

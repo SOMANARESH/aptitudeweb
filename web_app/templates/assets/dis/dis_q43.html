@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:43</h1>
 <hr>
@@ -12,26 +13,26 @@ If a man reduces his speed to 2/3, he takes 1 hour more in walking a certain dis
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1.5
 
 	
@@ -39,7 +40,9 @@ If a man reduces his speed to 2/3, he takes 1 hour more in walking a certain dis
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Walking at 2/3 of speed, he will take <sup>3</sup>&frasl;<sub>2</sub> of the normal time.<br><br>
 <sup>3</sup>&frasl;<sub>2</sub> of usual time = usual time + 1 hour<br><br> 
@@ -48,5 +51,6 @@ Usual time = 2&times;1 hour <br><br>= 2 hours.
 
 
 
+</div>
 </body>
 </html>

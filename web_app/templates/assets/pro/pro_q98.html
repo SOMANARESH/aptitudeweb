@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:98</h1>
 <hr>
@@ -12,26 +13,26 @@ A shopkeeper allows 25% discount on the marked price of his articles and hence g
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;400
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;600
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;800
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1000
 
 	
@@ -39,7 +40,9 @@ A shopkeeper allows 25% discount on the marked price of his articles and hence g
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 If profit is 25, then selling price = 100+25=125<br><br>
 If marked price is 100, then selling price = 100-25=75<br><br>
 Marked price of the article <br><br>= 
@@ -55,5 +58,6 @@ Marked price of the article <br><br>=
 =800.
 
 
+</div>
 </body>
 </html>

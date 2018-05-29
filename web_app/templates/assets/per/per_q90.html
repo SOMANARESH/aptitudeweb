@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:90</h1>
 <hr>
@@ -12,26 +13,26 @@ In a test consisting of 75 questions carrying one mark each. Samir answered 75% 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;90
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;75
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;86
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;60
 
 	
@@ -39,7 +40,9 @@ In a test consisting of 75 questions carrying one mark each. Samir answered 75% 
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the total number of questions = 75
 <br><br>
 Given Each question carries one mark
@@ -77,5 +80,6 @@ Required percentage = 0.8571&times;100
 Required percentage = 85.7
 <br><br>
 Required percentage = 86
+</div>
 </body>
 </html>

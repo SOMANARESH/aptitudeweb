@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:10</h1>
 <hr>
@@ -12,26 +13,26 @@ Ratio between two numbers is 3:4 and sum of their squares is 625. The numbers ar
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6,8
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;9,12
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12,16
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;15,20
 
 	
@@ -39,7 +40,9 @@ Ratio between two numbers is 3:4 and sum of their squares is 625. The numbers ar
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the numbers be 3x and 4x<br><br>
 Then 3x<sup>2</sup> + 4x<sup>2</sup> = 625<br><br>
@@ -52,5 +55,6 @@ X = root of (625/25)<br><br>
 The numbers are 3&times;5 and 4&times;5 i.e. 15 and 20.
 
 
+</div>
 </body>
 </html>

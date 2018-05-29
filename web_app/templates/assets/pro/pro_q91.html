@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:91</h1>
 <hr>
@@ -12,25 +13,25 @@ The percentage profit earned by selling an article for 1730 is equal to the perc
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1650
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1800
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Data in sufficient
 
 	
@@ -38,7 +39,9 @@ The percentage profit earned by selling an article for 1730 is equal to the perc
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let cost price of the article be x<br><br>
 Then cost price = 1730-x <br><br>= x-1270<br><br>
 2x=1730+1270=3000<br><br>
@@ -48,5 +51,6 @@ Required selling price = 1500+300<br><br>
 =1800.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h1>
 <hr>
@@ -12,25 +13,25 @@ One ball is drawn at random from any of these two bags,then the probability of t
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 21 &frasl; 77
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 41 &frasl; 77
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 51 &frasl; 77
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 51 &frasl; 154
 
 	
@@ -38,7 +39,9 @@ One ball is drawn at random from any of these two bags,then the probability of t
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 Here the black ball is going to be select from any of the two bags. 
 <br><br>
@@ -70,5 +73,6 @@ P(B) = (33 + 49) &frasl; (154)
 <br><br>
 P(B) = 82 &frasl; 154 = 41 &frasl; 77
 <br><br>
+</div>
 </body>
 </html>

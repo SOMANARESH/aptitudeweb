@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 19</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@ In a two digit number, the digit in units place is three times the digit in tens
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;39
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;93
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;Data inadequate
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ In a two digit number, the digit in units place is three times the digit in tens
 		
 	
 
-<h2> <u>Answer</u>: A </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Lets tens place digit be x. <br><br>
 Then units place digit = 3x<br><br>
 Now <br><br>
@@ -52,5 +55,6 @@ units place digit = 3x <br><br>
 The required number is 39.
 
 
+</div>
 </body>
 </html>

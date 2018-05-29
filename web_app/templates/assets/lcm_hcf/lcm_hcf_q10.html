@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -15,26 +16,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.20
 </div>
 <br>
-<div>
+<div class="div2">
     B.40
 </div>
 <br>
-<div>
+<div class="div2">
     C.80
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.120
 </div>
 
 
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -66,5 +69,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

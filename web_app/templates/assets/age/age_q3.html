@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:3</h1>
 <hr>
@@ -12,26 +13,26 @@ The present ages of A and B are in the ratio 4:5 and after 5 years, their ages w
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;15 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;25 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;30 years
 
 	
@@ -39,7 +40,9 @@ The present ages of A and B are in the ratio 4:5 and after 5 years, their ages w
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The Ratio between present ages of A and B is 4:5<br><br>
 
 =><sup>A</sup>&frasl;<sub>B</sub>
@@ -66,5 +69,6 @@ Substitute 1 in above eq. then we will get  <br><br>
 
 =>B=5&times;<sup>20</sup>&frasl;<sub>4</sub> = 25.
 
+</div>
 </body>
 </html>

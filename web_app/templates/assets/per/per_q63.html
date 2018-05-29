@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:63</h1>
 <hr>
@@ -15,26 +16,26 @@ The sum of 5% of a number and 4% of the other number is equal to
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2:3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3:2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3:4
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4:3
 
 	
@@ -42,7 +43,9 @@ The sum of 5% of a number and 4% of the other number is equal to
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Let the numbers be x and y<br><br>
@@ -55,5 +58,6 @@ Then
 3% of x = 4% of y <br><br>
 X:y = 4:3.
 
+</div>
 </body>
 </html>

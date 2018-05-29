@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:69</h1>
 <hr>
@@ -11,26 +12,26 @@ A train crosses a pole in 10 seconds and a platform 150 meter long in 16 seconds
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;90
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;120
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;180
 
 	
@@ -38,7 +39,9 @@ A train crosses a pole in 10 seconds and a platform 150 meter long in 16 seconds
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Train crosses distance equal to its length in 10 seconds<br><br>
 And distance equal to sum of length of train and length of platform in 16 seconds.<br><br>
@@ -49,5 +52,6 @@ Speed of the train = 150&divide;6 m/s<br><br> = (150&divide;6)&times;18&divide;5
 
 
 
+</div>
 </body>
 </html>

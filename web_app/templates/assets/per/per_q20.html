@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:20</h1>
 <hr>
@@ -14,26 +15,26 @@
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;40
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;200
 
 	
@@ -41,7 +42,9 @@
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the number be X<br><br>
 20% of 30%of X = 12
 <br><br>
@@ -55,5 +58,6 @@ X = <sup>12&times;10000</sup>&frasl;<sub>600</sub><br><br>
 X = 200
 
 
+</div>
 </body>
 </html>

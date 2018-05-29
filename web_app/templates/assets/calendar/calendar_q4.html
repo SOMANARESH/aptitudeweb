@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 4 </u>:</h2>
 <hr>
 <p>What will be the day of the week 15th August, 2010?</p>
 
 
-	<div>
+	<div class="div2">
 		A.Tuesday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.Monday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.Saturday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.Sunday
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p><li>Divide the given date into parts like below</li></p>
 	<p><li>15th August, 2010 = (2009 years + Period 1.1.2010 to 15.8.2010)</li></p>
@@ -63,5 +66,6 @@
         <ul>6 &rarr; Saturday</ul>
 	</li>
 	<p><li>The given date is Sunday</li></p>
+</div>
 </body>
 </html>

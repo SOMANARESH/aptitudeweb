@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:32</h1>
 <hr>
@@ -12,26 +13,26 @@ P and Q are 27 km away. Two trains with speeds of 24 km/hr and 18 km/hr respecti
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;48 km
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;36 km
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;126 km
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;81 km
 
 	
@@ -39,7 +40,9 @@ P and Q are 27 km away. Two trains with speeds of 24 km/hr and 18 km/hr respecti
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The faster train gains = 24 km/hr -18 km/hr<br><br> = 6 km/hr<br><br>
 Distance travelled by faster train (starting from P ) to gain 27km <br><br>
@@ -48,5 +51,6 @@ Distance QR = (108-27)km <br><br>=81 km.
 
 
 
+</div>
 </body>
 </html>

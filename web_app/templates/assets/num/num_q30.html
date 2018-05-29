@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h2>
 <hr>
@@ -12,27 +13,27 @@ The cost of 7 tables and 12 chairs is 48250. What is the cost of 21 tables and 3
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;96500
 
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;125500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;144750
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;Data insufficient
 
 	
@@ -40,7 +41,9 @@ The cost of 7 tables and 12 chairs is 48250. What is the cost of 21 tables and 3
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 21 tables &plus; 36 chairs 
 <br><br>
@@ -48,5 +51,6 @@ The cost of 7 tables and 12 chairs is 48250. What is the cost of 21 tables and 3
 = 3&times;48,250
 <br><br>
 = 144,750.
+</div>
 </body>
 </html>

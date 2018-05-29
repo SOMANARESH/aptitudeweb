@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:54</h1>
 <hr>
@@ -12,26 +13,26 @@ A certain number of persons can complete a piece of work in 55 days. if there we
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;17
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;22
 
 	
@@ -39,7 +40,9 @@ A certain number of persons can complete a piece of work in 55 days. if there we
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 lets x men can complete a work in 55 days <br><br>
 
 then 1 man can complete a work in 55x days <br><br>
@@ -64,5 +67,6 @@ x = 24.
 
 
 
+</div>
 </body>
 </html>

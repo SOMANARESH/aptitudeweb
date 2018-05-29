@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:18</h1>
 <hr>
@@ -12,26 +13,26 @@ if the sum of three consecutive numbers is more than the middle by 150, then the
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;75
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ if the sum of three consecutive numbers is more than the middle by 150, then the
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assume that the three consecutive numbers be n,n+1,n+2
 <br><br>
 Sum of these numbers is  
@@ -65,5 +68,6 @@ So middle term is
 n+1 = 74+1 = 75
 
 
+</div>
 </body>
 </html>

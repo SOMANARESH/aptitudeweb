@@ -25,7 +25,7 @@ SECRET_KEY = 'q1km2(_#l^#2w&$3sx@r*m4spok2z^8tkuk8(723h#-@==_c*9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'aptitudeweb.pythonanywhere.com']
+ALLOWED_HOSTS = [u'aptitudeweb.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -122,7 +122,8 @@ STATIC_URL = '/static/'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = u'/home/aptitudeweb/aptitudeweb/media'
+MEDIA_ROOT = u'/aptitudeweb/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') # u'/home/aptitudeweb/aptitudeweb/static'
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))

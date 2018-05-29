@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:56</h1>
 <hr>
@@ -14,26 +15,26 @@ If 30% of A = 0.25 of B = <sup>1</sup>&frasl;<sub>5</sub> of C, then A:B:C is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5:6:4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5:24:5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6:5:4
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10:12:15
 
 	
@@ -41,7 +42,9 @@ If 30% of A = 0.25 of B = <sup>1</sup>&frasl;<sub>5</sub> of C, then A:B:C is
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that 
 <br><br>
 30% of A = 0.25 of B = <sup>1</sup>&frasl;<sub>5</sub> of C <br><br>
@@ -73,5 +76,6 @@ A:B:C = 10A : 12A : 15A <br><br>
 
 A:B:C = 10:12:15
 
+</div>
 </body>
 </html>

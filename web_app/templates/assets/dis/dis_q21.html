@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:21</h1>
 <hr>
@@ -11,26 +12,26 @@ A car can cover a certain distance in 4 <sup>1</sup>&frasl;<sub>2</sub> hours. I
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50 km/h
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;40 km/h
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;45 km/h
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;60 km/h
 
 	
@@ -38,7 +39,9 @@ A car can cover a certain distance in 4 <sup>1</sup>&frasl;<sub>2</sub> hours. I
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 				
 Ratio of time taken = 4 <sup>1</sup>&frasl;<sub>2</sub>: (4 <sup>1</sup>&frasl;<sub>2</sub>
  -<sup>1</sup>&frasl;<sub>2</sub>) <br><br>
@@ -50,5 +53,6 @@ Slower sped = 8 ratio <br><br>= 8&times;5 km/hr <br><br>= 40 km/hr.
 
 
 
+</div>
 </body>
 </html>

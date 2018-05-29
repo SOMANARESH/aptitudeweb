@@ -1,6 +1,7 @@
+{% load static %}
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
     <title>Number Tutorial</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
 
 <hr/>
 <hr/>
-
 <p><font size="4"> <u>Natural Numbers(N): </u></font>
 <ul>
     <li>
@@ -362,5 +362,6 @@
         Total number of factors includes unity and the number itself.
     </li>
 </ol>
+</div>
 </body>
 </html>

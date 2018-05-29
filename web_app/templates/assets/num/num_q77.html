@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:77</h2>
 <hr>
@@ -12,26 +13,26 @@ A man has some hens and some cows. If the number of heads is 50 and number of fe
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;21
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;27
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;29
 
 	
@@ -39,7 +40,9 @@ A man has some hens and some cows. If the number of heads is 50 and number of fe
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the man has hens only<br><br>
 Then total heads = 50&times;1=50<br><br>
 And legs = 50&times;2 = 100 which is short by 42 from the actual legs i.e. 142<br><br>
@@ -48,5 +51,6 @@ Hens replaced with cows =42&divide;2=21<br><br>
 Cows = 21.
 
 
+</div>
 </body>
 </html>

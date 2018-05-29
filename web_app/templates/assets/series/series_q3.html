@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:3</h2>
 <hr>
@@ -16,25 +17,25 @@ What should come next
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; <sup>1</sup>&frasl;<sub>3</sub>
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; <sup>1</sup>&frasl;<sub>5</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; <sup>1</sup>&frasl;<sub>8</sub>
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; <sup>1</sup>&frasl;<sub>9</sub>
 
 	
@@ -42,7 +43,9 @@ What should come next
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <hr>
 1.Let us find the difference between two numbers
@@ -76,5 +79,6 @@ So the next number X = <sup>(<sup>1</sup>&frasl;<sub>4</sub>)</sup>&frasl;<sub>2
 <br><br>
 X = <sup>1</sup>&frasl;<sub>8</sub>
 <hr>
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:38</h2>
 <hr>
@@ -12,26 +13,26 @@ The least number by which 1944 must be multiplied so as to make the result a per
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;13
 
 	
@@ -39,10 +40,13 @@ The least number by which 1944 must be multiplied so as to make the result a per
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 1944 = 2<sup>3</sup> &times; 3<sup>5</sup><br><br>
 1944 must be multiplied by 3.
 
 
+</div>
 </body>
 </html>

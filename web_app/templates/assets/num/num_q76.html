@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:76</h2>
 <hr>
@@ -12,26 +13,26 @@ Find the total number of even factors of a number : 2 <sup> 4</sup> &times; 3 <s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;80
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;96
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;120
 
 	
@@ -39,11 +40,14 @@ Find the total number of even factors of a number : 2 <sup> 4</sup> &times; 3 <s
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Total nmber of factors = (4+1)&times;(5+1)&times;(3+1)=120<br><br>
 Odd factors = (5+1)&times;(3+1)=24<br><br>
 Even factors = 120-24=96.
 
 
+</div>
 </body>
 </html>

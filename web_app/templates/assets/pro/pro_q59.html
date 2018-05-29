@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:59</h1>
 <hr>
@@ -12,26 +13,26 @@ A man bought 25 pens for 4800 and sold them at profit equal to the selling price
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;192
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;196
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;200
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;cant say
 
 	
@@ -39,12 +40,15 @@ A man bought 25 pens for 4800 and sold them at profit equal to the selling price
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Selling price of 25 pens = cost price of 25 pens + selling price of 1 pen<br><br>
 Selling price of 24 pens = 4800<br><br>
 Selling price of 1 pen = 4800&divide;24 <br><br>= 200.
 
 
+</div>
 </body>
 </html>

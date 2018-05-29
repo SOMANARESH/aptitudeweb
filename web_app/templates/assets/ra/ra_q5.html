@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h2>
 <hr>
@@ -12,26 +13,26 @@ What must be deduced from each of the number 7,10,12 and 18 so that the resultan
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;-2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;4
 
 	
@@ -39,10 +40,13 @@ What must be deduced from each of the number 7,10,12 and 18 so that the resultan
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The required number = x = (10&times;12-7&times;18)&divide;(7+18)-(10+12)<br><br>
 =-<sup>6</sup>&frasl;<sub>3</sub><br><br>=-2.
 
 
+</div>
 </body>
 </html>

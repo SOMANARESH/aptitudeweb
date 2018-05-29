@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:1</h2>
 <hr>
@@ -19,26 +20,26 @@ in decimal form is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;.01027
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;.10127
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;101.00027
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;101.000027
 
 	
@@ -46,7 +47,9 @@ in decimal form is:
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 101
 
 <sup>27</sup>&frasl;<sub>100000</sub>
@@ -62,5 +65,6 @@ in decimal form is:
 
 = 101.00027.
 
+</div>
 </body>
 </html>

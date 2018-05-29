@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:45</h1>
 <hr>
@@ -12,26 +13,26 @@ The square root of 180625?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;425
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;435
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;475
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;525
 
 	
@@ -39,7 +40,9 @@ The square root of 180625?
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 4<sup>2</sup> < 18 < 5<sup>2</sup><br><br>
 The first digit of square root is 4<br><br>
@@ -48,5 +51,6 @@ Square root has last two digits 25<br><br>
 425 may be the required number<br><br>
 We check: 425<sup>2</sup><br><br> = 4&times;4.5|0625<br><br>=180625.
 
+</div>
 </body>
 </html>

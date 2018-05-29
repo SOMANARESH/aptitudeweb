@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:4</h1>
 <hr>
@@ -11,25 +12,25 @@ When two coins tossed,what is the probability of head on both coins is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 1 &frasl; 8
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 1 &frasl; 4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1 &frasl; 2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 1
 
 	
@@ -37,7 +38,9 @@ When two coins tossed,what is the probability of head on both coins is
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 Here we are tossing two coins.
 <br><br>
@@ -57,5 +60,6 @@ P(HH) = n(HH) &frasl; n(A)
 <br><br>
 P(HH) = 1 &frasl; 4
 <br><br>
+</div>
 </body>
 </html>

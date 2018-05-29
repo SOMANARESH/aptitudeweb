@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:70</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of marks of 28 students in Mathematics was 50:8 students left the sc
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50.5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;37.5
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;42.5
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;45
 
 	
@@ -39,7 +40,9 @@ The average of marks of 28 students in Mathematics was 50:8 students left the sc
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that Average marks of 28 students = 50 marks<br><br>
 <sup>(Sum of marks of 28 students)</sup>&frasl;<sub>28</sub> = 50
 <br><br>
@@ -80,5 +83,6 @@ Now average of 8 students who left the schoo is
 
 
 
+</div>
 </body>
 </html>

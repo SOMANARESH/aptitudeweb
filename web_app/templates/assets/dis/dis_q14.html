@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:14</h1>
 <hr>
@@ -13,26 +14,26 @@ In covering a certain distance, the speeds of A and B are in the ratio of 3:4. A
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1 hour
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1  hour 30 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2 hours 
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2 hours 30 minutes
 
 	
@@ -40,7 +41,9 @@ In covering a certain distance, the speeds of A and B are in the ratio of 3:4. A
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Ratio of speeds = 3:4 <br><br>
 Ratio of time = 4:3<br><br>
@@ -50,5 +53,6 @@ Time taken by A = 4 ratio <br><br>= 4&times;30 minutes <br><br>= 120 minutes <br
 = 2 hours.
 
 
+</div>
 </body>
 </html>

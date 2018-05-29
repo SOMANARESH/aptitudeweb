@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:93</h1>
 <hr>
@@ -12,26 +13,26 @@ On selling an article for 270, the amount of loss suffered is as much as profit 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;290
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;300
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;330
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;360
 
 	
@@ -39,7 +40,9 @@ On selling an article for 270, the amount of loss suffered is as much as profit 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Loss suffered = profit made = 10% of the cost price<br><br>
 Selling price = 270=90% of cost price<br><br>
@@ -52,5 +55,6 @@ Selling price at 20% profit = 120% of cost price <br><br>
 =360.
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:41</h2>
 <hr>
@@ -12,26 +13,26 @@ The weight of a container full of water is 28kg. When I is <sup>1</sup>&frasl;<s
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;8 kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20 kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;24 kg
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;18.67 kg
 
 	
@@ -39,7 +40,9 @@ The weight of a container full of water is 28kg. When I is <sup>1</sup>&frasl;<s
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Weight of container + full water = 28 kg &minus;&minus;&minus;&minus;&minus;&gt;(1)<br><br>
 And weight of container + <sup>1</sup>&frasl;<sub>4</sub> water = 19 kg&minus;&minus;&minus;&minus;&minus;&gt;(2)<br><br>
@@ -49,5 +52,6 @@ Weight of empty container = 28 kg -12 kg = 16 kg<br><br>
 Weight of <sup>2</sup>&frasl;<sub>3</sub> water= (<sup>2</sup>&frasl;<sub>3</sub>)&times;12 = 8 kg<br><br>
 Required weight = 16+8<br><br> = 24.
 
+</div>
 </body>
 </html>

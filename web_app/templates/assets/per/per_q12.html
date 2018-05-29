@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:12</h1>
 <hr>
@@ -12,26 +13,26 @@ If the difference between 73% of a number and 48% of the same number is 615, wha
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;123
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;92.75
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;369
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ If the difference between 73% of a number and 48% of the same number is 615, wha
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the number be x<br><br>
 Given the difference between 73% of a number and 48% of a number is 615<br><br>
@@ -54,5 +57,6 @@ Now 15% of a number is <br><br>
 15% of x = <sup>36900</sup>&frasl;<sub>100</sub><br><br>
 15% of x = 369<br><br>
 
+</div>
 </body>
 </html>

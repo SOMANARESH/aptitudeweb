@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h1>
 <hr>
@@ -12,26 +13,26 @@ The arithmetic mean of a set of 10 numbers is 20. If each number is first multip
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;40
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;45
 
 	
@@ -39,7 +40,9 @@ The arithmetic mean of a set of 10 numbers is 20. If each number is first multip
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the arithmatic mean of 10 numbers is 20
 <br><br>
 We can write Arithmatic mean of 10 numbers as 
@@ -81,5 +84,6 @@ The arithmatic mean of 10 numbers after multiplication and addition is
 
 = 45
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -11,26 +12,26 @@ Two persons start walking from a place in opposite directions at 5 km/h and 4 km
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;7 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9 hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;10 hours
 
 	
@@ -38,7 +39,9 @@ Two persons start walking from a place in opposite directions at 5 km/h and 4 km
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Relative speed of two persons = 5+4 <br><br>= 9 km/h<br><br>
@@ -46,5 +49,6 @@ Required time = 45&divide;9 <br><br>= 5 hours.
 
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:87</h1>
 <hr>
@@ -12,26 +13,26 @@ The profit earned after selling an article for 1754 is same as loss incurred aft
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1623
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1523
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1689
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1589
 
 	
@@ -39,7 +40,9 @@ The profit earned after selling an article for 1754 is same as loss incurred aft
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Let the loss and gain be x in each case<br><br>
@@ -50,5 +53,6 @@ Cost price = selling price (second)+ Loss<br><br>
 =1492+131=1623<br><br>
 Or cost price  selling price (first)-profit =1754-131<br><br>=1623.
 
+</div>
 </body>
 </html>

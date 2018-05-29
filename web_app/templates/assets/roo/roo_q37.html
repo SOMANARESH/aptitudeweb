@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h2>
 <hr>
@@ -12,26 +13,26 @@ Find the least number which when multiplied by 588 gives a perfect square number
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;7
 
 	
@@ -39,12 +40,15 @@ Find the least number which when multiplied by 588 gives a perfect square number
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 588=2&times;2&times;3&times;7&times;7<br><br>
 Here except for 3 all other factors are in pairs<br><br>
 We have to multiply 588 by 3 to make it a perfect square number<br><br>
 Note: the number 588 can also be divided by 3 to get it a square number.
 
+</div>
 </body>
 </html>

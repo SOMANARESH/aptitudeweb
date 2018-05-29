@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:22</h2>
 <hr>
@@ -18,33 +19,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;395.6121
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;359.6121
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;370.1621
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;370.6121
 
 
 </div>
 
 
-<h2><u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 (1989)<sup>2</sup> = duplex of 1|19|198|1989|989|89|9<br><br>
 1|18|97|162|226|144|81 =3956121<br><br>
@@ -57,5 +60,6 @@
 = 395.6121-25<br><br>
 =370.6121.
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:3</h2>
 <hr>
@@ -12,36 +13,39 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;54036
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;50436
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;34056
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;65043
 
 
 </div>
 
 
-<h2><u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 A number is exactly divisible by 18 if it is divisible by 2 and 9 both <br><br>
 
 65043 is an odd number and hence not divisible by 2.
 
+</div>
 </body>
 </html>

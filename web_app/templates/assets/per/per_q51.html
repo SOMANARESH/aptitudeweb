@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:51</h2>
 <hr>
@@ -14,33 +15,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;15000
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;20000
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;50000
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;60000
 
 
 </div>
 
 
-<h2><u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Total earnings = 9000<br><br>
 Salary = 5000 <br><br>
 We know that <br><br>
@@ -54,5 +57,6 @@ Given that Commission = 20% of sales<br><br>
 (<sup>1</sup>&frasl;<sub>5</sub>)&times;Sales = 4000<br><br>
 Sales = 5&times;4000 <br><br>
 Sales = 20000
+</div>
 </body>
 </html>

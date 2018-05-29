@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:85</h2>
 <hr>
@@ -12,26 +13,26 @@ In an examination, a student is awarded 4 marks for every correct answer and los
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;45
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;55
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;48
 
 	
@@ -39,12 +40,15 @@ In an examination, a student is awarded 4 marks for every correct answer and los
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let he attempted X sums correctly<br><br>
 Then his total marks = 4X-2(75-X)=150<br><br>
 6X = 300<br><br>
 X = 50.
 
 
+</div>
 </body>
 </html>

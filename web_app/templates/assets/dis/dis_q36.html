@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:36</h2>
 <hr>
@@ -13,26 +14,26 @@ I walk a certain distance and ride back taking a total time of 37 minutes. I cou
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;9.5 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;19 minutes
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18 minutes
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20 minutes
 
 	
@@ -40,7 +41,9 @@ I walk a certain distance and ride back taking a total time of 37 minutes. I cou
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 One way walking + one way riding = 37 minutes<br><br>
 2&times; (one way walking + one way riding ) <br><br>= 74 minutes<br><br>
@@ -49,5 +52,6 @@ Two ways riding time = 74 minutes &minus; 55 minutes <br><br>= 19 minutes.
 
 
 
+</div>
 </body>
 </html>

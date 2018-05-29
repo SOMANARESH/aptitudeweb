@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:8</h2>
 <hr>
@@ -13,25 +14,25 @@ Given the sequence below and find the value of X
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 511
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 481
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 391
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 421
 
 	
@@ -39,7 +40,9 @@ Given the sequence below and find the value of X
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <hr>
 <b>General Method:</b>
@@ -106,5 +109,6 @@ i.e, 2<sup>3</sup> - 1 = 7
 So similarly 8<sup>3</sup> - 1 = 511
 <br><br>
 <hr>
+</div>
 </body>
 </html>

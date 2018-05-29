@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:26</h1>
 <hr>
@@ -12,26 +13,26 @@ Of the three numbers, the first is twice the second and the second is 3 times th
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;120
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;150
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;180
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;300
 
 	
@@ -39,7 +40,9 @@ Of the three numbers, the first is twice the second and the second is 3 times th
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assume that third number is X<sub>3</sub>=n
 <br><br>
 From given condition second and first numbers can be written as
@@ -76,5 +79,6 @@ So largest of three numbers is
 
 
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:62</h2>
 <hr>
@@ -12,26 +13,26 @@ In a three digit number the digit in the units place is 4 times the digit in the
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;31
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;67
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;107
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ In a three digit number the digit in the units place is 4 times the digit in the
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Number may have 1 or 2 at hundreds place and 4 or 8 at units place.<br><br>
 Difference between units digit and tens digit = 18&divide;9=2<br><br>
 Tens digit may be <br><br>
@@ -52,5 +55,6 @@ The given number is 268.<br><br>
 25% &times;268<br><br> = 67.
 
 
+</div>
 </body>
 </html>

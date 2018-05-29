@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 2 </u>:</h2>
 <hr>
 <p>In How many ways the letters of the word &OpenCurlyDoubleQuote;MATHEMATICS&CloseCurlyDoubleQuote; can be formed?</p>
 
 
-	<div>
+	<div class="div2">
 		A.100020
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.120960
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.2494800
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.4989600
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>In a given word &OpenCurlyDoubleQuote;MATHEMATICS&CloseCurlyDoubleQuote; there are 11 letters</p>
 	<p>Among all there are three letters { M,A,T } occurred two times in a word.</p>
@@ -39,5 +42,6 @@
 	</ul>
 	<p>As per the above Scenario we can calculate the number of ways as </p>
 	<sup> 11! </sup> &frasl; <sub> (2! &times; 2! &times; 2!) </sub>= <sup> 39916800 </sup> &frasl; <sub> 8 </sub> = 4989600
+</div>
 </body>
 </html>

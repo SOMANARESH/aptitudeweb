@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:29</h2>
 <hr>
@@ -17,33 +18,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;3 mins
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;4 mins
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;5 mins
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;6 mins
 
 
 </div>
 
 
-<h2><u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used:</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day =
@@ -75,5 +78,6 @@ Tank to be filled =
 = 6 minutes.
 
 
+</div>
 </body>
 </html>

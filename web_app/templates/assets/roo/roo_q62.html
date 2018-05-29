@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:62</h1>
 <hr>
@@ -14,7 +15,7 @@ Find the square root of (0.<span style="white-space: nowrap;">
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;
 0.				<span style="white-space: nowrap;">
 				<span style="text-decoration:overline;">2</span>
@@ -24,7 +25,7 @@ Find the square root of (0.<span style="white-space: nowrap;">
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 
 0.				<span style="white-space: nowrap;">
@@ -35,7 +36,7 @@ Find the square root of (0.<span style="white-space: nowrap;">
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 
 0.				<span style="white-space: nowrap;">
@@ -47,7 +48,7 @@ Find the square root of (0.<span style="white-space: nowrap;">
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;
 
 0.				<span style="white-space: nowrap;">
@@ -60,7 +61,9 @@ Find the square root of (0.<span style="white-space: nowrap;">
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Square root of 0.4bar <br><br>=
  <span style="white-space: nowrap;">
@@ -71,5 +74,6 @@ Square root of 0.4bar <br><br>=
 = 0.				<span style="white-space: nowrap;">
 				<span style="text-decoration:overline;">6</span>
 				</span>.
+</div>
 </body>
 </html>

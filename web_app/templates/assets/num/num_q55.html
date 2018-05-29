@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:55</h2>
 <hr>
@@ -12,26 +13,26 @@ In a two digit number, the unit digit is equal to the square of tens digit. The 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;39
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;54
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;93
 
 	
@@ -39,7 +40,9 @@ In a two digit number, the unit digit is equal to the square of tens digit. The 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 from the problem the difference between the original number and the number formed by interchanging the digits is 54.
 <br><br>
@@ -102,5 +105,6 @@ Y = 9
 <br><br>
 So the number is 39
 
+</div>
 </body>
 </html>

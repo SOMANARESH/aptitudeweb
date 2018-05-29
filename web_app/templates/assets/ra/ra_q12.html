@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:12</h2>
 <hr>
@@ -14,38 +15,41 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;48kgs
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;49kgs
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;50kgs
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;51kgs
 
 
 </div>
 
 
-<h2><u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Ratio of prices = 100:98<br><br>
 =50:49<br><br>
 ratio of quantities = 49:50<br><br>
 New quantity = 50 kg.
 
+</div>
 </body>
 </html>

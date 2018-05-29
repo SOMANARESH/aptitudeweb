@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:5</h1>
 <hr>
@@ -12,26 +13,26 @@ If the ratio of cost price and the selling price is 5:6, the gain per cent is:
 </p>
 
       
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;33 <sup>1</sup>&frasl;<sub>3</sub> %
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;25%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;30%
 
 	
@@ -39,8 +40,11 @@ If the ratio of cost price and the selling price is 5:6, the gain per cent is:
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Gain percent = (6-5)&divide;5 &times;100 <br><br>=20%.
 
+</div>
 </body>
 </html>

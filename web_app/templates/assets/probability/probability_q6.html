@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:6</h1>
 <hr>
@@ -11,25 +12,25 @@ The probability that the number on any one of the two dice is either 1 or 6 is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 5 &frasl; 9
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 11 &frasl; 9
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 17 &frasl; 18
 
 	
@@ -37,7 +38,9 @@ The probability that the number on any one of the two dice is either 1 or 6 is
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 Given that two dice are rolled.
 <br><br>
@@ -55,5 +58,6 @@ P(1OR6) = 20 &fras; 36
 <br><br>
 P(1OR6) = 5 &frasl; 9
 <br><br>
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:72</h1>
 <hr>
@@ -13,26 +14,26 @@ Two numbers are respectively 25% and 20% less than a third number. What percent 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;75%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;80%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;93.75%
 
 	
@@ -40,7 +41,9 @@ Two numbers are respectively 25% and 20% less than a third number. What percent 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the numbers be X , Y and Z <br><br>
 Given that <br><br>X = 25% less than Z and Y = 20% less than Z <br><br>
 X = 25% less than  Z <br><br>
@@ -68,5 +71,6 @@ X = Y&times;<sup>15</sup>&frasl;<sub>16</sub>
 X = 0.9375Y
 <br><br>
 X = 93.75% of Y
+</div>
 </body>
 </html>

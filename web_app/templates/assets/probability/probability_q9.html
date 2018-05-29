@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:9</h1>
 <hr>
@@ -11,25 +12,25 @@ Three coins are tossed. The probability of getting neither 3 heads nor 3 tails i
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp; 3 &frasl; 4
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp; 2 &frasl; 3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp; 1 &frasl; 2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp; 1 &frasl; 3
 
 	
@@ -37,7 +38,9 @@ Three coins are tossed. The probability of getting neither 3 heads nor 3 tails i
 		
 	
 
-<h2> <u>Answer</u>: a</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <br><br>
 When three coins are tossed, then we will have following possibilities
 <br><br>
@@ -61,5 +64,6 @@ P(3H<sup>|</sup> OR 3T<sup>|</sup>) = 6 &frasl; 8
 <br><br>
 P(3H<sup>|</sup> OR 3T<sup>|</sup>) = 3 &frasl; 4
 <br><br>
+</div>
 </body>
 </html>

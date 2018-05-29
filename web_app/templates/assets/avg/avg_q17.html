@@ -1,7 +1,8 @@
+{% load static %}
                                                                                                                                                                                                             <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:17</h1>
 <hr>
@@ -12,26 +13,26 @@ Sum of three consecutive even numbers is 32 more than the average of the numbers
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;14
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;16
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20
 
 	
@@ -39,7 +40,9 @@ Sum of three consecutive even numbers is 32 more than the average of the numbers
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the three consecutive even numbers be 2n,2n+2,2n+4
 <br><br>
 Given that sum of these numbers is 32 more than the average of these numbers.
@@ -78,5 +81,6 @@ So middle number in series is 2n+2
 = 14+2
 <br><br>
 = 16
- </body>
+ </div>
+</body>
 </html>

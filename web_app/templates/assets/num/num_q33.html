@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:33</h2>
 <hr>
@@ -12,26 +13,26 @@ A boy was asked to multiply a certain number by 53. By mistake , he multiplied i
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;67
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;76
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;77
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;66
 
 	
@@ -39,12 +40,15 @@ A boy was asked to multiply a certain number by 53. By mistake , he multiplied i
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let X be the required number<br><br>
 Then 53X&minus;35X = 1206<br><br>
 18X = 1206<br><br>
 X = 67.
 
+</div>
 </body>
 </html>

@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:54</h2>
 <hr>
@@ -14,38 +15,41 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;5 <sup>1</sup>&frasl;<sub>2</sub> seconds
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;6 seconds
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;7 seconds
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;15 <sup>1</sup>&frasl;<sub>2</sub> seconds
 
 
 </div>
 
 
-<h2><u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Speed of train = 36 km/hr <br><br>= 36&times;5&divide;18<br><br>=10 m/s<br><br>
 Time taken to cross platform = 10 seconds + (55&divide;10)seconds<br><br>
 = 15 <sup>1</sup>&frasl;<sub>2</sub> seconds<br><br>
 Trick: time should be more than time taken to cross standing man.
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:97</h1>
 <hr>
@@ -12,26 +13,26 @@ A sells a bicycle to B at a profit of 20%. B sells it to C at a profit of 25%. I
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;110
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;120
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;125
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;150
 
 	
@@ -39,7 +40,9 @@ A sells a bicycle to B at a profit of 20%. B sells it to C at a profit of 25%. I
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Cost price for A = 225&times;
 <sup>100</sup>&frasl;<sub>125</sub>
@@ -50,5 +53,6 @@ Cost price for A = 225&times;
 <br><br>=150.
 
 
+</div>
 </body>
 </html>

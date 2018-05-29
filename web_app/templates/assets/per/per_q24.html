@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:24</h1>
 <hr>
@@ -13,26 +14,26 @@ If population of women in a village is 80% of population of men, what is the pop
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;80%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;100%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;112.5%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;125%
 
 	
@@ -40,7 +41,9 @@ If population of women in a village is 80% of population of men, what is the pop
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that population of women in a village is 80% of population of men<br><br>
 Population of women = <sup>80</sup>&frasl;<sub>100</sub>&times;Population of men<br><br>
 Population of men = <sup>100</sup>&frasl;<sub>80</sub>&times;Population of women<br><br>
@@ -50,5 +53,6 @@ Population of men = <sup>125</sup>&frasl;<sub>100</sub>&times;Population of wome
 Population of men = 125% of Population of women
 
 
+</div>
 </body>
 </html>

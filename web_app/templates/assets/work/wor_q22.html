@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:22</h1>
 <hr>
@@ -13,26 +14,26 @@ If all the four taps are opened simultaneously, the cistern can be filled in how
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;30
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;35
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;40
 
 	
@@ -40,7 +41,9 @@ If all the four taps are opened simultaneously, the cistern can be filled in how
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
@@ -82,5 +85,6 @@ Four taps one minute work =
 
 four taps take 30 minutes to fill the tank.
 
+</div>
 </body>
 </html>

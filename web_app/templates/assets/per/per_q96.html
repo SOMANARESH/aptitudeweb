@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:96</h1>
 <hr>
@@ -13,26 +14,26 @@ A man spends 10% of his income on food and 80%, of the remaining income on cloth
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1800
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1000
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;900
 
 	
@@ -40,7 +41,9 @@ A man spends 10% of his income on food and 80%, of the remaining income on cloth
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the total income be X
 <br><br>
 Given that a man spends 10% of income on food. So he has 90% remaining
@@ -105,5 +108,6 @@ X = 1000
 
 
 
+</div>
 </body>
 </html>

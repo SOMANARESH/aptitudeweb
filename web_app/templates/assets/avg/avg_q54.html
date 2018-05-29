@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:54</h1>
 <hr>
@@ -12,26 +13,26 @@ The average age of 14 girls and their teachers age is 15 years. If the teachers 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;35
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;32
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;29
 
 	
@@ -39,7 +40,9 @@ The average age of 14 girls and their teachers age is 15 years. If the teachers 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average age of 14 girls and teachers age is 15
 <br><br>
 i.e. <sup>(Sum of ages of 14 girls and teachers age)</sup>&frasl;<sub>15</sub> = 15
@@ -71,5 +74,6 @@ Teachers age = 29
 
 
 
+</div>
 </body>
 </html>

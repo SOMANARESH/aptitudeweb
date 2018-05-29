@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 
 <body>
@@ -13,26 +14,28 @@
     LCM of 0.63,1.05 and 2.1?</p>
 
 
-<div>
+<div class="div2">
     A.210
 </div>
 <br>
-<div>
+<div class="div2">
     B.2.1
 </div>
 <br>
-<div>
+<div class="div2">
     C.6.3
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.630
 </div>
 
 
 
-<h2> <u>Answer</u>:C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -51,7 +54,7 @@
 
     Now find the LCM of new numbers <br><br>
 
-    <img src="/static/images/LCM_13.png"/><br>
+    <img src="LCM_13.png"/><br>
 
     LCM of 63, 105, 210 = 3 &times; 5 &times; 7 &times; 2 &times; 3 <br><br>
     = 2 &times; 3 <sup>2</sup> &times; 5 &times; 7; <br><br>
@@ -67,5 +70,6 @@
 
 </p>
 
+</div>
 </body>
 </html>

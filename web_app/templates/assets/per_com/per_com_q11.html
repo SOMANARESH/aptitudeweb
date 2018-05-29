@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 11 </u>:</h2>
 <hr>
 <p>In a question paper, there are 4 MCQ's having 5 options each. in how many ways candidate will not get all four correct answers?</p>
 
 
-	<div>
+	<div class="div2">
 		A.625
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.624
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.1024
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.1023
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<b>Scenarios</b>
 	<ul>
@@ -53,5 +56,6 @@
 	<p>So total number of ways = 5<sup>4</sup>= 625.</p>
 	<p>Those combinations contains all wrong choices and exact one combination of all correct answers.</p>
 	<p>So total number of ways candidate will not get all four correct answers = 625 - 1 = 624</p>
+</div>
 </body>
 </html>

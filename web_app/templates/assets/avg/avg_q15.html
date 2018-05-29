@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:15</h1>
 <hr>
@@ -12,26 +13,26 @@ The sum of three consecutive odd natural numbers is 87. The smallest of these nu
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;29
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;31
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;23
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;27
 
 	
@@ -39,7 +40,9 @@ The sum of three consecutive odd natural numbers is 87. The smallest of these nu
 		
 	
 
-<h2> <u>Answer</u>:D </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the three consecutive odd numbers be 2n-1,2n+1,2n+3
 <br><br>
@@ -64,5 +67,6 @@ So smallest of 3 numbers is 2n-1
 = 28-1
 <br><br>
 = 27
+</div>
 </body>
 </html>

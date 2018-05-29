@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:53</h1>
 <hr>
@@ -14,26 +15,26 @@ of its selling price and sold it at 12% more than its selling price. His gain is
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;30%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 <sup>1</sup>&frasl;<sub>13</sub> %
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;29 <sup>3</sup>&frasl;<sub>13</sub> %.
 
 	
@@ -41,7 +42,9 @@ of its selling price and sold it at 12% more than its selling price. His gain is
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let marked price be x<br><br>
 Then cost price = <sup>13</sup>&frasl;<sub>15</sub>x <br><br>
 Selling price = <sup>112</sup>&frasl;<sub>100</sub>x<br><br>
@@ -72,5 +75,6 @@ Profit % = 129 <sup>3</sup>&frasl;<sub>13</sub>% - 100% <br><br>
 = 29 <sup>3</sup>&frasl;<sub>13</sub> %.
 
 
+</div>
 </body>
 </html>

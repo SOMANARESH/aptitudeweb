@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 12 </u>:</h2>
 <hr>
@@ -9,25 +10,27 @@
 </p>
 
 
-	<div>
+	<div class="div2">
 		A.24
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.25
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.63
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.80
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>Let us consider a men&CloseCurlyQuote;s group.</p>
     <p>The number of ways of selecting 5 men out of 7 men will be calculated as</p>
@@ -41,5 +44,6 @@
     <p><sup> 3 </sup> C <sub> 2 </sub> = <sup> 3 </sup> &frasl; <sub> 1 </sub> = 3</p>
 	<p>So the total number of ways of selecting a group of 5 men and 2 women out of 7 men and 3 women is calculated as </p>
 	<p><sup> 7 </sup> C <sub> 5 </sub> &times; <sup> 3 </sup> C <sub> 2 </sub> = 21 &times; 3 = 63</p>
+</div>
 </body>
 </html>

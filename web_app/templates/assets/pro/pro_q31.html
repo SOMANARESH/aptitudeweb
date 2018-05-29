@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:31</h1>
 <hr>
@@ -12,26 +13,26 @@ If selling price of a commodity is increased by 35, the profit is increased by 7
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;245
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;350
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;500
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;700
 
 	
@@ -39,11 +40,14 @@ If selling price of a commodity is increased by 35, the profit is increased by 7
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Increasing in selling price = 7% of cost price <br><br>= 35(i.e. 5 times of 7)<br><br>
 Cost price = 5&times;100 <br><br>= 500.
 
 
+</div>
 </body>
 </html>

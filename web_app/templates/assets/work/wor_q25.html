@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:25</h1>
 <hr>
@@ -13,26 +14,26 @@ If all of them work gogether, the time taken in completing the work will be:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12 1/3 days
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;13 1/3 days
 
 	
@@ -40,7 +41,9 @@ If all of them work gogether, the time taken in completing the work will be:
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 (A + B) + (B + C) + (A + C) = 
 
 <sup>1</sup>&frasl;<sub>30</sub> + 
@@ -78,5 +81,6 @@ Then 2(A + B + C)=
  days.
 
 
+</div>
 </body>
 </html>

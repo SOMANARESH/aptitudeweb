@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:80</h2>
 <hr>
@@ -12,26 +13,26 @@ A sum of 350 made up of 110 coins , which are either 1 or 5 denomination. How ma
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;55
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;175
 
 	
@@ -39,12 +40,15 @@ A sum of 350 made up of 110 coins , which are either 1 or 5 denomination. How ma
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let all the coins are of 1 denomination<br><br>
 Then total value of 110 coins = 110&times;1  = 110 i.e. 240 less than 350<br><br>
 Replacing 1 one rupee coin with five rupee coin means 4 extra with same number of coins.<br><br>
 Five rupee coins = 240&divide;4=60 coins.
 
 
+</div>
 </body>
 </html>

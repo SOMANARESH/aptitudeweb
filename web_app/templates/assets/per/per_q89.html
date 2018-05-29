@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:89</h1>
 <hr>
@@ -14,26 +15,26 @@ A sum of 817 is divided among A,B and C such that A receives 25% more than B and
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;285
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;300
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;315
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -41,7 +42,9 @@ A sum of 817 is divided among A,B and C such that A receives 25% more than B and
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that A+B+C = 817
 <br><br>
 Let us assume that C receives X
@@ -101,5 +104,6 @@ As share = (<sup>12255</sup>&frasl;<sub>43</sub>)
 As share = 285
 <br><br>
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:81</h1>
 <hr>
@@ -13,26 +14,26 @@ Out of two numbers, 40% of the greater number is equal to 60% of the smaller. If
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;70
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;80
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;90
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;60
 
 	
@@ -40,7 +41,9 @@ Out of two numbers, 40% of the greater number is equal to 60% of the smaller. If
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the numbers be X and Y (X>Y) <br><br>
 Given that 40% of greater number = 60% of smaller number <br><br>
 (<sup>40</sup>&frasl;<sub>100</sub>)X = (<sup>60</sup>&frasl;<sub>100</sub>)Y <br><br>
@@ -63,5 +66,6 @@ X = 150&times;<sup>3</sup>&frasl;<sub>5</sub>
 X = 30&times;3
 <br><br>
 X = 90
+</div>
 </body>
 </html>

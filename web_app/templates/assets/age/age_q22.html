@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:22</h1>
 <hr>
@@ -13,26 +14,26 @@ Mohan got married 9 years ago. Today his age is 1 <sup>1</sup>&frasl;<sub>3</sub
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;12 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;27 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;36 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;45 years
 
 	
@@ -40,7 +41,9 @@ Mohan got married 9 years ago. Today his age is 1 <sup>1</sup>&frasl;<sub>3</sub
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the present age of Mohan be M
 
@@ -70,5 +73,6 @@ M=36
 
 
 
+</div>
 </body>
 </html>

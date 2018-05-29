@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:7</h1>
 <hr>
@@ -12,13 +13,13 @@ If 3 toys are sold at the cost price of 4 toys of the same kind, the profit will
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;33 <sup>1</sup>&frasl;<sub>3</sub> %
 
 	                                                  
@@ -28,14 +29,14 @@ If 3 toys are sold at the cost price of 4 toys of the same kind, the profit will
 
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;62 <sup>1</sup>&frasl;<sub>3</sub>%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;50%
 
 	
@@ -43,7 +44,9 @@ If 3 toys are sold at the cost price of 4 toys of the same kind, the profit will
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Cost price of 4 toys = selling price of 3 toys <br><br>
 Cost price: sellig price = 3:4<br><br>
@@ -51,5 +54,6 @@ Profit = <sup>1</sup>&frasl;<sub>3</sub><br><br>
 = 33 <sup>1</sup>&frasl;<sub>3</sub>%.
 
 
+</div>
 </body>
 </html>

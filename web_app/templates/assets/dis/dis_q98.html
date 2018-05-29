@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:98</h1>
 <hr>
@@ -12,26 +13,26 @@ Nitin rides a bicycle at the speed of 15 km/mhr. But stops for 10 minutes to tak
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;12 hours 30 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;11 hours 10 mins
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;10 hours 20 mins
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;12 hours 10 mins
 
 	
@@ -39,7 +40,9 @@ Nitin rides a bicycle at the speed of 15 km/mhr. But stops for 10 minutes to tak
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time taken to cover 150 km @ 15 km/hr = 10 hours<br><br>
 He will take rest 150&divide;20<br><br>=7 times<br><br>
@@ -48,5 +51,6 @@ Total time taken = 10 hours + 1 hor 10 minutes <br><br>= 11 hours, 10 minutes.
 
 
 
+</div>
 </body>
 </html>

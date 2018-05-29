@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:83</h1>
 <hr>
@@ -12,26 +13,26 @@ On replacing an old member of a group with a younger member, the average age of 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;12
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;15
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;20
 
 	
@@ -39,7 +40,9 @@ On replacing an old member of a group with a younger member, the average age of 
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assune that X<sub>1</sub>,X<sub>2</sub>,...X<sub>10</sub> be the present ages of 10 old members
 <br><br>
 Let us assume that their average age before 2 years be P
@@ -68,5 +71,6 @@ X<sub>10</sub>-20 = Y
 <br><br>
 X<sub>10</sub>-Y = 20
 
+</div>
 </body>
 </html>

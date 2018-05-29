@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:86</h1>
 <hr>
@@ -13,26 +14,26 @@ Numerator of a fraction is increased by 12% and its denominator is decreased by 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;<sup>1</sup>&frasl;<sub>2</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;<sup>1</sup>&frasl;<sub>4</sub>
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;<sup>7</sup>&frasl;<sub>4</sub>
 
 	
@@ -40,7 +41,9 @@ Numerator of a fraction is increased by 12% and its denominator is decreased by 
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the original fraction is <sup>P</sup>&frasl;<sub>Q</sub> <br><br>
 Given that numerator is increased by 12% 
 <br><br>
@@ -75,5 +78,6 @@ Now the fraction after changes is <sup>4</sup>&frasl;<sub>7</sub>
 <sup>P</sup>&frasl;<sub>Q</sub> = <sup>4</sup>&frasl;<sub>8</sub> <br><br>
 <sup>P</sup>&frasl;<sub>Q</sub> = <sup>1</sup>&frasl;<sub>2</sub> <br><br>
 
+</div>
 </body>
 </html>

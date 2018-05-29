@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:44</h1>
 <hr>
@@ -15,26 +16,26 @@ If x% of x = 10% of y, they y=?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;<sup>x</sup>&frasl;<sub>10</sub>
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;<sup>x<sup>2</sup></sup>&frasl;<sub>10</sub>
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;<sup>x<sup>2</sup></sup>&frasl;<sub>100</sub>
 
 	
@@ -42,10 +43,13 @@ If x% of x = 10% of y, they y=?
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 x% of x = 10% of y <br><br>
 x&times;x = 10&times;y<br><br> 
 y = <sup>x &times; x</sup>&frasl;<sub>10</sub><br><br>
 =<sup>x<sup>2</sup></sup>&frasl;<sub>10</sub>.
+</div>
 </body>
 </html>

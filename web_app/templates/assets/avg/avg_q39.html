@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:39</h2>
 <hr>
@@ -12,26 +13,26 @@ The average of 5 consecutive integers starting with m is n. What is the average 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;(n+3)
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 <sup>(2n+9)</sup>&frasl;<sub>2</sub>
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 <sup>(2n+5)</sup>&frasl;<sub>2</sub>
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;(n+2)
 
 	
@@ -39,7 +40,9 @@ The average of 5 consecutive integers starting with m is n. What is the average 
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let us assume that the 5 consecutive numbers be m,m+1,m+2,m+3,m+4
 Given that the average of 5 consecutive numbers start with m is n<br><br>
 <sup>(Sum of 5 consecutive numbers start with m)</sup>&frasl;<sub>5</sub><br><br> = n
@@ -67,5 +70,6 @@ Average of 6 consecutive integers start with (m + 2 ) <br><br>
 = <sup>3(2n+5)</sup>&frasl;<sub>6</sub><br><br>
 = <sup>2n+5</sup>&frasl;<sub>2</sub><br><br>
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:9</h2>
 <hr>
@@ -11,32 +12,34 @@
 An even number, sum of whose digits is 36, is always divisible by:
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;9
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;18
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;32
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;76
 
 
 </div>
 
 
-<h2><u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 An even number is always divisible by 2 <br><br>
 
@@ -46,5 +49,6 @@ The number is always divisible by both 2 and 9 <br><br>
 
 The number is divisible by 2 &times; 9 = 18 .
 
+</div>
 </body>
 </html>

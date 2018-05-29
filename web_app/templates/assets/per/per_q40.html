@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:40</h1>
 <hr>
@@ -14,26 +15,26 @@ One fifth of a number is 18. What will be 30% of the same number?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5.4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;24
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;60
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -41,7 +42,9 @@ One fifth of a number is 18. What will be 30% of the same number?
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the number be X<br><br>
 One fifth of the number = 18 <br><br>
 (<sup>1</sup>&frasl;<sub>5</sub>)&times;X = 18 <br><br>
@@ -53,5 +56,6 @@ Now 30% of a number is <br><br>
 30% of X = (<sup>(30&times;90)</sup>&frasl;<sub>100</sub>)<br><br>
 30% of X = (<sup>2700</sup>&frasl;<sub>100</sub>)<br><br>
 30% of X = 27
+</div>
 </body>
 </html>

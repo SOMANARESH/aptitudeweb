@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:2</h2>
 <hr>
@@ -12,34 +13,36 @@
     &minus;4 ,&minus;2 ,0, 2, 4, 6, 8, 10,- - - - - ,200 which are in A.P
     <br>
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp; 100
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     B.&nbsp;&nbsp; 101
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     C.&nbsp;&nbsp; 102
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp; 103
 
 
 </div>
 
 
-<h2><u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 <p>
     Here Initial term a = &minus; 4
@@ -72,5 +75,6 @@
     <br><br>
 
 <p>
+</div>
 </body>
 </html>

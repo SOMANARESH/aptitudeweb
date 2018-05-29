@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:75</h1>
 <hr>
@@ -12,26 +13,26 @@ A man sells eggs at 10 eggs for 7 rupees, gaining 30%. How many eggs did he buy 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;7
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;11
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;13
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;15
 
 	
@@ -39,7 +40,9 @@ A man sells eggs at 10 eggs for 7 rupees, gaining 30%. How many eggs did he buy 
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 selling price of 1 egg = <sup>7</sup>&frasl;<sub>10</sub> <br><br> 
 cost price of 1 egg = <sup>7</sup>&frasl;<sub>10</sub>
@@ -49,5 +52,6 @@ cost price of 1 egg = <sup>7</sup>&frasl;<sub>10</sub>
 he bought 13 eggs for 7.
 
 
+</div>
 </body>
 </html>

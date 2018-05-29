@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:73</h1>
 <hr>
@@ -12,26 +13,26 @@ Two numbers are more than the third number by 20% and 50% respectively. First nu
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;150%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;80%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;120%
 
 	
@@ -39,7 +40,9 @@ Two numbers are more than the third number by 20% and 50% respectively. First nu
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Let the numbers be X , Y and Z <br><br>
 Given that <br><br>
 X = 20% more than Z and Y = 50% more than Z <br><br>
@@ -69,5 +72,6 @@ X = Y&times;<sup>12</sup>&frasl;<sub>15</sub>
 X = 0.8Y
 <br><br>
 X = 80% of Y
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -14,26 +15,26 @@ The population of a town is increased from 25000 to 30,000 in a year. Find the r
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10%
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20%
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25%
 
 	
@@ -41,7 +42,9 @@ The population of a town is increased from 25000 to 30,000 in a year. Find the r
 		
 	
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Total increases in the population <br><br>
 = 30,000-25,000<br><br>
 =5,000<br><br>
@@ -49,5 +52,6 @@ Percentage increases in population <br><br>
 = <sup>5000</sup>&frasl;<sub>25000</sub>&times;100<br><br>= 20%.
 
 
+</div>
 </body>
 </html>

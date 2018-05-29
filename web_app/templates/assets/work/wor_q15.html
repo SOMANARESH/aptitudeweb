@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:15</h1>
 <hr>
@@ -13,26 +14,26 @@ A alone can complete a work n 12 days. A and B together can complete it in 8 day
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;24days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;20days
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;18days
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;16days
 
 	
@@ -40,7 +41,9 @@ A alone can complete a work n 12 days. A and B together can complete it in 8 day
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
@@ -78,5 +81,6 @@ Then A and B one day work = A one day work + B one day work<br><br>
 Than x = 24.
 
 
+</div>
 </body>
 </html>

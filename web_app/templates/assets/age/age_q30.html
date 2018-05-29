@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -14,26 +15,26 @@ The ages of A and B are in the ratio 8:5. If the sum of their ages is 39 years. 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3:2
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;8:7
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;10:7
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;11:8
 
 	
@@ -41,7 +42,9 @@ The ages of A and B are in the ratio 8:5. If the sum of their ages is 39 years. 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Given that the ratio of ages of A and B is 8:5
 
@@ -121,5 +124,6 @@ Finally the ratio of their ages after 9 years is
 
 <sup>(A+9)</sup>&frasl;<sub>(B+9)</sub> = <sup>11</sup>&frasl;<sub>8</sub>
 
+</div>
 </body>
 </html>

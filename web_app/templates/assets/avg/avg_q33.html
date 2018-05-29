@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:33</h2>
 <hr>
@@ -12,33 +13,35 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.&nbsp;&nbsp;7
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     B.&nbsp;&nbsp;14
 
 
 </div>
 <br>
-<div>
+<div class="div2">
     C.&nbsp;&nbsp;28
 
 
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.&nbsp;&nbsp;35
 
 
 </div>
 
 
-<h2><u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Sum of first 7 multiples of 7<br><br>
 = (7&times;1)+(7&times;2)+&hyphen;&hyphen;&hyphen;&hyphen;&hyphen;+(7&times;7)<br><br>
 = 7&times;(1+2+&hyphen;&hyphen;&hyphen;&hyphen;&hyphen;+7)<br><br>
@@ -61,5 +64,6 @@ Average of first 7 multiples of 7
 <br><br> = 28.
 
 
+</div>
 </body>
 </html>

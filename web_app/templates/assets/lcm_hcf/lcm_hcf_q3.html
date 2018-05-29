@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 3 </u>:</h2>
 <hr>
@@ -21,26 +22,28 @@
 </p>
 
 
-<div>
+<div class="div2">
     A.2<sup>3</sup> &times; 3<sup>2</sup> &times; 11 , 2<sup>3</sup> &times; 3.
 </div>
 <br>
-<div>
+<div class="div2">
     B.2<sup>3</sup> &times; 3<sup>2</sup> &times; 7, 2<sup>2</sup> &times; 3.
 </div>
 <br>
-<div>
+<div class="div2">
     C. 2<sup>3</sup> &times; 3<sup>2</sup> &times; 7 &times; 11, 2<sup>2</sup> &times; 3.
 </div>
 <br>
 
-<div>
+<div class="div2">
     D.  2<sup>2</sup> &times; 3<sup>2</sup> &times; 7 &times; 11, 2<sup>3</sup> &times; 3 &times; 7 &times; 11.
 </div>
 
 
 
-<h2> <u>Answer</u>: C</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 <p>
 
@@ -55,5 +58,6 @@
     HCF = 2 <sup>2</sup> &times; 3<br><br>
 </p>
 
+</div>
 </body>
 </html>

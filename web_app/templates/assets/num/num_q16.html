@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 16</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@ There are 7 dozen candles kept in a box. If there are 14 such boxes, how many ca
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1176
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;98
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1216
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;168
 
 	
@@ -39,7 +40,9 @@ There are 7 dozen candles kept in a box. If there are 14 such boxes, how many ca
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 In one box we have 7 dozen candles <br><br>
 = 7&times;12<br><br>
 = 84<br><br>
@@ -48,5 +51,6 @@ Total candles = 84&times;14<br><br>
 = 1176.
 
 
+</div>
 </body>
 </html>

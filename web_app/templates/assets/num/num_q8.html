@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 8</u>:</h2>
 <hr>
@@ -12,26 +13,26 @@
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;420
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;450
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;500
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;540
 
 	
@@ -39,7 +40,9 @@
 		
 	
 
-<h2> <u>Answer</u>:B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given expression
 <br><br>
 ( <sup>800</sup>&frasl;<sub>64</sub> ) &times; ( <sup>1296</sup>&frasl;<sub>36</sub> )
@@ -51,5 +54,6 @@ Given expression
 = 450.
 
 
+</div>
 </body>
 </html>

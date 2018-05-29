@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:26</h1>
 <hr>
@@ -13,26 +14,26 @@ Two pipes can fill cistern in 3 hours and 4 hours respectively and a waste pipe 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;5hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;8hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;10hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;12hours
 
 	
@@ -40,7 +41,9 @@ Two pipes can fill cistern in 3 hours and 4 hours respectively and a waste pipe 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <u>Formula Used</u><br><br>
 If a man can do a piece of work in x days, <br><br>
 Then his work for one day = 
@@ -64,5 +67,6 @@ times takes to fill the tank = 12 minutes.<br><br>
 When there is a negitive work we use a (-) sign.
 
 
+</div>
 </body>
 </html>

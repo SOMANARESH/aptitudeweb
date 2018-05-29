@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:74</h2>
 <hr>
@@ -12,26 +13,26 @@ The sum of three different even numbers, each greater than 15, is 58. One of the
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;16
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;18
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;22
 
 	
@@ -39,12 +40,15 @@ The sum of three different even numbers, each greater than 15, is 58. One of the
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Two possibilities: 16+18+24=58 <br><br>
 and 16+20+22=58<br><br>
 16 is the common number in both possible combinations of numbers.<br><br>
 Note: 18+20+22=60>58.
 
 
+</div>
 </body>
 </html>

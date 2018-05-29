@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:46</h1>
 <hr>
@@ -14,26 +15,26 @@ Deepa bought a calculator with 30% discount on the listed price. Had she not got
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;192.50
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;275
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;117.85
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -41,7 +42,9 @@ Deepa bought a calculator with 30% discount on the listed price. Had she not got
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Discount = 30% of list price <br><br> 
 Let the list price be X<br><br> 
 30% Of list price = 82.50 <br><br>
@@ -61,5 +64,6 @@ So total price paid by deepa = Lised price - Discount
 Total price paid by deepa = 275-82.50
 <br><br> 
 Total price paid by deepa = 192.5
+</div>
 </body>
 </html>

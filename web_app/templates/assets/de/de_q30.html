@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h2>
 <hr>
@@ -13,26 +14,26 @@ If 1.125 &times; 10<sup>k</sup> = 0.001125, then the value of k is:
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;-4
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;-3
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;-2
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;-1
 
 	
@@ -40,7 +41,9 @@ If 1.125 &times; 10<sup>k</sup> = 0.001125, then the value of k is:
 		
 	
 
-<h2> <u>Answer</u>:b </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 10<sup>k</sup> = 0.001125&divide;1.125 
 <br><br>
 = 1.125&divide;1125
@@ -53,5 +56,6 @@ If 1.125 &times; 10<sup>k</sup> = 0.001125, then the value of k is:
 <br><br>
 k = -3.
 
+</div>
 </body>
 </html>

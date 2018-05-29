@@ -1,295 +1,291 @@
+{% load static %}
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="questions.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
     <title>
         Number Formulae
     </title>
 </head>
+
 <body>
 
-<br/>
-<br/>
-<hr/>
-<hr/>
-<p align="center"><font size="6"><b>
+    <br/>
+    <br/>
+    <hr/>
+    <hr/>
+    <p align="center"><font size="6"><b>
     <p1>Numbers Formulae</p1>
 </b></font>
-</p>
+    </p>
 
-<hr/>
-<hr/>
-<dl>
+    <hr/>
+    <hr/>
+    <dl>
 
-    <font size="5"><u>Some important formulas:</u></font>
-
-
-    <ol>
-        <br>
-        <li>
-            (a + b)(a - b) = a <sup>2</sup>-b <sup>2</sup>.
-        </li>
-        <br>
-        <li>
-
-            (a + b)<sup>2</sup> = (a <sup>2</sup> + b <sup>2</sup> + 2ab).
-        </li>
-        <br>
-        <li>
-            (a - b)<sup>2</sup> = (a <sup>2</sup> + b <sup>2</sup> - 2ab).
-        </li>
-        <br>
-        <li>
-
-            (a + b + c)<sup>2</sup> = a <sup>2</sup> + b <sup>2</sup> + c <sup>2</sup> + 2(ab+bc+ca).
-        </li>
-        <br>
-        <li>
-            (a <sup>3</sup> + b <sup>3</sup>) = (a+b)(a <sup>2</sup> -ab+ b <sup>2</sup>).
-        </li>
-        <br>
-
-        <li>
-
-            (a <sup>3</sup>- b <sup>3</sup>) = (a-b)(a <sup>2</sup> +ab+ b <sup>2</sup>).
-        </li>
-        <br>
-        <li>
-            (a <sup>3</sup> + b <sup>3</sup>+ c <sup>3</sup>- 3abc) = (a+b+c)(a <sup>2</sup>+b <sup>2</sup>+ c
-            <sup>2</sup>-ab-bc-ca).
-
-        </li>
-        <br>
-        <li>
-            When a + b + c = 0; then a <sup>3</sup> + b <sup>3</sup> + c <sup>3</sup> = 3abc.
-        </li>
-    </ol>
+        <font size="5"><u>Some important formulas:</u></font>
 
 
-    <p><font size="4"> <u>Properties of Numbers </u></font>
-
-    <ol>
-        <li>
-            A three digit number formed by repeating a one digit number thrice, is always divisible by 111.
+        <ol>
             <br>
-            Since 111=3 &times; 37, such numbers are divisible by 3, 37, 111.
+            <li>
+                (a + b)(a - b) = a <sup>2</sup>-b <sup>2</sup>.
+            </li>
             <br>
-            <u>Ex:</u>222, 777, 888 etc, are divisible by 3, 37, 111.
+            <li>
 
-
-        </li>
-        <br>
-
-        <li>
-            A four digit number formed by repeating a two digit number, is always divisible by 101.
+                (a + b)<sup>2</sup> = (a <sup>2</sup> + b <sup>2</sup> + 2ab).
+            </li>
             <br>
-            <u>Ex:</u> 2525, 3636, 8383 etc, are divisible by 101.
-        </li>
-        <br>
-
-        <li>
-            The number zero surrounded by the same two digit number on both sides. Any such five digit number is always
-            divisible by 1001.
+            <li>
+                (a - b)<sup>2</sup> = (a <sup>2</sup> + b <sup>2</sup> - 2ab).
+            </li>
             <br>
-            Since 1001 = 7 &times; 11 &times; 13. Such numbers are divisible by 7, 11, 13 and 1001.
+            <li>
+
+                (a + b + c)<sup>2</sup> = a <sup>2</sup> + b <sup>2</sup> + c <sup>2</sup> + 2(ab+bc+ca).
+            </li>
             <br>
-            <u>Ex:</u> 52052, 68068, 93093, 85085.
-        </li>
-        <br>
-
-        <li>
-            A six digit number formed by repeating a three digit number is always divisible by 1001.
+            <li>
+                (a <sup>3</sup> + b <sup>3</sup>) = (a+b)(a <sup>2</sup> -ab+ b <sup>2</sup>).
+            </li>
             <br>
-            Since 1001 = 7 &times; 11 &times; 13. Such numbers are divisible by 7,11,13 also.
-            ` <br>
-            <u>Ex:</u> 436436, 850850, 789789, 123123.
 
-        </li>
-        <br>
+            <li>
 
-        <li>
-            If sum of digits of a natural number is subtracted from the number itself, the resulting number is always
-            divisible by 9.
+                (a <sup>3</sup>- b <sup>3</sup>) = (a-b)(a <sup>2</sup> +ab+ b <sup>2</sup>).
+            </li>
             <br>
-            <u>Ex:</u> 143: Sum of digits = 1 + 4 + 3 = 8
+            <li>
+                (a <sup>3</sup> + b <sup>3</sup>+ c <sup>3</sup>- 3abc) = (a+b+c)(a <sup>2</sup>+b <sup>2</sup>+ c
+                <sup>2</sup>-ab-bc-ca).
+
+            </li>
             <br>
-            Now 143 - 8 = 135, which is divisible by 9.
-        </li>
-        <br>
-
-        <li>
-            Sum of two digit number and number formed by interchanging its digits, is always divisible by 11.
-            <br>
-            <u>Ex1:</u> 38 + 83 = 121 which is divisible by 11.
-            <br>
-            <u>Ex2:</u> 98 + 89 = 187 which is divisible by 11.
-        </li>
-        <br>
-
-        <li>
-            Digits of a two digit number and reversed. Difference between the original number and new number is always
-            divisible by 9.
-            <br>
-            <u>Ex:</u> 71 - 17 = 54, which is divisible by 9.
-        </li>
-        <br>
-
-        <li>
-            Digits of three digits number are reversed. Difference between the original number and new number is always
-            divisible by 99.
-            <br>
-            <u>Ex:</u> 731 - 137 = 594, which is divisible by 99.
-        </li>
-        <br>
-
-        <li>
-            Difference between square of a two digit number (xy) and square of a number formed by interchanging the
-            digits (yx), is always divisible by 99.
-            <br>
-            <u>Ex:</u> 21 <sup> 2 </sup> - 12 <sup> 2 </sup> = 441 - 144 = 297 = 99 &times; 3.
-        </li>
-        <br>
-    </ol>
+            <li>
+                When a + b + c = 0; then a <sup>3</sup> + b <sup>3</sup> + c <sup>3</sup> = 3abc.
+            </li>
+        </ol>
 
 
-    <p><font size="4"> <u> Test of Divisibility: </u></font>
+        <p><font size="4"> <u>Properties of Numbers </u></font>
 
-    <ol>
-        <li>
-
-
-            <u><b> Divisibility By 2:</b></u><br>
-
-
-            <br>A number is divisible by 2 if its unit digit is any of of ,2,4,6,8.
-            <br><br>
-            <u>Ex:</u> 58694 is divisible by 2, while 86945 is not divisibleby 2.
+            <ol>
+                <li>
+                    A three digit number formed by repeating a one digit number thrice, is always divisible by 111.
+                    <br> Since 111=3 &times; 37, such numbers are divisible by 3, 37, 111.
+                    <br>
+                    <u>Ex:</u>222, 777, 888 etc, are divisible by 3, 37, 111.
 
 
-        </li>
-        <br>
-
-        <li>
-
-            <u><b> Divisibility By 3:</b></u><br>
-
-
-            <br>A number is divisible by 3 only when the sum of its digits is divisible by 3.
-            <br><br>
-            <u>Ex:</u> In the number 695421, the sum of digits = 27, which is divisible by 3, then 695421 is
-            divisible by 3.
-
-
-        </li>
-        <br>
-        <li>
-            <dl>
-
-                <u> <b>Divisibility By 4:</b></u><br>
-
-
-                <br>A number is divisible by 4 is the last two digits is divisible by 4.
-                <br><br>
-                <u>Ex1:</u> 6879376 is divisible by 4, since 76 is divisible by 4.
+                </li>
                 <br>
-                <u>Ex:2</u> 496138 is not divisible by 4, since 38 is not divisible by 4.
 
-            </dl>
-        </li>
-        <br>
+                <li>
+                    A four digit number formed by repeating a two digit number, is always divisible by 101.
+                    <br>
+                    <u>Ex:</u> 2525, 3636, 8383 etc, are divisible by 101.
+                </li>
+                <br>
 
+                <li>
+                    The number zero surrounded by the same two digit number on both sides. Any such five digit number is always divisible by 1001.
+                    <br> Since 1001 = 7 &times; 11 &times; 13. Such numbers are divisible by 7, 11, 13 and 1001.
+                    <br>
+                    <u>Ex:</u> 52052, 68068, 93093, 85085.
+                </li>
+                <br>
 
-        <li>
+                <li>
+                    A six digit number formed by repeating a three digit number is always divisible by 1001.
+                    <br> Since 1001 = 7 &times; 11 &times; 13. Such numbers are divisible by 7,11,13 also. `
+                    <br>
+                    <u>Ex:</u> 436436, 850850, 789789, 123123.
 
+                </li>
+                <br>
 
-            <u> <b>Divisibility By 5:</b></u><br>
+                <li>
+                    If sum of digits of a natural number is subtracted from the number itself, the resulting number is always divisible by 9.
+                    <br>
+                    <u>Ex:</u> 143: Sum of digits = 1 + 4 + 3 = 8
+                    <br> Now 143 - 8 = 135, which is divisible by 9.
+                </li>
+                <br>
 
+                <li>
+                    Sum of two digit number and number formed by interchanging its digits, is always divisible by 11.
+                    <br>
+                    <u>Ex1:</u> 38 + 83 = 121 which is divisible by 11.
+                    <br>
+                    <u>Ex2:</u> 98 + 89 = 187 which is divisible by 11.
+                </li>
+                <br>
 
-            <br>A number is divisible by 5 when its unit digit is 0 or 5.
-            <br><br>
-            <u>Ex:</u> 76895 and 68790 are divisible with 5.
+                <li>
+                    Digits of a two digit number and reversed. Difference between the original number and new number is always divisible by 9.
+                    <br>
+                    <u>Ex:</u> 71 - 17 = 54, which is divisible by 9.
+                </li>
+                <br>
 
+                <li>
+                    Digits of three digits number are reversed. Difference between the original number and new number is always divisible by 99.
+                    <br>
+                    <u>Ex:</u> 731 - 137 = 594, which is divisible by 99.
+                </li>
+                <br>
 
-        </li>
-        <br>
-        <li>
-
-
-            <u><b> Divisibility By 8:</b></u><br>
-
-
-            <br>A number is divisible by 8 if the number formed by hundreds tens and units digit of the given number is
-            divisible by 8.
-            <br><br>
-            <u>Ex:</u> In the number 16789352 the number formed by last three digits 352 is divisible by 8 then
-            whole number is divisible by 8.
-
-
-        </li>
-        <br>
-
-        <li>
-
-            <u> <b>Divisibility By 9:</b></u><br>
-
-            <br>A number is divisible by 9 only when the sum of its digits is divisible by 9.
-            <br><br>
-            <u>Ex:</u> In number 246591, the sum of digits = 27, which is divisible by 9, then whole number is
-            divisible by 9.
-
-
-        </li>
-        <br>
-
-        <li>
-            <u> <b>Divisibility By 10:</b></u><br>
-
-            <br>A number is divisible by 10 only when its unit digit is 0.
-            <br><br>
-            <u>Ex:</u> Each of the numbers 76890 and 68790 is divisible by 10.
-
-
-        </li>
-        <br>
-
-
-        <li>
-
-
-            <u> <b>Divisibility By 11:</b></u><br>
+                <li>
+                    Difference between square of a two digit number (xy) and square of a number formed by interchanging the digits (yx), is always divisible by 99.
+                    <br>
+                    <u>Ex:</u> 21 <sup> 2 </sup> - 12 <sup> 2 </sup> = 441 - 144 = 297 = 99 &times; 3.
+                </li>
+                <br>
+            </ol>
 
 
-            <br>A number is divisible by 11 if the difference between the sum of its digits at odd places and the sum of
-            its digits at even places is either 0 or a number divisible by 11.
-            <br><br>
-            <u>Ex1:</u>
-            <br>Take the number 29435417.
-            <br>
-            = (Sum of its digits at odd places) - (Sum of its digits at even places).
-            <br>= ( 7 + 4 + 3 + 9 ) - ( 1 + 5 + 4 + 2 )
-            <br>= ( 23 - 12)
-            <br>= 11.
+            <p><font size="4"> <u> Test of Divisibility: </u></font>
 
-            <br><br>
-            <u>Ex2:</u>
-            <br>
-            Consider the number 57463822.
-            <br>
-            = (Sum of its digits at odd places) - (Sum of its digits at even places).
-            <br>
-            = ( 2 + 8 + 6 + 7 ) - ( 2 + 3 + 4 + 5 )
-            <br> = ( 23 - 14 )
-            <br> = 9
-            <br>
-            which is not divisible by 11. Then 57463822 is not divisible by 11.
-            </dd>
-        </li>
-    </ol>
-</dl>
+                <ol>
+                    <li>
 
-</li>
-<br>
-</ol>
 
+                        <u><b> Divisibility By 2:</b></u>
+                        <br>
+
+
+                        <br>A number is divisible by 2 if its unit digit is any of of ,2,4,6,8.
+                        <br>
+                        <br>
+                        <u>Ex:</u> 58694 is divisible by 2, while 86945 is not divisibleby 2.
+
+
+                    </li>
+                    <br>
+
+                    <li>
+
+                        <u><b> Divisibility By 3:</b></u>
+                        <br>
+
+
+                        <br>A number is divisible by 3 only when the sum of its digits is divisible by 3.
+                        <br>
+                        <br>
+                        <u>Ex:</u> In the number 695421, the sum of digits = 27, which is divisible by 3, then 695421 is divisible by 3.
+
+
+                    </li>
+                    <br>
+                    <li>
+                        <dl>
+
+                            <u> <b>Divisibility By 4:</b></u>
+                            <br>
+
+
+                            <br>A number is divisible by 4 is the last two digits is divisible by 4.
+                            <br>
+                            <br>
+                            <u>Ex1:</u> 6879376 is divisible by 4, since 76 is divisible by 4.
+                            <br>
+                            <u>Ex:2</u> 496138 is not divisible by 4, since 38 is not divisible by 4.
+
+                        </dl>
+                    </li>
+                    <br>
+
+
+                    <li>
+
+
+                        <u> <b>Divisibility By 5:</b></u>
+                        <br>
+
+
+                        <br>A number is divisible by 5 when its unit digit is 0 or 5.
+                        <br>
+                        <br>
+                        <u>Ex:</u> 76895 and 68790 are divisible with 5.
+
+
+                    </li>
+                    <br>
+                    <li>
+
+
+                        <u><b> Divisibility By 8:</b></u>
+                        <br>
+
+
+                        <br>A number is divisible by 8 if the number formed by hundreds tens and units digit of the given number is divisible by 8.
+                        <br>
+                        <br>
+                        <u>Ex:</u> In the number 16789352 the number formed by last three digits 352 is divisible by 8 then whole number is divisible by 8.
+
+
+                    </li>
+                    <br>
+
+                    <li>
+
+                        <u> <b>Divisibility By 9:</b></u>
+                        <br>
+
+                        <br>A number is divisible by 9 only when the sum of its digits is divisible by 9.
+                        <br>
+                        <br>
+                        <u>Ex:</u> In number 246591, the sum of digits = 27, which is divisible by 9, then whole number is divisible by 9.
+
+
+                    </li>
+                    <br>
+
+                    <li>
+                        <u> <b>Divisibility By 10:</b></u>
+                        <br>
+
+                        <br>A number is divisible by 10 only when its unit digit is 0.
+                        <br>
+                        <br>
+                        <u>Ex:</u> Each of the numbers 76890 and 68790 is divisible by 10.
+
+
+                    </li>
+                    <br>
+
+
+                    <li>
+
+
+                        <u> <b>Divisibility By 11:</b></u>
+                        <br>
+
+
+                        <br>A number is divisible by 11 if the difference between the sum of its digits at odd places and the sum of its digits at even places is either 0 or a number divisible by 11.
+                        <br>
+                        <br>
+                        <u>Ex1:</u>
+                        <br>Take the number 29435417.
+                        <br> = (Sum of its digits at odd places) - (Sum of its digits at even places).
+                        <br>= ( 7 + 4 + 3 + 9 ) - ( 1 + 5 + 4 + 2 )
+                        <br>= ( 23 - 12)
+                        <br>= 11.
+
+                        <br>
+                        <br>
+                        <u>Ex2:</u>
+                        <br> Consider the number 57463822.
+                        <br> = (Sum of its digits at odd places) - (Sum of its digits at even places).
+                        <br> = ( 2 + 8 + 6 + 7 ) - ( 2 + 3 + 4 + 5 )
+                        <br> = ( 23 - 14 )
+                        <br> = 9
+                        <br> which is not divisible by 11. Then 57463822 is not divisible by 11.
+
+                    </li>
+                </ol>
+    </dl>
 
 </body>
 

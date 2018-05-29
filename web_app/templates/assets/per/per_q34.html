@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:34</h1>
 <hr>
@@ -13,26 +14,26 @@ To pass an examination, a candidate needs 40% marks. All questions carry equal m
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;30
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;40
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;45
 
 	
@@ -40,7 +41,9 @@ To pass an examination, a candidate needs 40% marks. All questions carry equal m
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 40% of questions = 10 <br><br>
 1% of questions = <sup>10</sup>&frasl;<sub>40</sub><br><br>
@@ -51,5 +54,6 @@ Total questions = 25<br><br>
 
 
 
+</div>
 </body>
 </html>

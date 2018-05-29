@@ -1,37 +1,41 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 5 </u>:</h2>
 <hr>
 <p>My watch gains 5 min every hour. How many degrees the second hand moves in every min?</p>
 
 
-	<div>
+	<div class="div2">
 		A.330&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.390&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.360&deg;
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.430&deg;
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: B </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>We know that for every minutes second hand will cover 360&deg;</p>
 	<p>Given that watch gains 5 mins for every hour.</p>
 	<p>So that means, for one hour it covers 65 minutes. i.e, 13 spaces.</p>
 	<p>We know that for each space second hand will cover 30&deg;</p>
 	<p>So for 13 spaces, it will cover 13 &times; 30&deg; = 390&deg;</p>
+</div>
 </body>
 </html>

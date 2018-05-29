@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h1>
 <hr>
@@ -12,26 +13,26 @@ Average of n observations is 35, average of n other observations is 37 and avera
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;36
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;38
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;40
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;57
 
 	
@@ -39,7 +40,9 @@ Average of n observations is 35, average of n other observations is 37 and avera
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that the average of first n observations is 35
 <br><br>
 <sup>(sum of first n observations)</sup>&frasl;<sub>n</sub> = 35
@@ -69,5 +72,6 @@ Now the average of all numbers is
 = 38
 
 
+</div>
 </body>
 </html>

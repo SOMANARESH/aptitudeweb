@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:8</h1>
 <hr>
@@ -13,26 +14,26 @@ If x = (0.08)<sup>2</sup>, y = 1/(0.08)<sup>2</sup> and z = (1- 0.08<sup>2</sup>
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;y< z < x
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;z < x < y
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;y < x and x = z
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;x > y and x = z
 
 	
@@ -40,12 +41,15 @@ If x = (0.08)<sup>2</sup>, y = 1/(0.08)<sup>2</sup> and z = (1- 0.08<sup>2</sup>
 		
 	
 
-<h2> <u>Answer</u>: b</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 X= (0.08)<sup>2</sup>  = 0< x < 1<br><br>
 y = <sup>1</sup>&frasl;<sub>(0.08)<sup>2</sup></sub> = (12.5)<sup>2</sup> > 1<br><br>
  and z= (1-0.08<sup>2</sup>)-1= -0.08<sup>2</sup><0<br><br>
 &nbsp;z < x < y.
 
 
+</div>
 </body>
 </html>

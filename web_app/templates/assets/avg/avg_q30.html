@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:30</h1>
 <hr>
@@ -12,26 +13,26 @@ Out of three numbers, the first is twice the second and is half of the third. If
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;48
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;52
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;44
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;40
 
 	
@@ -39,7 +40,9 @@ Out of three numbers, the first is twice the second and is half of the third. If
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that first number is twice that of second and half that of third
 <br><br>
 i.e.X<sub>1</sub> = 2(X<sub>2</sub>)
@@ -84,5 +87,6 @@ X<sub>1</sub>-X<sub>3</sub> = 96-48
 X<sub>1</sub>-X<sub>3</sub> = 48
 <br><br>
 
+</div>
 </body>
 </html>

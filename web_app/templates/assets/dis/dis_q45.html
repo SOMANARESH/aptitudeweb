@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:45</h1>
 <hr>
@@ -13,26 +14,26 @@ Walking <sup>4</sup>&frasl;<sub>5</sub> of his usual speed, a man reaches is lat
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2 <sup>1</sup>&frasl;<sub>2</sub> hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2 hours
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1 <sup>1</sup>&frasl;<sub>2</sub> hours
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1 <sup>1</sup>&frasl;<sub>3</sub> hours
 
 	
@@ -40,7 +41,9 @@ Walking <sup>4</sup>&frasl;<sub>5</sub> of his usual speed, a man reaches is lat
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time taken at 
 <sup>4</sup>&frasl;<sub>5</sub>
@@ -56,5 +59,6 @@ usual time = <sup>1</sup>&frasl;<sub>3</sub> &times;
 <sup>4</sup>&frasl;<sub>1</sub><br><br>
 = 1 <sup>1</sup>&frasl;<sub>3</sub>.
 
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:9</h1>
 <hr>
@@ -11,26 +12,26 @@ If ratio of mohans age to that of his father is 1:5. After 10 years, their ages 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;25 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;30 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;40 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;50 years
 
 	
@@ -38,7 +39,9 @@ If ratio of mohans age to that of his father is 1:5. After 10 years, their ages 
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The ratio of mohans age to that of his father is 1:5<br><br>
 
 => <sup>M</sup>&frasl;<sub>F</sub> = <sup>1</sup>&frasl;<sub>5</sub><br><br>
@@ -63,5 +66,6 @@ M = 10<br><br>
 
 = 5&times;10 = 50.
 
+</div>
 </body>
 </html>

@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 2 </u>:</h2>
 <hr>
 <p>If the first day(today) of the Week is Monday, what will be the day on 99th day after today</p>
 
 
-	<div>
+	<div class="div2">
 		A.Tuesday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.Monday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.Saturday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.Sunday
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: A </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p><li>Given that Monday is the starting day of the week.</li></p>
 	<p><li>So the numbering of days is as follows
@@ -43,5 +46,6 @@
     <p><li>Total odd days = 99 &percnt; 7</li></p>
     <p><li>Total odd days = 1</li></p>
 	<p><li>So 99th day is Tuesday</li></p>
+</div>
 </body>
 </html>

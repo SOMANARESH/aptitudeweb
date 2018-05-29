@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:25</h1>
 <hr>
@@ -15,26 +16,26 @@ A spends 90% of his salary and B spends 85% of his salary. But savings of both a
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2000
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2500
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3000
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;3500
 
 	
@@ -42,7 +43,9 @@ A spends 90% of his salary and B spends 85% of his salary. But savings of both a
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Savings of A = (100-90)% = 10% of his salary<br><br>
 
 Savings of B = (100-85)% = 15% of his salary<br><br>
@@ -63,5 +66,6 @@ As Salary = 2&times;1000<br><br>
 
 As Salary = 2000
 
+</div>
 </body>
 </html>

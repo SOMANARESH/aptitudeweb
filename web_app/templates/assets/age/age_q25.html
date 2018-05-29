@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:25</h1>
 <hr>
@@ -13,26 +14,26 @@ Sum of present ages of A,B and C is 72 years.if 4 years ago, their ages were in 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;7 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;10 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;12 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;14 years
 
 	
@@ -40,7 +41,9 @@ Sum of present ages of A,B and C is 72 years.if 4 years ago, their ages were in 
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Sum of present ages of A, B and C is 72 years.<br>
 Sum of their ages (4 years ago) = 72-3&times;4<br>= 60 years<br>
@@ -98,5 +101,6 @@ A-4 = 10
 
 A=14
 
+</div>
 </body>
 </html>

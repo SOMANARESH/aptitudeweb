@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:27</h2>
 <hr>
@@ -13,26 +14,26 @@ Which of the following is equal to 3.14&times;10<sup>6</sup> ?
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;314
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;3140
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;3140000
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -40,10 +41,13 @@ Which of the following is equal to 3.14&times;10<sup>6</sup> ?
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 3.14&times;10<sup>6</sup> = 3.140000&times;1000000
 <br><br>
 =3140000.
 
+</div>
 </body>
 </html>

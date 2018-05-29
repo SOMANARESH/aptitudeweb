@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:45</h1>
 <hr>
@@ -12,26 +13,26 @@ The average of n numbers is x. when 36 is subtracted from two of the numbers, th
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;8
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;9
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;72
 
 	
@@ -39,7 +40,9 @@ The average of n numbers is x. when 36 is subtracted from two of the numbers, th
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Given that average of n numbers is x
 <br><br>
 <sup>(Sum of n numbers)</sup>&frasl;n = x
@@ -61,5 +64,6 @@ xn-72 = xn-8n
 n = 9
 <br><br>
 
+</div>
 </body>
 </html>

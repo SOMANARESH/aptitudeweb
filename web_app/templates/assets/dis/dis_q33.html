@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:33</h1>
 <hr>
@@ -12,26 +13,26 @@ A and B, standing at places having distance 12 km, start walking towards each ot
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;3 <sup>3</sup>&frasl;<sub>5</sub> km/hr
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;4 <sup>3</sup>&frasl;<sub>5</sub> km/hr
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;5 <sup>3</sup>&frasl;<sub>5</sub> km/hr
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6 <sup>3</sup>&frasl;<sub>5</sub> km/hr
 
 	
@@ -39,7 +40,9 @@ A and B, standing at places having distance 12 km, start walking towards each ot
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Time taken = 1 hour 15 minutes = 1 <sup>1</sup>&frasl;<sub>4</sub> hour <br><br>
 = <sup>5</sup>&frasl;<sub>4</sub>hour<br><br>
@@ -50,5 +53,6 @@ Their relative speed = 12&divide;
 Speed of B = (<sup>48</sup>&frasl;<sub>5</sub>)-4 <br><br>= 28&divide;5 <br><br>= 5 <sup>3</sup>&frasl;<sub>5</sub> km/hr.
 
 
+</div>
 </body>
 </html>

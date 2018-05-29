@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:38</h1>
 <hr>
@@ -12,26 +13,26 @@ A loss of 19% gets converted into a profit of 17% when the selling price is incr
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;360
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;540
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;450
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;600
 
 	
@@ -39,7 +40,9 @@ A loss of 19% gets converted into a profit of 17% when the selling price is incr
 		
 	
 
-<h2> <u>Answer</u>:c </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Difference in two selling prices = 17%-(-19%)<br><br>= 36% of cost price<br><br>
 Actual difference in two selling prices = 162<br><br>
@@ -47,5 +50,6 @@ Cost price = <sup>162</sup>&frasl;<sub>36</sub>
 &times;100<br><br>=450.
 
 
+</div>
 </body>
 </html>

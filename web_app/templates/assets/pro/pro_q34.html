@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:34</h1>
 <hr>
@@ -12,26 +13,26 @@ A bicycle is sold at 10% profit. Had it been sold for 10 less, the profit would 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;100
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;180
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;190
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;200
 
 	
@@ -39,12 +40,15 @@ A bicycle is sold at 10% profit. Had it been sold for 10 less, the profit would 
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Difference in two selling prices = 10%-5% <br><br>= 5% of cost price<br><br>
 Actual difference in two sellin prices = 10 (i.e. 2 times of 5)<br><br>
 Cost  price = 2&times;100 <br><br>= 200.
 
 
+</div>
 </body>
 </html>

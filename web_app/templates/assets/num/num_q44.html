@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:44</h2>
 <hr>
@@ -12,26 +13,26 @@ Pooja started her job with certain monthly salary and gets a fixed pay increment
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;2640,320
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;2460,320
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;2450,520
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;2640,520
 
 	
@@ -39,7 +40,9 @@ Pooja started her job with certain monthly salary and gets a fixed pay increment
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Five increments = 6800-4200 = 2600<br><br>
 One increment = <sup>2600</sup>&frasl;<sub>5</sub> = 520<br><br>
@@ -49,5 +52,6 @@ Initial salary = salary after 3 years &minus; 3 increments<br><br>
 = 4200-1560<br><br>
 = 2640.
 
+</div>
 </body>
 </html>

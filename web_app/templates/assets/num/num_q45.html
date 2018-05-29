@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:45</h2>
 <hr>
@@ -12,33 +13,35 @@ How many digits are required to write numbers from 1 to 400
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;1002
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1092
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;1103
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1209
 	
 </div>
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 One digit numbers (1 to 9) = 9<br><br>
 Two digit numbers (10 to 99) = 90<br><br>
 Three digit numbers (100 to 400) = 301<br><br>
@@ -46,5 +49,6 @@ Total digits required = 9&times;1+90&times;2+301&times;3<br><br>
 =9+180+903<br><br>=1092.
 
 
+</div>
 </body>
 </html>

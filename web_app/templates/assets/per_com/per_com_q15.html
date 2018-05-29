@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 15 </u>:</h2>
 <hr>
 <p>There are 6 boxes numbered 1, 2,....6. Each box is to be filled up either with a red or a green ball in such a way that at least 1 box contains a green ball and the boxes containing green balls are consecutively numbered. The total number of ways in which this can be done is </p>
 
 
-	<div>
+	<div class="div2">
 		A.60
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.23
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.21
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.46
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p>Given that each box contain either red or green ball and at least one box can have a green ball. </p>
     <p>So there is possibility of having one green ball in one box at a time.</p>
@@ -38,5 +41,6 @@
 	<p>For Five boxes = 2</p>
 	<p>For six boxes = 1</p>
 	<p>So Total combinations = 6+5+4+3+2+1 = 21</p>
+</div>
 </body>
 </html>

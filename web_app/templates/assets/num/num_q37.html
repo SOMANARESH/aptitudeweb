@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:37</h2>
 <hr>
@@ -12,26 +13,26 @@ In a question of division, the divisor is 7 times the quotient and 3 times the r
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;588
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;784
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;823
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;1036
 
 	
@@ -39,7 +40,9 @@ In a question of division, the divisor is 7 times the quotient and 3 times the r
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Divisor = 28&times;3=84<br><br>
 Quotient = 84&divide;7=12<br><br>
 Dividend = (divisor&times;quotient)+remainder<br><br>
@@ -48,5 +51,6 @@ Dividend = (divisor&times;quotient)+remainder<br><br>
 = 1036.
 
 
+</div>
 </body>
 </html>

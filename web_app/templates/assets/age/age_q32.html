@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:32</h1>
 <hr>
@@ -12,26 +13,26 @@ At the time of marriage, a man was 6 years older to his wife. 12 years after the
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;18 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;24 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;30 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;36 years
 
 	
@@ -39,7 +40,9 @@ At the time of marriage, a man was 6 years older to his wife. 12 years after the
 		
 	
 
-<h2> <u>Answer</u>:a </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 
 Let us assume that the age of a Man and his Wife at the time of marriage be <u>M</u> and <u>W</u>
@@ -89,5 +92,6 @@ W=18
 Wifes age at the time of marriage is 18 years
 
 
+</div>
 </body>
 </html>

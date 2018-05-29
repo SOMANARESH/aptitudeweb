@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:1</h1>
 <hr>
@@ -12,25 +13,25 @@
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;0
 	
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;1
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7
 	
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;8
 	
 
@@ -39,7 +40,9 @@
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 since 7 &times;  8 = 56 <br><br>
 
@@ -50,5 +53,6 @@ now 6 &times;  3 = 18. <br><br>
 unit digit in (217 &times; 818) &times; 193 is 8<br><br>
 
 unit digit is 8.
+</div>
 </body>
 </html>

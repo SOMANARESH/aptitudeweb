@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:39</h1>
 <hr>
@@ -12,26 +13,26 @@ A general wishing to draw up his 2350 men army in the form of a solid square fou
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;23
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;46
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;48
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of other
 
 	
@@ -39,7 +40,9 @@ A general wishing to draw up his 2350 men army in the form of a solid square fou
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 The number of men who formed the solid square = 2350-46<br><br>=2304<br><br>
 The number of men in each row =
 <span style="white-space: nowrap;">
@@ -48,5 +51,6 @@ The number of men in each row =
 <br><br> = 48.
 
 
+</div>
 </body>
 </html>

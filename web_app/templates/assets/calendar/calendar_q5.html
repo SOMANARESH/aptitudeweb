@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 5 </u>:</h2>
 <hr>
 <p>What was the day of the week on 17th June, 1998?</p>
 
 
-	<div>
+	<div class="div2">
 		A.Monday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.Tuesday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.Wednesday
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.Thursday
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<li>Divide the given date into parts like below</li>
 	<p><li>17th June, 1998 = (1997 years + Period from 1.1.1998 to 17.6.1998)</li></p>
@@ -62,5 +65,6 @@
         <ul>6 &rarr; Saturday</ul>
 	</li>
 	<p><li>The given date is on Wednesday</li></p>
+</div>
 </body>
 </html>

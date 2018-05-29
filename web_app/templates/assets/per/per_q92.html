@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:92</h1>
 <hr>
@@ -13,26 +14,26 @@ Ms. Sujata invests 2170 which is 7% of her monthly salary in mutual funds. Later
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;12530
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;113520
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;135120
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;115320
 
 	
@@ -40,7 +41,9 @@ Ms. Sujata invests 2170 which is 7% of her monthly salary in mutual funds. Later
 		
 	
 
-<h2> <u>Answer</u>: D</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 Givwn that she spents 7% salary in mutual funds which is 2170<br><br>
 7% of monthly salary = 2170 <br><br>
 (<sup>7</sup>&frasl;<sub>100</sub>)&times;Total Salary = 2170
@@ -69,5 +72,6 @@ Total Annual investment = 115320
 <br><br>
 
 
+</div>
 </body>
 </html>

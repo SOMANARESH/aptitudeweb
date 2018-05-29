@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:12</h2>
 <hr>
@@ -16,26 +17,26 @@ and greater than
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;
 
 	<sup>1</sup>&frasl;<sub>4</sub>
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;
 <sup>23</sup>&frasl;<sub>24</sub>
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;
 <sup>11</sup>&frasl;<sub>12</sub>
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;
 
 	<sup>17</sup>&frasl;<sub>24</sub>
@@ -43,7 +44,9 @@ and greater than
 		
 	
 
-<h2> <u>Answer</u>:d </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <sup>7</sup>&frasl;<sub>8</sub>=
 = 0.875,<br><br>
 <sup>1</sup>&frasl;<sub>3</sub> = 0.333,<br><br>
@@ -57,5 +60,6 @@ Then <sup>17</sup>&frasl;<sub>24</sub>
 <sup>7</sup>&frasl;<sub>8</sub>. 
 
 
+</div>
 </body>
 </html>

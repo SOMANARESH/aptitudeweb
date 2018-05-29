@@ -1,8 +1,9 @@
+{% load static %}
 <html>
 <body>
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:63</h2>
 <hr>
@@ -12,26 +13,26 @@ A person started his journey in the morning at 11 a.m, he covered 3/8 of the jou
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;6 a.m
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;5.30 a.m
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;7 a.m
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;6.30 a.m
 
 	
@@ -39,7 +40,9 @@ A person started his journey in the morning at 11 a.m, he covered 3/8 of the jou
 		
 	
 
-<h2> <u>Answer</u>: d</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Journey covered between 11 a.m. and 4:30 p.m.<br><br>
 =(<sup>5</sup>&frasl;<sub>6</sub>) &minus; (<sup>3</sup>&frasl;<sub>8</sub>)
@@ -66,5 +69,6 @@ Journey was started at 11 a.m. &minus; 4 <sup>1</sup>&frasl;<sub>2</sub> hours <
 
 
 
+</div>
 </body>
 </html>

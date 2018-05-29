@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:40</h2>
 <hr>
@@ -12,26 +13,26 @@ A bucket full of water weighs 50 kg, while half-filled bucket weighs 30kg. Find 
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;10 kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;15 kg
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;20 kg
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;25 kg
 
 	
@@ -39,12 +40,15 @@ A bucket full of water weighs 50 kg, while half-filled bucket weighs 30kg. Find 
 		
 	
 
-<h2> <u>Answer</u>: A</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Weight of bucket + full water = 50 kg&minus;&minus;&minus;&minus;&minus;&gt;(1)<br><br>
 And weight of bucket + half water = 30 kg &minus;&minus;&minus;&minus;&minus;&gt;(2)<br><br>
 (1)-(2): weight of half water = (50-30)kg = 20 kg<br><br>
 Weight of empty bucket = 30 kg &minus; 20 kg = 10 kg.<br><br>
 
+</div>
 </body>
 </html>

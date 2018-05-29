@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:4</h1>
 <hr>
@@ -12,26 +13,26 @@ Present ages of ram and sita are in the ratio 13:12 respectively. 8 yeasrs later
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;50 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;54 years
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;48 years
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;None of these
 
 	
@@ -39,7 +40,9 @@ Present ages of ram and sita are in the ratio 13:12 respectively. 8 yeasrs later
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 The Ratio between Present ages of ram and sita is 13:12<br><br>
 
@@ -66,5 +69,6 @@ Substitute 1 in above eq. then we will get  <br><br>
 
 
 
+</div>
 </body>
 </html>

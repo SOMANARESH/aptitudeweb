@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:51</h2>
 <hr>
@@ -12,26 +13,26 @@ The sum of the digits of a two digit number is 11. On adding 27 to the given num
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;38
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;47
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;74
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;83
 
 	
@@ -39,7 +40,9 @@ The sum of the digits of a two digit number is 11. On adding 27 to the given num
 		
 	
 
-<h2> <u>Answer</u>: B</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 
 Let the two digit number be XY then it can be represented in decimal format as below
 <br><br>
@@ -82,5 +85,6 @@ X = 7-3
 X = 4
 <br><br>
 So the number is XY = 47
+</div>
 </body>
 </html>

@@ -1,7 +1,8 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question </u>:56</h1>
 <hr>
@@ -22,26 +23,26 @@ Find the approximate value of
 </p>
 
 
-<div>
+<div class="div2">
 	A.&nbsp;&nbsp;58
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	B.&nbsp;&nbsp;56
 
 	
 </div>
 <br>
-<div>
+<div class="div2">
 	C.&nbsp;&nbsp;52
 
 	
 </div>
 <br>
 			
-<div>
+<div class="div2">
 	D.&nbsp;&nbsp;63
 
 	
@@ -49,7 +50,9 @@ Find the approximate value of
 		
 	
 
-<h2> <u>Answer</u>: c</h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 				=<span style="white-space: nowrap;">
 				&radic;<span 												style="text-decoration:overline;">&nbsp;624.98&nbsp;</span>
 				</span>	
@@ -72,5 +75,6 @@ Find the approximate value of
 =25+27<br><br>
 =52
 
+</div>
 </body>
 </html>

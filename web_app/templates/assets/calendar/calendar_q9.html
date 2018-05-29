@@ -1,32 +1,35 @@
+{% load static %}
 <html>
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="questions.css">
+<link rel="stylesheet" type="text/css" href="{% static 'questions.css' %}">
 </head>
 <h2><u> Question 9 </u>:</h2>
 <hr>
 <p>The calendar for the year 2007 will be the same for the year?</p>
 
 
-	<div>
+	<div class="div2">
 		A.2016
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		B.2017
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		C.2018
 	</div>
 <br>
-	<div>
+	<div class="div2">
 		D.2019
 	</div>
 		
 	
 
-<h2> <u>Answer</u>: C </h2>
+<br><button type="button" onclick="document.getElementById('demo').style.display='block'" id='button1'>Show Answer</button> 
+ <button onclick="document.getElementById('demo').style.display='none'">Hide Answer</button> 
+ <div id="demo" style="display:none"><br>
 <h3>Solution: </h3>
 	<p><li>Count the number of odd days from the year 2007 onwards to get the sum equal to 0 odd day.</li></p>
 	<p><li>2007 (Normal Year) = 1 Odd day, Count = 1, Odd days = 1&percnt;7 = 1</li></p>
@@ -41,5 +44,6 @@
     <p><li>2016 (Leap Year) = 2 Odd day, Count = 11+2 = 13,Odd days = 13&percnt;7 = 6</li></p>
     <p><li>2017 (Normal Year) = 1 Odd day, Count = 13+1 = 14,Odd days = 14&percnt;7 = 0</li></p>
     <p><li>Calendar for the year 2018 will be the same as for the year 2007.</li></p>
+</div>
 </body>
 </html>
